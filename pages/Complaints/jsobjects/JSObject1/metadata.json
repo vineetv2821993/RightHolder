@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66f3bdc1af2b8e5a2a63d6e6_f648fdd4-92aa-45ad-b0bf-83187f24312b",
+  "id": "Complaints_JSObject1",
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Complaints",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

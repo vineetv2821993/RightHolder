@@ -1,0 +1,31 @@
+INSERT INTO taoq_research.rightHolderProfile (
+	id, 
+	rightHolderUserId, 
+	fullName, 
+	company_name, 
+	rightHolderName, 
+	email, 
+	phoneNumber, 
+	address, 
+	city, 
+	state, 
+	country, 
+	acknowledgement, 
+	digitalSignature, 
+	document
+) VALUES (
+	'{{this.params.id}}',  
+	'{{this.params.rightHolderUserId}}', 
+	'{{this.params.fullName}}', 
+	'{{this.params.company_name}}', 
+	'{{this.params.rightHolderName}}', 
+	'{{this.params.email}}', 
+	'{{this.params.phoneNumber}}', 
+	'{{this.params.address}}', 
+	'{{this.params.city}}', 
+	'{{this.params.state}}', 
+	'{{this.params.country}}', 
+	'{{this.params.acknowledgment}}', 
+	'{{this.params.digitalSignature}}', 
+	'{{this.params.document}}'
+);

@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66f3bdc1af2b8e5a2a63d6e6_88e37789-8cf5-4e10-a8e6-259924b12f4c",
+  "id": "Login_CreateAccount",
+  "unpublishedCollection": {
+    "name": "CreateAccount",
+    "pageId": "Login",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "exitQuery",
+        "value": "''"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+SELECT complaint_form_id FROM complaints_form where infringing_url = '{{this.params.infringing_url}}';

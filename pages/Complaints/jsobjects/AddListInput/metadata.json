@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66f3bdc1af2b8e5a2a63d6e6_beef8cf8-c5ca-4007-8e91-2d05d8436cef",
+  "id": "Complaints_AddListInput",
+  "unpublishedCollection": {
+    "name": "AddListInput",
+    "pageId": "Complaints",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "index",
+        "value": "1"
+      },
+      {
+        "name": "listArray",
+        "value": "[{\n  id: AddListInput.index,\n  input1: '',\n  Description: '',\n  FilePicker1: ''\n}]"
+      }
+    ]
+  }
+}

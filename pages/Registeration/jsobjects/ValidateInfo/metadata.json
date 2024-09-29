@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66f3bdc1af2b8e5a2a63d6e6_43ec0ac5-3ed0-4729-aef5-56cc893038e7",
+  "id": "Registeration_ValidateInfo",
+  "unpublishedCollection": {
+    "name": "ValidateInfo",
+    "pageId": "Registeration",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

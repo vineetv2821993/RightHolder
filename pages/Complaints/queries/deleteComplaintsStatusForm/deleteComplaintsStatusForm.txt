@@ -1,0 +1,1 @@
+delete from complaint_status where complaint_status_id ={{this.params.complaint_status_id}};

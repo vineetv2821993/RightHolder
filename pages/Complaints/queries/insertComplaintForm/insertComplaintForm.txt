@@ -1,0 +1,23 @@
+INSERT INTO taoq_research.complaints_form (
+	complaint_form_id,
+	complaint_Case_id,
+	category_type, 
+	description, 
+	acknowledgment, 
+	original_work, 
+	infringing_url, 
+	rightHolderUserId, 
+	inserted_at, 
+	updated_at
+) VALUES (
+	'{{this.params.complaint_form_id}}',
+	'{{this.params.complaint_Case_id}}',
+	'{{this.params.category_type}}',       -- Category type (from Select2 widget)
+	'{{this.params.description}}',         -- Description field
+	{{this.params.acknowledgment ? 1 : 0}}, -- Acknowledgment flag (converted to tinyint)
+	'{{this.params.original_work}}',       -- Original work field
+	'{{this.params.infringing_url}}',      -- Infringing URL field
+	'{{appsmith.store.rightHolderUserId}}', -- rightHolderUserId from Appsmith store
+	'{{this.params.inserted_at}}', -- Inserted timestamp
+	'{{this.params.updated_at}}'  -- Updated timestamp
+);

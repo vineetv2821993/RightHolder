@@ -1,0 +1,15 @@
+INSERT INTO taoq_research.rightHolder (
+	id,
+	username,
+	password_hash,
+	email,
+	inserted_at,
+	updated_at
+) VALUES (
+	'{{this.params.id}}',
+	'{{this.params.username}}',
+	'{{this.params.password_hash}}',
+	'{{this.params.email}}',
+	'{{this.params.inserted_at}}',
+	'{{this.params.updated_at}}'
+);

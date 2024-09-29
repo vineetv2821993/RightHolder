@@ -1,0 +1,82 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 91,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.c94480439adb48de6883bb496aa5ef7d.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "mwt297032x",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelStyle": "BOLD",
+  "labelText": "Country",
+  "labelTextColor": "#231f20",
+  "labelTextSize": "1rem",
+  "labelWidth": "14",
+  "leftColumn": 7,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 56,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 49,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 93,
+  "originalTopRow": 86,
+  "parentColumnSpace": 12.15625,
+  "parentId": "lre5o5g67c",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 42,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Afghanistan\",\n    \"code\": \"AF\"\n  },\n  {\n    \"name\": \"Albania\",\n    \"code\": \"AL\"\n  },\n  {\n    \"name\": \"Algeria\",\n    \"code\": \"DZ\"\n  },\n  {\n    \"name\": \"American Samoa\",\n    \"code\": \"AS\"\n  },\n  {\n    \"name\": \"Andorra\",\n    \"code\": \"AD\"\n  },\n  {\n    \"name\": \"Angola\",\n    \"code\": \"AO\"\n  },\n  {\n    \"name\": \"Anguilla\",\n    \"code\": \"AI\"\n  },\n  {\n    \"name\": \"Antarctica\",\n    \"code\": \"AQ\"\n  },\n  {\n    \"name\": \"Antigua And Barbuda\",\n    \"code\": \"AG\"\n  },\n  {\n    \"name\": \"Argentina\",\n    \"code\": \"AR\"\n  },\n  {\n    \"name\": \"Armenia\",\n    \"code\": \"AM\"\n  },\n  {\n    \"name\": \"Aruba\",\n    \"code\": \"AW\"\n  },\n  {\n    \"name\": \"Australia\",\n    \"code\": \"AU\"\n  },\n  {\n    \"name\": \"Austria\",\n    \"code\": \"AT\"\n  },\n  {\n    \"name\": \"Azerbaijan\",\n    \"code\": \"AZ\"\n  },\n  {\n    \"name\": \"Bahamas\",\n    \"code\": \"BS\"\n  },\n  {\n    \"name\": \"Bahrain\",\n    \"code\": \"BH\"\n  },\n  {\n    \"name\": \"Bangladesh\",\n    \"code\": \"BD\"\n  },\n  {\n    \"name\": \"Barbados\",\n    \"code\": \"BB\"\n  },\n  {\n    \"name\": \"Belarus\",\n    \"code\": \"BY\"\n  },\n  {\n    \"name\": \"Belgium\",\n    \"code\": \"BE\"\n  },\n  {\n    \"name\": \"Belize\",\n    \"code\": \"BZ\"\n  },\n  {\n    \"name\": \"Benin\",\n    \"code\": \"BJ\"\n  },\n  {\n    \"name\": \"Bermuda\",\n    \"code\": \"BM\"\n  },\n  {\n    \"name\": \"Bhutan\",\n    \"code\": \"BT\"\n  },\n  {\n    \"name\": \"Bolivia, Plurinational State Of\",\n    \"code\": \"BO\"\n  },\n  {\n    \"name\": \"Bonaire, Saint Eustatius And Saba\",\n    \"code\": \"BQ\"\n  },\n  {\n    \"name\": \"Bosnia & Herzegovina\",\n    \"code\": \"BA\"\n  },\n  {\n    \"name\": \"Botswana\",\n    \"code\": \"BW\"\n  },\n  {\n    \"name\": \"Bouvet Island\",\n    \"code\": \"BV\"\n  },\n  {\n    \"name\": \"Brazil\",\n    \"code\": \"BR\"\n  },\n  {\n    \"name\": \"British Indian Ocean Territory\",\n    \"code\": \"IO\"\n  },\n  {\n    \"name\": \"Brunei Darussalam\",\n    \"code\": \"BN\"\n  },\n  {\n    \"name\": \"Bulgaria\",\n    \"code\": \"BG\"\n  },\n  {\n    \"name\": \"Burkina Faso\",\n    \"code\": \"BF\"\n  },\n  {\n    \"name\": \"Burundi\",\n    \"code\": \"BI\"\n  },\n  {\n    \"name\": \"Cabo Verde\",\n    \"code\": \"CV\"\n  },\n  {\n    \"name\": \"Cambodia\",\n    \"code\": \"KH\"\n  },\n  {\n    \"name\": \"Cameroon\",\n    \"code\": \"CM\"\n  },\n  {\n    \"name\": \"Canada\",\n    \"code\": \"CA\"\n  },\n  {\n    \"name\": \"Cayman Islands\",\n    \"code\": \"KY\"\n  },\n  {\n    \"name\": \"Central African Republic\",\n    \"code\": \"CF\"\n  },\n  {\n    \"name\": \"Chad\",\n    \"code\": \"TD\"\n  },\n  {\n    \"name\": \"Chile\",\n    \"code\": \"CL\"\n  },\n  {\n    \"name\": \"China\",\n    \"code\": \"CN\"\n  },\n  {\n    \"name\": \"Christmas Island\",\n    \"code\": \"CX\"\n  },\n  {\n    \"name\": \"Cocos (Keeling) Islands\",\n    \"code\": \"CC\"\n  },\n  {\n    \"name\": \"Colombia\",\n    \"code\": \"CO\"\n  },\n  {\n    \"name\": \"Comoros\",\n    \"code\": \"KM\"\n  },\n  {\n    \"name\": \"Cook Islands\",\n    \"code\": \"CK\"\n  },\n  {\n    \"name\": \"Costa Rica\",\n    \"code\": \"CR\"\n  },\n  {\n    \"name\": \"Croatia\",\n    \"code\": \"HR\"\n  },\n  {\n    \"name\": \"Cuba\",\n    \"code\": \"CU\"\n  },\n  {\n    \"name\": \"Curacao\",\n    \"code\": \"CW\"\n  },\n  {\n    \"name\": \"Cyprus\",\n    \"code\": \"CY\"\n  },\n  {\n    \"name\": \"Czech Republic\",\n    \"code\": \"CZ\"\n  },\n  {\n    \"name\": \"Côte d'Ivoire\",\n    \"code\": \"CI\"\n  },\n  {\n    \"name\": \"Democratic Republic Of Congo\",\n    \"code\": \"CD\"\n  },\n  {\n    \"name\": \"Denmark\",\n    \"code\": \"DK\"\n  },\n  {\n    \"name\": \"Djibouti\",\n    \"code\": \"DJ\"\n  },\n  {\n    \"name\": \"Dominica\",\n    \"code\": \"DM\"\n  },\n  {\n    \"name\": \"Dominican Republic\",\n    \"code\": \"DO\"\n  },\n  {\n    \"name\": \"Ecuador\",\n    \"code\": \"EC\"\n  },\n  {\n    \"name\": \"Egypt\",\n    \"code\": \"EG\"\n  },\n  {\n    \"name\": \"El Salvador\",\n    \"code\": \"SV\"\n  },\n  {\n    \"name\": \"Equatorial Guinea\",\n    \"code\": \"GQ\"\n  },\n  {\n    \"name\": \"Eritrea\",\n    \"code\": \"ER\"\n  },\n  {\n    \"name\": \"Estonia\",\n    \"code\": \"EE\"\n  },\n  {\n    \"name\": \"Ethiopia\",\n    \"code\": \"ET\"\n  },\n  {\n    \"name\": \"Falkland Islands\",\n    \"code\": \"FK\"\n  },\n  {\n    \"name\": \"Faroe Islands\",\n    \"code\": \"FO\"\n  },\n  {\n    \"name\": \"Fiji\",\n    \"code\": \"FJ\"\n  },\n  {\n    \"name\": \"Finland\",\n    \"code\": \"FI\"\n  },\n  {\n    \"name\": \"France\",\n    \"code\": \"FR\"\n  },\n  {\n    \"name\": \"French Guiana\",\n    \"code\": \"GF\"\n  },\n  {\n    \"name\": \"French Polynesia\",\n    \"code\": \"PF\"\n  },\n  {\n    \"name\": \"French Southern Territories\",\n    \"code\": \"TF\"\n  }]",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.9aef24cb159e9c6e4d0f1d7ca4fb0c79.svg",
+  "topRow": 84,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "x2juxscohm",
+  "widgetName": "Select2Copy"
+}
