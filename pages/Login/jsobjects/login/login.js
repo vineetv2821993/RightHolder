@@ -32,7 +32,7 @@ export default {
 
 			else
 			{
-				showAlert("invalid username or emailaddress and password","error");
+				showAlert("invalid username or email Address and password","error");
 			}
 		}
 

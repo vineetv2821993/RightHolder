@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "GetRightHolderInfo",
     "pageId": "Complaints",
     "userSetOnLoad": true
