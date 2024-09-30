@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 40,
+  "bottomRow": 41,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -80,6 +80,9 @@
     },
     {
       "key": "primaryColumns.complaint_Case_id.computedValue"
+    },
+    {
+      "key": "totalRecordsCount"
     }
   ],
   "dynamicPropertyPathList": [
@@ -90,7 +93,11 @@
       "key": "primaryColumns.Status.cellBackground"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onPageChange"
+    }
+  ],
   "enableClientSideSearch": true,
   "flexVerticalAlignment": "start",
   "hideCard": false,
@@ -122,7 +129,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 40,
+  "onPageChange": "{{GetViewComplaintStatus.run()}}",
+  "originalBottomRow": 42,
   "originalTopRow": 12,
   "parentColumnSpace": 10.981458187103271,
   "parentId": "7qeys3mkqy",
@@ -198,7 +206,7 @@
     },
     "Status": {
       "alias": "Status",
-      "allowCellWrapping": true,
+      "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"] === 'Approved' ? \"#006d6a\" : (currentRow[\"Status\"] === 'InProgress' ? \"#808080\" : \"#ef4444\") ))}}",
       "columnType": "text",
@@ -335,8 +343,9 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 62,
+  "rightColumn": 64,
   "searchKey": "",
+  "serverSidePaginationEnabled": true,
   "tableData": "{{GetViewComplaintStatus.data}}",
   "tags": [
     "Suggested",
@@ -345,7 +354,7 @@
   "textSize": "0.875rem",
   "thumbnailSVG": "/static/media/thumbnail.d0492f06681daa69baf92b07d3829dfc.svg",
   "topRow": 12,
-  "totalRecordsCount": 0,
+  "totalRecordsCount": "{{countViewComplaintStatus.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",

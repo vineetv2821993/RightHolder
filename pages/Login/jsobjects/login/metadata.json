@@ -8,6 +8,10 @@
     "pluginType": "JS",
     "variables": [
       {
+        "name": "exitQuery",
+        "value": "''"
+      },
+      {
         "name": "signInQuery",
         "value": "''"
       }

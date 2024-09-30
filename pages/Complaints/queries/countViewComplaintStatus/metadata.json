@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "66f3bdc1af2b8e5a2a63d6e6_bace2245-f26d-4e72-833c-40f25a363c4b",
-  "id": "Login_ExitRightHolder",
+  "gitSyncId": "66f3bdc1af2b8e5a2a63d6e6_b600352f-dde1-409e-aab0-cee5230412e3",
+  "id": "Complaints_countViewComplaintStatus",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "{{CreateAccount.exitQuery?CreateAccount.exitQuery:login.exitQuery}}",
+      "body": "SELECT count(*) as count FROM complaint_status;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,14 +22,10 @@
       "name": "ResearchDB",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
-    "executeOnLoad": false,
-    "name": "ExitRightHolder",
-    "pageId": "Login",
+    "dynamicBindingPathList": [],
+    "executeOnLoad": true,
+    "name": "countViewComplaintStatus",
+    "pageId": "Complaints",
     "userSetOnLoad": false
   }
 }
