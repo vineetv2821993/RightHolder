@@ -25,58 +25,81 @@ export default {
 		}
 		return false;  // Session is still valid
 	},
-	async submitForm(){
-		if(!await this.checkExpireUser()){
-			for(let i=0;i<List1.listData.length;i++){
-				let complaint_form_id = this.generateUUID();
-				let complaint_status_id = this.generateUUID();
-				let complaint_Case_id = await CountComplaintForm.data[0].count + 1;
+	async submitForm() {
+		if (!await this.checkExpireUser()) {
+			let complaint_Case_id = await CountComplaintForm.data[0].count;
+			let errors = []; // To collect error messages
 
-				try{
-					await insertComplaintForm.run(
-						{
+			try {
+				for (let i = 0; i < List1.listData.length; i++) {
+					let complaint_form_id = this.generateUUID();
+					let complaint_status_id = this.generateUUID();
+					complaint_Case_id++;
+
+					// Insert into complaint form
+					try {
+						await insertComplaintForm.run({
 							complaint_form_id: complaint_form_id,
-							complaint_Case_id:Input12.text+ "-" + complaint_Case_id,
-							category_type:Select2.selectedOptionLabel,
+							complaint_Case_id: Input12.text + "-" + complaint_Case_id,
+							category_type: Select2.selectedOptionLabel,
 							acknowledgment: Checkbox1.isChecked,
 							original_work: originalWork.text,
 							rightHolderUserId: appsmith.store.rightHolderUserId,
 							infringing_url: List1.listData[i].input1,
 							documentProff: FilePicker1.files[0].data,
-							description:List1.listData[i].Description,
+							description: List1.listData[i].Description,
 							inserted_at: moment().format('YYYY-MM-DD HH:mm:ss'),
 							updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
-						}
-					);
-					await insertComplaintsStatusForm.run(
-						{
-							complaint_status_id:complaint_status_id,
+						});
+
+						// Insert into complaint status form
+						await insertComplaintsStatusForm.run({
+							complaint_status_id: complaint_status_id,
 							complaint_form_id: complaint_form_id,
 							status: 'InProgress',
 							reason_of_approve_reject: null,
 							status_updated_by: null,
 							inserted_at: moment().format('YYYY-MM-DD HH:mm:ss'),
 							updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
+						});
+					} catch (ex) {
+						console.error("Error while inserting forms for item " + i + ":", ex);
+						// Rollback if an error occurs
+						try {
+							await deleteComplaintForm.run({ complaint_form_id: complaint_form_id });
+							await deleteComplaintsStatusForm.run({ complaint_status_id: complaint_status_id });
+						} catch (rollbackEx) {
+							console.error("Error during rollback for complaint ID " + complaint_form_id + ":", rollbackEx);
+							errors.push("Error during rollback for complaint ID " + complaint_form_id);
 						}
-					);
-					showAlert("form sucessfully submitted","info");
-					closeModal(Modal2.name);
-					resetWidget("Select2", true);
-					resetWidget("originalWork", true);
-					resetWidget("List1", true);
 
+						errors.push("Error inserting form for item " + i + ": " + ex.message);
+					}
 				}
-				catch(ex){
-					deleteComplaintForm.run({ complaint_form_id: complaint_form_id });
-					deleteComplaintsStatusForm.run({ complaint_status_id: complaint_status_id });
-					showAlert("error inserting the form,Please try after some time","error");
-				}
+			} catch (outerEx) {
+				console.error("An error occurred during submission:", outerEx);
+				errors.push("An unexpected error occurred during submission. Please try again later.");
 			}
-		}
-		else
-		{
-			showAlert("Session is expire , please login again","warning");
+
+			if (errors.length > 0) {
+				// If there were errors, show a summary alert
+				showAlert("Some errors occurred:\n" + errors.join("\n"), "error");
+			} else {
+				// Success message and UI reset
+				showAlert("All forms successfully submitted", "info");
+				closeModal(Modal2.name);
+				// Reset the widgets
+				resetWidget("Select2", true);
+				resetWidget("originalWork", true);
+
+				// Reset the list widget
+				resetWidget("List1", true);
+			}
+		} else {
+			// Session expired message and redirection to login
+			showAlert("Session has expired, please login again", "warning");
 			navigateTo('Login', {}, 'SAME_WINDOW');
 		}
 	}
+
 }
