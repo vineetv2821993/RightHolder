@@ -2,7 +2,7 @@
   "animateLoading": true,
   "backgroundColor": "{{}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 17,
+  "bottomRow": 15,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
