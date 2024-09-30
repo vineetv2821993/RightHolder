@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT  complaints_form.complaint_Case_id,complaints_form.original_work AS OrginalWebsite , complaints_form.infringing_url AS InfringingUrl ,  complaint_status.status  as Status ,complaint_status.status_updated_by as StatusUpdatedBy ,\ncomplaint_status.reason_of_approve_reject FROM complaints_form\nINNER JOIN complaint_status on complaint_status.complaint_form_id = complaints_form.complaint_form_id\nWHERE  complaints_form.complaint_form_id like '%{{Table1.searchText || \"\"}}%'\nORDER BY {{Table1.sortOrder.column || 'complaints_form.complaint_form_id'}} {{Table1.sortOrder.order || \"ASC\"}}\nLIMIT {{Table1.pageSize}}\nOFFSET {{(Table1.pageNo - 1) * Table1.pageSize}};",
+      "body": "SELECT  complaints_form.complaint_Case_id,complaints_form.original_work AS OrginalWebsite , complaints_form.infringing_url AS InfringingUrl ,  complaint_status.status  as Status ,complaint_status.status_updated_by as StatusUpdatedBy ,\ncomplaint_status.reason_of_approve_reject FROM complaints_form\nINNER JOIN complaint_status on complaint_status.complaint_form_id = complaints_form.complaint_form_id\nWHERE  complaints_form.rightHolderUserId = '{{appsmith.store.rightHolderUserId}}'  and complaints_form.complaint_form_id like '%{{Table1.searchText || \"\"}}%'\nORDER BY {{Table1.sortOrder.column || 'complaints_form.complaint_form_id'}} {{Table1.sortOrder.order || \"ASC\"}}\nLIMIT {{Table1.pageSize}}\nOFFSET {{(Table1.pageNo - 1) * Table1.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
