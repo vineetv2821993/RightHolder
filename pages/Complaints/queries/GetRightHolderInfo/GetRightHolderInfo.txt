@@ -1,1 +1,1 @@
-SELECT * FROM rightHolderProfile where id='{{appsmith.store.rightHolderInfoId}}';
+SELECT * FROM rightHolderProfile where rightHolderUserId='{{appsmith.store.rightHolderUserId}}';
