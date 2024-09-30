@@ -40,7 +40,7 @@
   "labelText": "Category",
   "labelTextColor": "#231f20",
   "labelTextSize": "1rem",
-  "labelWidth": "14",
+  "labelWidth": "13",
   "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
@@ -68,7 +68,7 @@
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 37,
+  "rightColumn": 34,
   "searchTags": [
     "dropdown"
   ],

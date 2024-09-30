@@ -130,7 +130,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onPageChange": "{{GetViewComplaintStatus.run()}}",
-  "originalBottomRow": 42,
+  "originalBottomRow": 41,
   "originalTopRow": 12,
   "parentColumnSpace": 10.981458187103271,
   "parentId": "7qeys3mkqy",
