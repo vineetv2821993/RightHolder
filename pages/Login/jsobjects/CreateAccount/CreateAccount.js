@@ -1,5 +1,24 @@
 export default {
 	exitQuery:'',
+	async checkExpireUser() {
+		// Fetch the expire_at value from the database
+		let expireDate = await checkExpire.run({id:appsmith.store.rightHolderUserId});
+		if (expireDate.length === 0) {
+
+			return false;  // User not found
+		}
+		const expireAt = moment(expireDate[0].expire_at).format('YYYY-MM-DD HH:mm:ss');
+
+
+		const currentTime = moment().format('YYYY-MM-DD HH:mm:ss')
+
+
+		// Check if the current time is after the expire_at time
+		if (moment(currentTime).isAfter(expireAt)) {
+			return false;  // Session expired
+		}
+		return true;  // Session is still valid
+	},
 	validateData(){
 		let isValid=true;
 		if(!Input3 || !Input3.text){
@@ -48,6 +67,7 @@ export default {
 					username: Input3.text,
 					password_hash: passwordHash,  // Ensure this is properly hashed
 					email: Input4.text,
+					expire_at: moment().add(2, 'hours').format('YYYY-MM-DD HH:mm:ss'),
 					inserted_at: moment().format('YYYY-MM-DD HH:mm:ss'),
 					updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
 				};

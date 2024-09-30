@@ -1,0 +1,3 @@
+UPDATE taoq_research.rightHolder
+SET expire_at = '{{moment().add(2, 'hours').format('YYYY-MM-DD HH:mm:ss')}}'
+WHERE id = '{{this.params.id}}';

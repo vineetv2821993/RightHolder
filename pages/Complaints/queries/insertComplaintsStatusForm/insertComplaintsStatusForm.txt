@@ -10,7 +10,7 @@ INSERT INTO taoq_research.complaint_status (
 	'{{this.params.complaint_status_id}}',  
 	'{{this.params.complaint_form_id}}',              
 	'{{this.params.status}}', 
-	'{{this.params.reason_of_approve_reject}}',                              
+	'{{this.params.reason_of_approve_reject}}',                         
 	'{{this.params.status_updated_by}}',                           
 	'{{moment().format('YYYY-MM-DD HH:mm:ss')}}', 
 	'{{moment().format('YYYY-MM-DD HH:mm:ss')}}'  

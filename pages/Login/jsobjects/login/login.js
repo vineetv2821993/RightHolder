@@ -1,5 +1,24 @@
 export default {
 	signInQuery: '',
+	async checkExpireUser(loginId) {
+		// Fetch the expire_at value from the database
+		let expireDate = await checkExpire.run({id:loginId});
+		if (expireDate.length === 0) {
+
+			return true;  // User not found
+		}
+		const expireAt = moment(expireDate[0].expire_at).format('YYYY-MM-DD HH:mm:ss');
+
+
+		const currentTime = moment().format('YYYY-MM-DD HH:mm:ss')
+
+
+		// Check if the current time is after the expire_at time
+		if (moment(currentTime).isAfter(expireAt)) {
+			return true;  // Session expired
+		}
+		return false;  // Session is still valid
+	},
 	async signInRightHolder() {
 		if(!Input1.text){
 			showAlert("Email Address  or User Name is required", "error");
@@ -20,6 +39,10 @@ export default {
 			let data = await signInRightHolder.run();
 			if(data && data.length >0){
 				let checkData = await checkRightHolderInfoExit.run({id:data[0].id});
+				let isExpire = await this.checkExpireUser(data[0].id);
+				if(!isExpire){
+					await updateExpireDate.run({id:data[0].id});
+				}
 				if(checkData && checkData.length>0){
 					navigateTo('Complaints', {}, 'SAME_WINDOW');
 				}

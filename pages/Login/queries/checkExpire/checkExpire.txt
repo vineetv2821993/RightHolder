@@ -1,0 +1,2 @@
+SELECT expire_at FROM taoq_research.rightHolder
+WHERE id = '{{this.params.id}}';

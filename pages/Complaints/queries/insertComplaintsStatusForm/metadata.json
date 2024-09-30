@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO taoq_research.complaint_status (\n\tcomplaint_status_id,\n\tcomplaint_form_id,\n\tstatus,\n\treason_of_approve_reject,\n\tstatus_updated_by,\n\tinserted_at,\n\tupdated_at\n) VALUES (\n\t'{{this.params.complaint_status_id}}',  \n\t'{{this.params.complaint_form_id}}',              \n\t'{{this.params.status}}', \n\t'{{this.params.reason_of_approve_reject}}',                              \n\t'{{this.params.status_updated_by}}',                           \n\t'{{moment().format('YYYY-MM-DD HH:mm:ss')}}', \n\t'{{moment().format('YYYY-MM-DD HH:mm:ss')}}'  \n);",
+      "body": "INSERT INTO taoq_research.complaint_status (\n\tcomplaint_status_id,\n\tcomplaint_form_id,\n\tstatus,\n\treason_of_approve_reject,\n\tstatus_updated_by,\n\tinserted_at,\n\tupdated_at\n) VALUES (\n\t'{{this.params.complaint_status_id}}',  \n\t'{{this.params.complaint_form_id}}',              \n\t'{{this.params.status}}', \n\t'{{this.params.reason_of_approve_reject}}',                         \n\t'{{this.params.status_updated_by}}',                           \n\t'{{moment().format('YYYY-MM-DD HH:mm:ss')}}', \n\t'{{moment().format('YYYY-MM-DD HH:mm:ss')}}'  \n);",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

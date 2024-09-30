@@ -6,6 +6,7 @@ INSERT INTO taoq_research.complaints_form (
 	acknowledgment, 
 	original_work, 
 	infringing_url, 
+	documentProof,
 	rightHolderUserId, 
 	inserted_at, 
 	updated_at
@@ -17,6 +18,7 @@ INSERT INTO taoq_research.complaints_form (
 	{{this.params.acknowledgment ? 1 : 0}}, -- Acknowledgment flag (converted to tinyint)
 	'{{this.params.original_work}}',       -- Original work field
 	'{{this.params.infringing_url}}',      -- Infringing URL field
+	'{{this.params.documentProff}}',
 	'{{appsmith.store.rightHolderUserId}}', -- rightHolderUserId from Appsmith store
 	'{{this.params.inserted_at}}', -- Inserted timestamp
 	'{{this.params.updated_at}}'  -- Updated timestamp
