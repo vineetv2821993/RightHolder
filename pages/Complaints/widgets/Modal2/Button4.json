@@ -44,7 +44,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{complaintsForm.submitForm();}}",
+  "onClick": "{{complaintsForm.submitForm();\nresetWidget(\"List1\", true);}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "4d1n10bhkk",

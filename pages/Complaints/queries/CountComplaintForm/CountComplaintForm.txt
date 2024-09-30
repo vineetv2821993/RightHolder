@@ -1,1 +1,3 @@
-SELECT COUNT(*)  as count FROM complaints_form;
+SELECT count(*)  as count FROM complaints_form 
+INNER JOIN rightHolderProfile on rightHolderProfile.rightHolderUserId = complaints_form.rightHolderUserId
+where rightHolderProfile.company_name ='{{Input12.text}}';

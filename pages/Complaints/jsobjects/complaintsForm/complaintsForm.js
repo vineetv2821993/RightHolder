@@ -27,26 +27,29 @@ export default {
 	},
 	async submitForm() {
 		if (!await this.checkExpireUser()) {
-			let complaint_Case_id = await CountComplaintForm.data[0].count;
+			let complaint_Case_id = await CountComplaintForm.run();
+			let countIndex= complaint_Case_id[0].count;
+			console.log("QueryCOubnt",countIndex);
 			let errors = []; // To collect error messages
 
 			try {
 				for (let i = 0; i < List1.listData.length; i++) {
 					let complaint_form_id = this.generateUUID();
 					let complaint_status_id = this.generateUUID();
-					complaint_Case_id++;
+					countIndex = countIndex+1;
+					console.log("nextCount",countIndex);
 
 					// Insert into complaint form
 					try {
 						await insertComplaintForm.run({
 							complaint_form_id: complaint_form_id,
-							complaint_Case_id: Input12.text + "-" + complaint_Case_id,
+							complaint_Case_id: Input12.text + "-" + countIndex,
 							category_type: Select2.selectedOptionLabel,
 							acknowledgment: Checkbox1.isChecked,
 							original_work: originalWork.text,
 							rightHolderUserId: appsmith.store.rightHolderUserId,
 							infringing_url: List1.listData[i].input1,
-							documentProff: FilePicker1.files[0].data,
+							documentProff: List1.listData[i].FilePicker1,
 							description: List1.listData[i].Description,
 							inserted_at: moment().format('YYYY-MM-DD HH:mm:ss'),
 							updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
@@ -63,12 +66,14 @@ export default {
 							updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
 						});
 					} catch (ex) {
+						closeModal(Modal2.name);
 						console.error("Error while inserting forms for item " + i + ":", ex);
 						// Rollback if an error occurs
 						try {
 							await deleteComplaintForm.run({ complaint_form_id: complaint_form_id });
 							await deleteComplaintsStatusForm.run({ complaint_status_id: complaint_status_id });
 						} catch (rollbackEx) {
+							closeModal(Modal2.name);
 							console.error("Error during rollback for complaint ID " + complaint_form_id + ":", rollbackEx);
 							errors.push("Error during rollback for complaint ID " + complaint_form_id);
 						}
@@ -77,6 +82,7 @@ export default {
 					}
 				}
 			} catch (outerEx) {
+				closeModal(Modal2.name);
 				console.error("An error occurred during submission:", outerEx);
 				errors.push("An unexpected error occurred during submission. Please try again later.");
 			}

@@ -5,12 +5,12 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT COUNT(*)  as count FROM complaints_form;",
+      "body": "SELECT count(*)  as count FROM complaints_form \nINNER JOIN rightHolderProfile on rightHolderProfile.rightHolderUserId = complaints_form.rightHolderUserId\nwhere rightHolderProfile.company_name ='{{Input12.text}}';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,7 +22,11 @@
       "name": "ResearchDB",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": true,
     "name": "CountComplaintForm",
     "pageId": "Complaints",
