@@ -38,7 +38,7 @@ export default {
 				this.signInQuery = `
     SELECT id, username, email
     FROM taoq_research.rightHolder
-    WHERE (email = '${Input1.text}' OR username = '${Input1.text}')
+    WHERE (email = '${Input1.text}')
     AND password_hash = '${hashedPassword}'
 `;
 				console.log(	this.signInQuery );
