@@ -1,7 +1,7 @@
 {
-  "animateLoading": "true",
+  "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 15,
+  "bottomRow": 29,
   "boxShadow": "none",
   "defaultImage": "https://assets.appsmith.com/widgets/default.png",
   "displayName": "Image",
@@ -10,29 +10,10 @@
       "key": "borderRadius"
     },
     {
-      "key": "isVisible"
-    },
-    {
       "key": "image"
     }
   ],
-  "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    },
-    {
-      "key": "animateLoading"
-    },
-    {
-      "key": "onClick"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "enableDownload": false,
   "enableRotation": false,
   "flexVerticalAlignment": "start",
@@ -42,13 +23,13 @@
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,
-  "isVisible": "{{FilePicker1.files.length>0?true:false}}",
-  "key": "ryq5qsucyg",
-  "leftColumn": 38,
+  "isVisible": true,
+  "key": "7ml5iwxof2",
+  "leftColumn": 9,
   "maxZoomLevel": 1,
   "mobileBottomRow": 15,
-  "mobileLeftColumn": 44,
-  "mobileRightColumn": 56,
+  "mobileLeftColumn": 22,
+  "mobileRightColumn": 34,
   "mobileTopRow": 3,
   "needsErrorInfo": false,
   "objectFit": "contain",
@@ -59,19 +40,18 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{showModal(Modal5.name);}}",
-  "parentColumnSpace": 9.581333875656128,
-  "parentId": "iiyzk6tpxt",
+  "parentColumnSpace": 9.65625,
+  "parentId": "myic55qan6",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 50,
+  "rightColumn": 56,
   "tags": [
     "Media"
   ],
   "thumbnailSVG": "/static/media/thumbnail.74089bb21dfcb5890f6b106f93c3b9c8.svg",
-  "topRow": 6,
+  "topRow": 3,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "67or5kpf8l",
-  "widgetName": "Image3"
+  "widgetId": "zautdqhp1b",
+  "widgetName": "Image4"
 }
