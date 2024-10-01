@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 38,
+  "bottomRow": 44,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -130,8 +130,8 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onPageChange": "{{GetViewComplaintStatus.run()}}",
-  "originalBottomRow": 41,
-  "originalTopRow": 12,
+  "originalBottomRow": 38,
+  "originalTopRow": 9,
   "parentColumnSpace": 10.981458187103271,
   "parentId": "7qeys3mkqy",
   "parentRowSpace": 10,

@@ -65,7 +65,7 @@ export default {
 				}
 			}
 			else{
-				showAlert("User or email not found, please create the account","warning");
+				showAlert("Email Address not found, please create the account","warning");
 			}
 		}
 
