@@ -11,6 +11,7 @@ INSERT INTO taoq_research.rightHolderProfile (
 	state, 
 	country, 
 	acknowledgement, 
+	copyRightLetter,
 	digitalSignature, 
 	document
 ) VALUES (
@@ -26,6 +27,7 @@ INSERT INTO taoq_research.rightHolderProfile (
 	'{{this.params.state}}', 
 	'{{this.params.country}}', 
 	'{{this.params.acknowledgment}}', 
+	'{{this.params.copyRightLetter}}',
 	'{{this.params.digitalSignature}}', 
 	'{{this.params.document}}'
 );

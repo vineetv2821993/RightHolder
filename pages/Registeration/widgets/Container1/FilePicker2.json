@@ -1,5 +1,7 @@
 {
-  "allowedFileTypes": [],
+  "allowedFileTypes": [
+    "image/*"
+  ],
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 94,
@@ -14,6 +16,7 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicTriggerPathList": [],
   "dynamicTyping": true,
   "fileDataType": "Base64",
   "files": [],
@@ -23,7 +26,7 @@
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "lxdcwmz572",
   "label": "Select Files",
