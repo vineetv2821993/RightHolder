@@ -66,7 +66,9 @@ export default {
 			isValid = false;
 			showAlert("At least one copy rigth letter file needs to be uploaded", "error");
 		}
-		return isValid;
+		if(isValid){
+			showModal(Modal1.name)
+		}
 	},
 
 

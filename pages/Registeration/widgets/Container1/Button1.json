@@ -43,7 +43,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{showModal(Modal1.name);}}",
+  "onClick": "{{ValidateInfo.validate();}}",
   "originalBottomRow": 163,
   "originalTopRow": 159,
   "parentColumnSpace": 16.052734375,
