@@ -63,7 +63,7 @@
   ],
   "text": "Please upload your Valid Copyright Ownership Document/Authorised Representative Letter/Trademark Certificate",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
+  "textColor": "#a9a7a7",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
   "topRow": 79,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
