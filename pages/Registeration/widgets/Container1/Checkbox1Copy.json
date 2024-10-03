@@ -3,7 +3,7 @@
   "alignWidget": "LEFT",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 110,
+  "bottomRow": 129,
   "defaultCheckedState": true,
   "displayName": "Checkbox",
   "dynamicBindingPathList": [
@@ -26,7 +26,7 @@
   "labelStyle": "BOLD",
   "labelTextColor": "#231f20",
   "labelTextSize": "1rem",
-  "leftColumn": 7,
+  "leftColumn": 8,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -42,14 +42,14 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 110,
-  "originalTopRow": 104,
+  "originalBottomRow": 129,
+  "originalTopRow": 123,
   "parentColumnSpace": 12.15625,
   "parentId": "lre5o5g67c",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 31,
+  "rightColumn": 32,
   "searchTags": [
     "boolean"
   ],
@@ -57,7 +57,7 @@
     "Toggles"
   ],
   "thumbnailSVG": "/static/media/thumbnail.aa4d27836e27bb6c4c45db14dee8f2b2.svg",
-  "topRow": 104,
+  "topRow": 123,
   "type": "CHECKBOX_WIDGET",
   "version": 1,
   "widgetId": "wiq1lcgcp8",

@@ -62,6 +62,10 @@ export default {
 			isValid = false;
 			showAlert("At least one file needs to be uploaded", "error");
 		}
+		if(!FilePicker2 || !FilePicker2.files || FilePicker2.files.length === 0){
+			isValid = false;
+			showAlert("At least one copy rigth letter file needs to be uploaded", "error");
+		}
 		return isValid;
 	},
 

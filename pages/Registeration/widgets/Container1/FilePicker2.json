@@ -1,12 +1,11 @@
 {
+  "allowedFileTypes": [],
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 163,
+  "bottomRow": 94,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "PRIMARY",
-  "disabledWhenInvalid": false,
-  "displayName": "Button",
+  "displayName": "FilePicker",
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
@@ -15,26 +14,27 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicTyping": true,
+  "fileDataType": "Base64",
+  "files": [],
   "hideCard": false,
-  "iconSVG": "/static/media/icon.7a418b9e1899a550d7e8f33b48cbde12.svg",
+  "iconSVG": "/static/media/icon.b08ce7590c570fc5b7ffa528c70d35bf.svg",
   "isDefaultClickDisabled": true,
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
+  "isRequired": false,
   "isVisible": true,
-  "key": "4avm7ubjg9",
-  "leftColumn": 25,
+  "key": "lxdcwmz572",
+  "label": "Select Files",
+  "leftColumn": 22,
+  "maxFileSize": 5,
+  "maxNumFiles": 1,
   "minWidth": 120,
-  "mobileBottomRow": 148,
-  "mobileLeftColumn": 18,
-  "mobileRightColumn": 34,
-  "mobileTopRow": 144,
+  "mobileBottomRow": 92,
+  "mobileLeftColumn": 22,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 88,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -43,30 +43,23 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{showModal(Modal1.name);}}",
-  "originalBottomRow": 163,
-  "originalTopRow": 159,
   "parentColumnSpace": 16.052734375,
   "parentId": "lre5o5g67c",
   "parentRowSpace": 10,
-  "placement": "CENTER",
-  "recaptchaType": "V3",
   "renderMode": "CANVAS",
-  "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 35,
+  "rightColumn": 38,
   "searchTags": [
-    "click",
-    "submit"
+    "upload"
   ],
+  "selectedFiles": [],
   "tags": [
-    "Buttons"
+    "Inputs"
   ],
-  "text": "Submit",
-  "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 159,
-  "type": "BUTTON_WIDGET",
+  "thumbnailSVG": "/static/media/thumbnail.164363adea04c44e54b1fd47657a579e.svg",
+  "topRow": 90,
+  "type": "FILE_PICKER_WIDGET_V2",
   "version": 1,
-  "widgetId": "p1ee0qly6i",
-  "widgetName": "Button1"
+  "widgetId": "57q261p74k",
+  "widgetName": "FilePicker2"
 }

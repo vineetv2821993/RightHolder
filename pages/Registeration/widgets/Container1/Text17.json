@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 127,
+  "bottomRow": 103,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -24,15 +24,15 @@
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "1ru23y0d8i",
-  "leftColumn": 34,
+  "key": "ki31ev141a",
+  "leftColumn": 7,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 135,
-  "mobileLeftColumn": 19,
-  "mobileRightColumn": 35,
-  "mobileTopRow": 131,
+  "mobileBottomRow": 94,
+  "mobileLeftColumn": 7,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 90,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -41,15 +41,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 128,
-  "originalTopRow": 124,
+  "originalBottomRow": 99,
+  "originalTopRow": 88,
   "overflow": "NONE",
-  "parentColumnSpace": 12.15625,
+  "parentColumnSpace": 16.052734375,
   "parentId": "lre5o5g67c",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 48,
+  "rightColumn": 18,
   "searchTags": [
     "typography",
     "paragraph",
@@ -60,14 +60,14 @@
     "Suggested",
     "Content"
   ],
-  "text": "I understand and agree",
+  "text": "Please upload your Valid Copyright Ownership Document/Authorised Representative Letter/Trademark Certificate",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 123,
+  "topRow": 88,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "2diyvq71km",
-  "widgetName": "Text12CopyCopy"
+  "widgetId": "1jxmeqtkde",
+  "widgetName": "Text17"
 }
