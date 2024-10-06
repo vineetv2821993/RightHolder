@@ -28,7 +28,7 @@ export default {
 			showAlert("Please Select the confirm phone  number code","error");
 		}
 		else if(Select1Copy.selectedOptionLabel){
-			lengthCheck = phoneLength.phoneLength.find(i => i.phone_code === Select1.selectedOptionLabel).phone_length;
+			lengthCheck1 = phoneLength.phoneLength.find(i => i.phone_code === Select1.selectedOptionLabel).phone_length;
 		}
 		if(Select1.selectedOptionLabel && Select1Copy.selectedOptionLabel){
 			if(Select1.selectedOptionLabel  !== Select1Copy.selectedOptionLabel){
@@ -48,8 +48,9 @@ export default {
 			isValid = false;
 			showAlert("Confirm Phone Number is required", "error");
 		} else if (!new RegExp(`^\\d{${lengthCheck1}}$`).test(ConfirmPhoneNumber.text)) {  // Correct field reference
+			console.log("ConfirmPhoneNumber.text",ConfirmPhoneNumber.text.length)
 			isValid = false;
-			showAlert(`Confirm Phone Number must be ${lengthCheck} digits long`, "error");
+			showAlert(`Confirm Phone Number must be ${lengthCheck1} digits long`, "error");
 		} else if (ConfirmPhoneNumber.text !== phoneNumber.text) {
 			isValid = false;
 			showAlert("Phone Number and Confirm Phone Number do not match", "error");
