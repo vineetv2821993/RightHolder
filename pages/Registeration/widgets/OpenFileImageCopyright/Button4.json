@@ -1,10 +1,11 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 163,
+  "bottomRow": 50,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "PRIMARY",
+  "buttonStyle": "PRIMARY",
+  "buttonVariant": "SECONDARY",
   "disabledWhenInvalid": false,
   "displayName": "Button",
   "dynamicBindingPathList": [
@@ -15,7 +16,6 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -28,13 +28,13 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "4avm7ubjg9",
-  "leftColumn": 25,
+  "key": "3c2xt3h7v7",
+  "leftColumn": 44,
   "minWidth": 120,
-  "mobileBottomRow": 148,
-  "mobileLeftColumn": 18,
-  "mobileRightColumn": 34,
-  "mobileTopRow": 144,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 47,
+  "mobileTopRow": 18,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -43,18 +43,14 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{ValidateInfo.validate();}}",
-  "originalBottomRow": 151,
-  "originalTopRow": 147,
-  "parentColumnSpace": 16.052734375,
-  "parentId": "lre5o5g67c",
-  "parentRowSpace": 10,
+  "onClick": "{{closeModal(OpenFileImageCopyright.name);}}",
+  "parentId": "5o2n8mtxaq",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 35,
+  "rightColumn": 57,
   "searchTags": [
     "click",
     "submit"
@@ -62,11 +58,11 @@
   "tags": [
     "Buttons"
   ],
-  "text": "Submit",
+  "text": "Close",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 159,
+  "topRow": 46,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "p1ee0qly6i",
-  "widgetName": "Button1"
+  "widgetId": "sm3s9ahpki",
+  "widgetName": "Button4"
 }
