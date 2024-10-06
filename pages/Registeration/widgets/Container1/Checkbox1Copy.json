@@ -3,7 +3,7 @@
   "alignWidget": "LEFT",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 129,
+  "bottomRow": 126,
   "defaultCheckedState": true,
   "displayName": "Checkbox",
   "dynamicBindingPathList": [
@@ -57,7 +57,7 @@
     "Toggles"
   ],
   "thumbnailSVG": "/static/media/thumbnail.aa4d27836e27bb6c4c45db14dee8f2b2.svg",
-  "topRow": 123,
+  "topRow": 122,
   "type": "CHECKBOX_WIDGET",
   "version": 1,
   "widgetId": "wiq1lcgcp8",

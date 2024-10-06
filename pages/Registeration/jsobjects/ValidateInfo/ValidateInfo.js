@@ -1,5 +1,7 @@
 export default {
 	validate () {
+		let lengthCheck = phoneLength.phoneLength.find(i => i.phone_code === Select1.selectedOptionLabel).phone_length;
+		console.log("lengthCheck",lengthCheck);
 		let isValid = true;
 		if(!Name || !Name.text){
 			isValid = false;
@@ -17,17 +19,17 @@ export default {
 		if (!phoneNumber.text) {
 			isValid = false;
 			showAlert("Phone Number is required", "error");
-		} else if (!/^\d{10}$/.test(phoneNumber.text)) { // Example regex for 10-digit phone number
+		} else if (!new RegExp(`^\\d{${lengthCheck}}$`).test(phoneNumber.text)) {  // Proper interpolation and regex creation
 			isValid = false;
-			showAlert("Phone Number must be 10 digits long", "error");
+			showAlert(`Phone Number must be ${lengthCheck} digits long`, "error");
 		}
 
 		if (!ConfirmPhoneNumber.text) {
 			isValid = false;
 			showAlert("Confirm Phone Number is required", "error");
-		} else if (!/^\d{10}$/.test(ConfirmPhoneNumber.text)) { // Example regex for 10-digit phone number
+		} else if (!new RegExp(`^\\d{${lengthCheck}}$`).test(ConfirmPhoneNumber.text)) {  // Correct field reference
 			isValid = false;
-			showAlert("Confirm Phone Number must be 10 digits long", "error");
+			showAlert(`Confirm Phone Number must be ${lengthCheck} digits long`, "error");
 		} else if (ConfirmPhoneNumber.text !== phoneNumber.text) {
 			isValid = false;
 			showAlert("Phone Number and Confirm Phone Number do not match", "error");
