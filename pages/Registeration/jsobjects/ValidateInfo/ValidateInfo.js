@@ -1,7 +1,7 @@
 export default {
 	validate () {
-		let lengthCheck = phoneLength.phoneLength.find(i => i.phone_code === Select1.selectedOptionLabel).phone_length;
-		console.log("lengthCheck",lengthCheck);
+		let lengthCheck;
+		let lengthCheck1;
 		let isValid = true;
 		if(!Name || !Name.text){
 			isValid = false;
@@ -16,6 +16,26 @@ export default {
 			isValid = false;
 			showAlert("Email Address is required", "error");
 		}
+		if(!Select1.selectedOptionLabel){
+			isValid = false;
+			showAlert("Please Select the phone number code","error");
+		}
+		else if(Select1.selectedOptionLabel){
+			lengthCheck = phoneLength.phoneLength.find(i => i.phone_code === Select1.selectedOptionLabel).phone_length;
+		}
+		if(!Select1Copy.selectedOptionLabel){
+			isValid = false;
+			showAlert("Please Select the confirm phone  number code","error");
+		}
+		else if(Select1Copy.selectedOptionLabel){
+			lengthCheck = phoneLength.phoneLength.find(i => i.phone_code === Select1.selectedOptionLabel).phone_length;
+		}
+		if(Select1.selectedOptionLabel && Select1Copy.selectedOptionLabel){
+			if(Select1.selectedOptionLabel  !== Select1Copy.selectedOptionLabel){
+				isValid = false;
+				showAlert("Phone Number Code and Confirm Phone Number Code do not match","error");
+			}
+		}
 		if (!phoneNumber.text) {
 			isValid = false;
 			showAlert("Phone Number is required", "error");
@@ -27,7 +47,7 @@ export default {
 		if (!ConfirmPhoneNumber.text) {
 			isValid = false;
 			showAlert("Confirm Phone Number is required", "error");
-		} else if (!new RegExp(`^\\d{${lengthCheck}}$`).test(ConfirmPhoneNumber.text)) {  // Correct field reference
+		} else if (!new RegExp(`^\\d{${lengthCheck1}}$`).test(ConfirmPhoneNumber.text)) {  // Correct field reference
 			isValid = false;
 			showAlert(`Confirm Phone Number must be ${lengthCheck} digits long`, "error");
 		} else if (ConfirmPhoneNumber.text !== phoneNumber.text) {
