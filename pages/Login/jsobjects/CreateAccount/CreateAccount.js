@@ -54,7 +54,7 @@ export default {
 		const passwordHash = CryptoJS.SHA256(Input5.text).toString(); // Hash the password
 		if(this.validateData()){
 			// Prepare the payload for the insert operation
-			this.exitQuery = `SELECT id FROM taoq_research.rightHolder WHERE email = '${Input4.text}' or username ='${Input3.text}'`;
+			this.exitQuery = `SELECT id FROM test_taoq_reach.rightHolder WHERE email = '${Input4.text}' or username ='${Input3.text}'`;
 
 			// Run the exit query to check if the user exists
 			const result = await ExitRightHolder.run();
@@ -77,9 +77,8 @@ export default {
 					const response = await Insert_User.run(userPayload);
 					if (response) {
 						showAlert('User created successfully!', 'success'); // Show success message
-						closeModal(Modal1.name);			
-						resetWidget(Modal1.name);
-
+						await closeModal(Modal1.name);			
+						await	resetWidget(Modal1.name);
 					}
 				} catch (err) {
 					showAlert('Error creating user: ' + err.message, 'error'); // Show error message
@@ -87,8 +86,8 @@ export default {
 			}
 			else{
 				showAlert('User already created, try different EmailAddress or userName', 'warning'); // Show success message
-				closeModal(Modal1.name);
-				resetWidget(Modal1.name);
+				await closeModal(Modal1.name);
+				await resetWidget(Modal1.name);
 			}
 		}
 	}
