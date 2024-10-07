@@ -69,6 +69,7 @@
     }
   ],
   "currentItemsView": "{{[]}}",
+  "defaultSelectedItem": "{{AddListInput.lsitPageNo}}",
   "displayName": "List",
   "dynamicBindingPathList": [
     {
@@ -94,6 +95,9 @@
     },
     {
       "key": "listData"
+    },
+    {
+      "key": "defaultSelectedItem"
     }
   ],
   "dynamicPropertyPathList": [

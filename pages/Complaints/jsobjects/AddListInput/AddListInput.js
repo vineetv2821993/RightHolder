@@ -2,7 +2,7 @@ export default {
 	index:1,
 	// Initial list array to hold dynamic fields, starting with one entry
 	listArray: [{ id: this.index, input1: '', Description: '',FilePicker1:'' }],
-
+	lsitPageNo:1,
 
 	// Function to add new input fields dynamically
 	Button5onClick() {
@@ -18,6 +18,10 @@ export default {
 
 		// Update the List1 widget data with the new input fields array
 		List1.listData.push(this.listArray);
+		const itemsPerPage = List1.pageSize; // The number of items per page
+		const totalItems = this.listArray.length;
+		this.lsitPageNo = Math.ceil(totalItems / itemsPerPage); // Calculate the page 
+
 	},
 
 	// Function to delete an input field container
