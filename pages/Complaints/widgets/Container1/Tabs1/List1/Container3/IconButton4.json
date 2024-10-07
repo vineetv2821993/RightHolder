@@ -12,10 +12,17 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -27,7 +34,7 @@
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "{{List1.listData.length>1? true:false}}",
   "key": "zamsmklumj",
   "leftColumn": 61,
   "minWidth": 50,

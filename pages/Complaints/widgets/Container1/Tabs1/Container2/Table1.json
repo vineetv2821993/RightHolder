@@ -31,6 +31,7 @@
     }
   },
   "columnOrder": [
+    "customColumn1",
     "complaint_Case_id",
     "OrginalWebsite",
     "InfringingUrl",
@@ -38,7 +39,7 @@
     "reason_of_approve_reject",
     "Status"
   ],
-  "columnUpdatedAt": 1727682946940,
+  "columnUpdatedAt": 1728298286744,
   "columnWidthMap": {
     "OrginalWebsite": 228,
     "reason_of_approve_reject": 259
@@ -86,6 +87,9 @@
     },
     {
       "key": "totalRecordsCount"
+    },
+    {
+      "key": "primaryColumns.customColumn1.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -211,7 +215,7 @@
       "alias": "Status",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"] === 'Approved' ? \"#0fd926\" : (currentRow[\"Status\"] === 'InProgress' ? \"#808080\" : \"#ef4444\") ))}}",
+      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"] === 'Approved' ? \"#0fd926\" : (currentRow[\"Status\"] === 'InProgress' ? \"#808080\" : (currentRow[\"Status\"] === 'Rejected' ? \"#ef4444\" : (\n\tcurrentRow[\"Status\"] === 'Blocked' ? \"#14e82e\" :\"#d6ea0d\"\n))) ))}}",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"]))}}",
       "currencyCode": "USD",
@@ -303,6 +307,39 @@
       "originalId": "complaint_Case_id",
       "sticky": "",
       "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn1": {
+      "alias": "Date",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "text",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( moment(currentRow[\"Date\"]).format('YYYY-MM-DD HH:mm:ss')))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customColumn1",
+      "index": 6,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Date",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "originalId": "customColumn1",
+      "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
