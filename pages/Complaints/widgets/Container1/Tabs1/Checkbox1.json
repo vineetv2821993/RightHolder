@@ -42,14 +42,14 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 62,
+  "originalBottomRow": 64,
   "originalTopRow": 58,
   "parentColumnSpace": 12.15625,
   "parentId": "bj03uzwp09",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 24,
+  "rightColumn": 33,
   "searchTags": [
     "boolean"
   ],
@@ -57,7 +57,7 @@
     "Toggles"
   ],
   "thumbnailSVG": "/static/media/thumbnail.aa4d27836e27bb6c4c45db14dee8f2b2.svg",
-  "topRow": 58,
+  "topRow": 60,
   "type": "CHECKBOX_WIDGET",
   "version": 1,
   "widgetId": "syr10nh6qw",

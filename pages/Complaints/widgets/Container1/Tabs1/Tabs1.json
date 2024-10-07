@@ -5,12 +5,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 73,
+  "bottomRow": 111,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 610,
+      "bottomRow": 990,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -66,7 +66,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 980,
+      "bottomRow": 990,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -145,8 +145,8 @@
   "isVisible": true,
   "key": "cv1hn3sp9i",
   "leftColumn": 1,
-  "maxDynamicHeight": 104,
-  "minDynamicHeight": 65,
+  "maxDynamicHeight": 103,
+  "minDynamicHeight": 97,
   "minWidth": 450,
   "mobileBottomRow": 30,
   "mobileLeftColumn": 10,
@@ -161,7 +161,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onTabSelected": "{{GetViewComplaintStatus.run()}}",
-  "originalBottomRow": 73,
+  "originalBottomRow": 111,
   "originalTopRow": 8,
   "parentColumnSpace": 17.828125,
   "parentId": "3ybwtybvv6",
