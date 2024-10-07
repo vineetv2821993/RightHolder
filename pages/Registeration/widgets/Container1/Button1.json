@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 159,
+  "bottomRow": 161,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -64,7 +64,7 @@
   ],
   "text": "Submit",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 155,
+  "topRow": 157,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "m4xsn4oi3f",
