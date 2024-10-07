@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 156,
+  "bottomRow": 152,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -25,7 +25,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "1ru23y0d8i",
-  "leftColumn": 16,
+  "leftColumn": 7,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -41,15 +41,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 144,
-  "originalTopRow": 127,
+  "originalBottomRow": 152,
+  "originalTopRow": 128,
   "overflow": "NONE",
   "parentColumnSpace": 12.15625,
-  "parentId": "lre5o5g67c",
+  "parentId": "fptruhz2e1",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 44,
+  "rightColumn": 46,
   "searchTags": [
     "typography",
     "paragraph",
@@ -60,14 +60,14 @@
     "Suggested",
     "Content"
   ],
-  "text": "By checking this box, you attest, under penalty of perjury, that you have a good faith belief that use of the material or violation of Intellectual Property in this report is not authorized by the copyright owner, its agent, or the law; AND you are authorized to act on behalf of the copyright owner; AND you understand, under SAIP Guidelines or Law, you may be liable for any damages, including costs and attorneys' fees, if you knowingly materially misrepresent reported material. Checking this box also confirms that you have a bona fide belief that the information and allegations contained in this report are accurate and complete, for purposes of the Digital Services Act",
+  "text": "I understand and agree ,\nBy checking this box, you attest, under penalty of perjury, that you have a good faith belief that use of the material or violation of Intellectual Property in this report is not authorized by the copyright owner, its agent, or the law; AND you are authorized to act on behalf of the copyright owner; AND you understand, under SAIP Guidelines or Law, you may be liable for any damages, including costs and attorneys' fees, if you knowingly materially misrepresent reported material. Checking this box also confirms that you have a bona fide belief that the information and allegations contained in this report are accurate and complete, for purposes of the Digital Services Act",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 130,
+  "topRow": 128,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "b0ftwyoyj7",
+  "widgetId": "xbvu5ngrhz",
   "widgetName": "Text12Copy1"
 }

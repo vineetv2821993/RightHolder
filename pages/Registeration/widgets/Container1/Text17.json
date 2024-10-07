@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 103,
+  "bottomRow": 101,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -41,15 +41,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 99,
-  "originalTopRow": 88,
+  "originalBottomRow": 101,
+  "originalTopRow": 86,
   "overflow": "NONE",
   "parentColumnSpace": 16.052734375,
-  "parentId": "lre5o5g67c",
+  "parentId": "fptruhz2e1",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 18,
+  "rightColumn": 20,
   "searchTags": [
     "typography",
     "paragraph",
@@ -64,10 +64,10 @@
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 88,
+  "topRow": 86,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "1jxmeqtkde",
+  "widgetId": "6xaqv83f76",
   "widgetName": "Text17"
 }

@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 40,
-  "boxShadow": "none",
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "defaultText": "",
   "displayName": "Input",
   "dynamicBindingPathList": [
@@ -50,10 +50,10 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 42,
-  "originalTopRow": 35,
+  "originalBottomRow": 40,
+  "originalTopRow": 33,
   "parentColumnSpace": 12.125,
-  "parentId": "lre5o5g67c",
+  "parentId": "fptruhz2e1",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -74,6 +74,6 @@
   "topRow": 33,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "3hwry22bjj",
+  "widgetId": "bxyw4x1z29",
   "widgetName": "CompanyName"
 }

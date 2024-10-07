@@ -1,7 +1,8 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 113,
+  "bottomRow": 115,
+  "bottomRowBeforeCollapse": 115,
   "boxShadow": "none",
   "defaultImage": "{{FilePicker1.files.length >0 ? FilePicker1.files[0].data: ''}}",
   "displayName": "Image",
@@ -37,7 +38,7 @@
   "isLoading": false,
   "isVisible": "{{FilePicker1.files.length>0 ?\ntrue : false\n}}",
   "key": "jhxegbv4bv",
-  "leftColumn": 42,
+  "leftColumn": 47,
   "maxZoomLevel": 1,
   "mobileBottomRow": 113,
   "mobileLeftColumn": 42,
@@ -53,18 +54,21 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{showModal(OpenFileImageProofCopy.name);}}",
+  "originalBottomRow": 115,
+  "originalTopRow": 103,
   "parentColumnSpace": 16.052734375,
-  "parentId": "lre5o5g67c",
+  "parentId": "fptruhz2e1",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 58,
+  "rightColumn": 63,
   "tags": [
     "Media"
   ],
   "thumbnailSVG": "/static/media/thumbnail.74089bb21dfcb5890f6b106f93c3b9c8.svg",
-  "topRow": 101,
+  "topRow": 103,
+  "topRowBeforeCollapse": 103,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "oq8apxkgcf",
+  "widgetId": "yat8cb3zk5",
   "widgetName": "Image2"
 }

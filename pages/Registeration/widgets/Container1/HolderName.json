@@ -3,8 +3,8 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 24,
-  "boxShadow": "none",
+  "bottomRow": 25,
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "defaultText": "{{getEmailAddress.data[0].username}}",
   "displayName": "Input",
   "dynamicBindingPathList": [
@@ -57,10 +57,10 @@
   },
   "onFocus": "{{}}",
   "onSubmit": "{{}}",
-  "originalBottomRow": 26,
-  "originalTopRow": 19,
+  "originalBottomRow": 25,
+  "originalTopRow": 18,
   "parentColumnSpace": 12.125,
-  "parentId": "lre5o5g67c",
+  "parentId": "fptruhz2e1",
   "parentRowSpace": 10,
   "placeholderText": "You must be the rights holder or an authorized agent thereof",
   "renderMode": "CANVAS",
@@ -79,10 +79,10 @@
     "Inputs"
   ],
   "thumbnailSVG": "/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
-  "topRow": 17,
+  "topRow": 18,
   "type": "INPUT_WIDGET_V2",
   "validation": "",
   "version": 2,
-  "widgetId": "f7mtrhfd8i",
+  "widgetId": "l2i3hon6hg",
   "widgetName": "HolderName"
 }

@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 33,
-  "boxShadow": "none",
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "defaultText": "{{getEmailAddress.data[0].email}}",
   "displayName": "Input",
   "dynamicBindingPathList": [
@@ -53,10 +53,10 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 35,
-  "originalTopRow": 28,
+  "originalBottomRow": 33,
+  "originalTopRow": 26,
   "parentColumnSpace": 12.125,
-  "parentId": "lre5o5g67c",
+  "parentId": "fptruhz2e1",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -78,6 +78,6 @@
   "topRow": 26,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "4xcssbcwis",
+  "widgetId": "mcztu1v45g",
   "widgetName": "EmailAddress"
 }

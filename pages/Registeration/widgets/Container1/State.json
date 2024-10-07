@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 79,
-  "boxShadow": "none",
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "defaultText": "",
   "displayName": "Input",
   "dynamicBindingPathList": [
@@ -53,12 +53,12 @@
   "originalBottomRow": 79,
   "originalTopRow": 72,
   "parentColumnSpace": 12.125,
-  "parentId": "lre5o5g67c",
+  "parentId": "fptruhz2e1",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 41,
+  "rightColumn": 43,
   "searchTags": [
     "form",
     "text input",
@@ -74,6 +74,6 @@
   "topRow": 72,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "gta8c7ddk8",
+  "widgetId": "2p818lv9eb",
   "widgetName": "State"
 }

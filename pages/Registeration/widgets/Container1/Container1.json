@@ -4,12 +4,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 177,
+  "bottomRow": 163,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1650,
+      "bottomRow": 1610,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -48,7 +48,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "idj3renlra",
+      "parentId": "u3hv3usws3",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -56,7 +56,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "lre5o5g67c",
+      "widgetId": "fptruhz2e1",
       "widgetName": "Canvas1"
     }
   ],
@@ -70,7 +70,8 @@
       "key": "boxShadow"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "AUTO_HEIGHT_WITH_LIMITS",
+  "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "stretch",
   "hideCard": false,
   "iconSVG": "/static/media/icon.b4f5f9eb27fc2bb537b53187836aea6c.svg",
@@ -79,9 +80,9 @@
   "isLoading": false,
   "isVisible": true,
   "key": "71swvlrmsw",
-  "leftColumn": 5,
-  "maxDynamicHeight": 9000,
-  "minDynamicHeight": 10,
+  "leftColumn": 8,
+  "maxDynamicHeight": 161,
+  "minDynamicHeight": 160,
   "minWidth": 450,
   "mobileBottomRow": 19,
   "mobileLeftColumn": 9,
@@ -95,14 +96,14 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 177,
-  "originalTopRow": 12,
+  "originalBottomRow": 163,
+  "originalTopRow": 2,
   "parentColumnSpace": 21.375,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 54,
+  "rightColumn": 57,
   "searchTags": [
     "div",
     "parent",
@@ -113,9 +114,9 @@
     "Layout"
   ],
   "thumbnailSVG": "/static/media/thumbnail.6cb355b93146b5347bbb048a568ed446.svg",
-  "topRow": 12,
+  "topRow": 2,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "idj3renlra",
+  "widgetId": "u3hv3usws3",
   "widgetName": "Container1"
 }
