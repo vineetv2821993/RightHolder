@@ -15,7 +15,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
       "key": "onTextChanged"
@@ -29,7 +29,7 @@
   "hideCard": false,
   "iconAlign": "left",
   "iconSVG": "/static/media/icon.e082ea210dbe0f5ca1bf7bfd67abdbec.svg",
-  "inputType": "TEXT",
+  "inputType": "MULTI_LINE_TEXT",
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
@@ -76,6 +76,7 @@
     "number",
     "textarea"
   ],
+  "shouldAllowAutofill": false,
   "showStepArrows": false,
   "tags": [
     "Suggested",
