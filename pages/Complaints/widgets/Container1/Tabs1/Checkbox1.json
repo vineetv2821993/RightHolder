@@ -4,7 +4,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 68,
-  "defaultCheckedState": true,
+  "defaultCheckedState": false,
   "displayName": "Checkbox",
   "dynamicBindingPathList": [
     {

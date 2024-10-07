@@ -1,18 +1,21 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 34,
+  "bottomRow": 46,
   "boxShadow": "none",
-  "buttonColor": "#078467",
-  "buttonVariant": "PRIMARY",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY",
+  "buttonVariant": "SECONDARY",
   "disabledWhenInvalid": false,
   "displayName": "Button",
   "dynamicBindingPathList": [
     {
+      "key": "buttonColor"
+    },
+    {
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -25,13 +28,13 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "oskvmnqzhp",
-  "leftColumn": 40,
+  "key": "qv7074012s",
+  "leftColumn": 46,
   "minWidth": 120,
-  "mobileBottomRow": 34,
-  "mobileLeftColumn": 38,
-  "mobileRightColumn": 54,
-  "mobileTopRow": 30,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 47,
+  "mobileTopRow": 18,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -40,16 +43,14 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{showModal(Modal1.name).then(() => {\n  resetWidget(\"Modal1\", true);\n});}}",
-  "parentColumnSpace": 9.65267562866211,
-  "parentId": "844122fsmy",
-  "parentRowSpace": 10,
+  "onClick": "{{closeModal(Modal5.name);}}",
+  "parentId": "2ier0f1zm9",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 60,
+  "rightColumn": 62,
   "searchTags": [
     "click",
     "submit"
@@ -57,11 +58,11 @@
   "tags": [
     "Buttons"
   ],
-  "text": "Sign Up for SAIP",
+  "text": "Close",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 30,
+  "topRow": 42,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "9wo1b0hzxs",
-  "widgetName": "Button2"
+  "widgetId": "tvozid4itm",
+  "widgetName": "Button9"
 }

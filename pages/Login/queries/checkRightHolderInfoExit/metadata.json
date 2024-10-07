@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "select id from rightHolderProfile WHERE rightHolderUserId = '{{this.params.id}}'",
+      "body": "select id,Status,rightHolderName from rightHolderProfile WHERE rightHolderUserId = '{{this.params.id}}'",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

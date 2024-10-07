@@ -56,7 +56,11 @@ export default {
 				showAlert("form sucessfully submitted","info");
 				resetWidget(Modal1.name);
 				storeValue("rightHolderInfoId",rightHolderInfoId);
-				navigateTo('Complaints', {}, 'SAME_WINDOW');
+				await showModal(Modal1Copy.name);
+				setTimeout(function() {
+					navigateTo('Login', {}, 'SAME_WINDOW');
+				}, 15000);
+				await SendEmail.run();
 			}
 			else{
 				showAlert("Session is expire , please login again","warning");

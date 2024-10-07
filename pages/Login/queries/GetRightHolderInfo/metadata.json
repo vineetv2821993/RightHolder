@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66f3bdc1af2b8e5a2a63d6e6_9cbcf9ab-66fa-4774-b5d2-e0f57ba0ed43",
-  "id": "Registeration_getRightHolderInfo",
+  "gitSyncId": "66fb995faf2b8e5a2a63f337_ea4fbc17-834f-4d2a-b763-2b5df68c777e",
+  "id": "Login_GetRightHolderInfo",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM rightHolderProfile;",
+      "body": "SELECT * FROM rightHolderProfile where rightHolderUserId='{{appsmith.store.rightHolderUserId}}';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,10 +22,14 @@
       "name": "ResearchDB",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [],
-    "executeOnLoad": false,
-    "name": "getRightHolderInfo",
-    "pageId": "Registeration",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "executeOnLoad": true,
+    "name": "GetRightHolderInfo",
+    "pageId": "Login",
     "userSetOnLoad": false
   }
 }

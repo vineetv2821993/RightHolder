@@ -12,6 +12,10 @@
         "value": "''"
       },
       {
+        "name": "modalText",
+        "value": "''"
+      },
+      {
         "name": "signInQuery",
         "value": "''"
       }

@@ -1,1 +1,1 @@
-SELECT * FROM rightHolderProfile where ;
+SELECT * FROM rightHolderProfile;

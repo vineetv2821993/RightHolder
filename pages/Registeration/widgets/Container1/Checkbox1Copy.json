@@ -4,7 +4,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 127,
-  "defaultCheckedState": true,
+  "defaultCheckedState": false,
   "displayName": "Checkbox",
   "dynamicBindingPathList": [
     {
@@ -42,8 +42,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 125,
-  "originalTopRow": 121,
+  "originalBottomRow": 127,
+  "originalTopRow": 123,
   "parentColumnSpace": 12.15625,
   "parentId": "fptruhz2e1",
   "parentRowSpace": 10,
