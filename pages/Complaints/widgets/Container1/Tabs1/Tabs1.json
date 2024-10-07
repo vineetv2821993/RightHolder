@@ -5,12 +5,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 111,
+  "bottomRow": 112,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 990,
+      "bottomRow": 1010,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -50,7 +50,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "5aryb67dfb",
+      "parentId": "vzcsrzw06w",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -61,12 +61,12 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "4patom7dj7",
-      "widgetName": "Canvas1"
+      "widgetId": "xjfxfh6bf4",
+      "widgetName": "Canvas110"
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 990,
+      "bottomRow": 1010,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -105,7 +105,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "5aryb67dfb",
+      "parentId": "vzcsrzw06w",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -116,7 +116,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "bj03uzwp09",
+      "widgetId": "6q67higads",
       "widgetName": "Canvas2"
     }
   ],
@@ -145,8 +145,8 @@
   "isVisible": true,
   "key": "cv1hn3sp9i",
   "leftColumn": 1,
-  "maxDynamicHeight": 103,
-  "minDynamicHeight": 97,
+  "maxDynamicHeight": 105,
+  "minDynamicHeight": 104,
   "minWidth": 450,
   "mobileBottomRow": 30,
   "mobileLeftColumn": 10,
@@ -161,8 +161,8 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onTabSelected": "{{GetViewComplaintStatus.run()}}",
-  "originalBottomRow": 111,
-  "originalTopRow": 8,
+  "originalBottomRow": 112,
+  "originalTopRow": 7,
   "parentColumnSpace": 17.828125,
   "parentId": "3ybwtybvv6",
   "parentRowSpace": 10,
@@ -179,7 +179,7 @@
       "isVisible": true,
       "label": "View Complaints",
       "positioning": "vertical",
-      "widgetId": "4patom7dj7"
+      "widgetId": "xjfxfh6bf4"
     },
     "tab2": {
       "id": "tab2",
@@ -188,16 +188,16 @@
       "isVisible": true,
       "label": "Add Complaints",
       "positioning": "vertical",
-      "widgetId": "bj03uzwp09"
+      "widgetId": "6q67higads"
     }
   },
   "tags": [
     "Layout"
   ],
   "thumbnailSVG": "/static/media/thumbnail.902d280515fd575657e8ccf99545112b.svg",
-  "topRow": 8,
+  "topRow": 7,
   "type": "TABS_WIDGET",
   "version": 3,
-  "widgetId": "5aryb67dfb",
+  "widgetId": "vzcsrzw06w",
   "widgetName": "Tabs1"
 }
