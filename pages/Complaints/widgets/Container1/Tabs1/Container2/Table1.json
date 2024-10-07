@@ -40,6 +40,7 @@
   ],
   "columnUpdatedAt": 1727682946940,
   "columnWidthMap": {
+    "OrginalWebsite": 228,
     "reason_of_approve_reject": 259
   },
   "defaultPageSize": 0,
@@ -345,7 +346,7 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 52,
+  "rightColumn": 53,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "tableData": "{{GetViewComplaintStatus.data}}",
