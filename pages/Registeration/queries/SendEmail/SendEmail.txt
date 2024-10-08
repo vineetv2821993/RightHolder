@@ -1,1 +1,83 @@
-Text Data
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email Template</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	color: #333;
+}
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+}
+.header {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.content {
+	margin-bottom: 20px;
+}
+.content p {
+	margin: 10px 0;
+}
+.content ul {
+	list-style: none;
+	padding: 0;
+}
+.content ul li {
+	margin: 5px 0;
+}
+.footer {
+	font-size: 14px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+Hi SAIP Team,
+</div>
+<div class="content">
+<p>I hope this message finds you well.</p>
+
+<p> We have received an Intellectual Property Violation Complaint request from {{HolderName.text}} </p>
+
+<p><strong>Please review the details provided below:</strong></p>
+<ul>
+<li><strong>Full Name:</strong> {{Name.text}}</li>
+<li><strong>Right Holder Name:</strong> {{HolderName.text}}</li>
+<li><strong>Company Name:</strong> {{CompanyName.text}}</li>
+<li><strong>Email:</strong> {{EmailAddress.text}}</li>
+<li><strong>Phone Number:</strong> {{Select1.selectedOptionLabel}}-{{phoneNumber.text}}</li>
+<li><strong>Address:</strong> {{Address.text}}, {{City.text}}, {{State.text}}, {{Select2Copy.selectedOptionLabel}} (Country)</li>
+</ul>
+<p> We have attached the Copyright Ownership Document and Identification Proof for verfication </p>
+
+<p>For your convenience, you can click the link below to access the Dashboard directly:</p>
+<p><a href="https://saip.bytes.care/app/saip-vms/dashboard-66cc3795ec80177fd0d752e0?branch=master" target="_blank">
+https://saip.bytes.care/app/saip-vms/dashboard-66cc3795ec80177fd0d752e0?branch=master
+</a></p>
+
+
+
+<p> We kindly ask that you prioritize the verification of this information and update the Approved/Rejected Status in the Dashboard for {{HolderName.text}} rightHolder profile.</p>
+</div>
+<div class="footer">
+
+<p>Thank you for your prompt attention to this matter.</p>
+
+<p>Best regards,</p>
+<p>{{Name.text}}<br>
+{{CompanyName.text}}</p>
+</div>
+</div>
+</body>
+</html>

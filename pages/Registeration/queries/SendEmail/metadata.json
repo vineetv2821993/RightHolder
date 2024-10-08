@@ -5,19 +5,20 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "Text Data",
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>Email Template</title>\n<style>\nbody {\n\tfont-family: Arial, sans-serif;\n\tline-height: 1.6;\n\tcolor: #333;\n}\n.container {\n\tmax-width: 600px;\n\tmargin: 0 auto;\n\tpadding: 20px;\n\tborder: 1px solid #ddd;\n\tborder-radius: 8px;\n}\n.header {\n\tfont-size: 18px;\n\tfont-weight: bold;\n\tmargin-bottom: 10px;\n}\n.content {\n\tmargin-bottom: 20px;\n}\n.content p {\n\tmargin: 10px 0;\n}\n.content ul {\n\tlist-style: none;\n\tpadding: 0;\n}\n.content ul li {\n\tmargin: 5px 0;\n}\n.footer {\n\tfont-size: 14px;\n}\n</style>\n</head>\n<body>\n<div class=\"container\">\n<div class=\"header\">\nHi SAIP Team,\n</div>\n<div class=\"content\">\n<p>I hope this message finds you well.</p>\n\n<p> We have received an Intellectual Property Violation Complaint request from {{HolderName.text}} </p>\n\n<p><strong>Please review the details provided below:</strong></p>\n<ul>\n<li><strong>Full Name:</strong> {{Name.text}}</li>\n<li><strong>Right Holder Name:</strong> {{HolderName.text}}</li>\n<li><strong>Company Name:</strong> {{CompanyName.text}}</li>\n<li><strong>Email:</strong> {{EmailAddress.text}}</li>\n<li><strong>Phone Number:</strong> {{Select1.selectedOptionLabel}}-{{phoneNumber.text}}</li>\n<li><strong>Address:</strong> {{Address.text}}, {{City.text}}, {{State.text}}, {{Select2Copy.selectedOptionLabel}} (Country)</li>\n</ul>\n<p> We have attached the Copyright Ownership Document and Identification Proof for verfication </p>\n\n<p>For your convenience, you can click the link below to access the Dashboard directly:</p>\n<p><a href=\"https://saip.bytes.care/app/saip-vms/dashboard-66cc3795ec80177fd0d752e0?branch=master\" target=\"_blank\">\nhttps://saip.bytes.care/app/saip-vms/dashboard-66cc3795ec80177fd0d752e0?branch=master\n</a></p>\n\n\n\n<p> We kindly ask that you prioritize the verification of this information and update the Approved/Rejected Status in the Dashboard for {{HolderName.text}} rightHolder profile.</p>\n</div>\n<div class=\"footer\">\n\n<p>Thank you for your prompt attention to this matter.</p>\n\n<p>Best regards,</p>\n<p>{{Name.text}}<br>\n{{CompanyName.text}}</p>\n</div>\n</div>\n</body>\n</html>",
       "encodeParamsToggle": true,
       "formData": {
         "command": "SEND",
         "send": {
-          "bodyType": "text/plain",
+          "attachments": "[{{FilePicker2.files[0]}},{{FilePicker1.files[0]}}]",
+          "bodyType": "text/html",
           "from": "saip@naxap.com",
           "subject": "Email Subject",
           "to": "jasmeet.singh@bytescare.com"
         }
       },
       "paginationType": "NONE",
-      "timeoutInMillisecond": 10000
+      "timeoutInMillisecond": 100000
     },
     "confirmBeforeExecute": false,
     "datasource": {
@@ -26,7 +27,14 @@
       "name": "GMAIL",
       "pluginId": "smtp-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      },
+      {
+        "key": "formData.send.attachments"
+      }
+    ],
     "executeOnLoad": false,
     "name": "SendEmail",
     "pageId": "Registeration",

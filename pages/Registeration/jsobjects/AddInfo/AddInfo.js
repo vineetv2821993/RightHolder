@@ -49,6 +49,7 @@ export default {
 						document: FilePicker1.files.length > 0 ?FilePicker1.files[0].data
 						: null,
 						copyRightLetter: FilePicker2.files.length>0 ? FilePicker2.files[0].data : null,
+						status: "InProgress",
 						inserted_at: moment().format('YYYY-MM-DD HH:mm:ss'),
 						updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
 					}
