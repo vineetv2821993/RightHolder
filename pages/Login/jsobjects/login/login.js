@@ -54,10 +54,11 @@ export default {
 					if (checkData && checkData.length > 0) {
 						if (checkData[0].Status === "InProgress") {
 							this.modalText = `Dear ${checkData[0].rightHolderName},
-        Thank you for your submission. Your details are currently being reviewed by our SAIP team.
-        We understand that waiting can be challenging, and we appreciate your patience as we work through this process.
-        You will receive an email notification as soon as your verification is complete.
-        Would you like to view your profile?
+Thank you for your submission. Your details are currently being reviewed by SAIP team.
+We understand that waiting can be challenging, and we appreciate your patience as we work through this process.
+You will receive an email notification as soon as your verification is complete.
+
+Would you like to view your profile?
 `;
 							await showModal(Modal2.name);
 							setTimeout(function() {
@@ -65,9 +66,10 @@ export default {
 							}, 30000);
 						} else if (checkData[0].Status === "Rejected") {
 							this.modalText = `Dear ${checkData[0].rightHolderName},
-								We regret to inform you that your profile has not been approved by the SAIP team due to insufficient information or documentation.
-								For further assistance and clarification, we kindly encourage you to reach out to the SAIP team directly. 
-								Would you like to view your profile?
+We regret to inform you that your profile has not been approved by the SAIP team due to insufficient information or documentation.
+For further assistance and clarification, we kindly encourage you to reach out to the SAIP team directly. 
+
+Would you like to view your profile?
 						`;
 							await showModal(Modal2.name);
 							setTimeout(function() {
