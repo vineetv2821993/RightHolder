@@ -1,5 +1,6 @@
-INSERT INTO taoq_research.complaints_form (
+INSERT INTO test_taoq_reach.complaints_form (
 	complaint_form_id,
+	complaint_request_id,
 	complaint_Case_id,
 	category_type, 
 	description, 
@@ -12,6 +13,7 @@ INSERT INTO taoq_research.complaints_form (
 	updated_at
 ) VALUES (
 	'{{this.params.complaint_form_id}}',
+	'{{this.params.complaint_request_id}}',
 	'{{this.params.complaint_Case_id}}',
 	'{{this.params.category_type}}',       -- Category type (from Select2 widget)
 	'{{this.params.description}}',         -- Description field

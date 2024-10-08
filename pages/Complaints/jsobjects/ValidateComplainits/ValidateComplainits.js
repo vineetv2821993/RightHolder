@@ -2,6 +2,7 @@ export default {
 	async validateComplaints() {
 		let isValid = true;
 		let errorMessage = "";
+		console.log("List1.listData before validation: ", AddListInput.listArray);
 
 		// Validate Category selection
 		if (!Select2 || !Select2.selectedOptionLabel) {
@@ -27,35 +28,29 @@ export default {
 			// Loop through the dynamically added fields for validation
 			const urlSet = new Set();
 
-			List1.listData.forEach(async (item, index) => {
-				// Check if infringing URL is missing
-				if (!item.input1 || item.input1.trim() === "") {
+			for(let i=0;i<AddListInput.listArray.length ;i++){
+				console.log(AddListInput.listArray[i], "item.input1");
+				if (!AddListInput.listArray[i].input1 || AddListInput.listArray[i].input1.trim() === "") {
 					isValid = false;
-					errorMessage = `Infringing URL is missing in item ${index + 1}.`;
-				} 		else if(!item.FilePicker1  || item.FilePicker1.trim() === ""){
+					errorMessage = `Infringing URL is missing in item ${i + 1}.`;
+				} else if (!AddListInput.listArray[i].FilePicker1 || AddListInput.listArray[i].FilePicker1.trim() === "") {
 					isValid = false;
-					errorMessage =`Please Provide us proof for Infringing  URL ${item.input1}  in item  ${index + 1}.`;;
-				}
-				// Check if description is missing
-				else if (!item.Description || item.Description.trim() === "") {
+					errorMessage = `Please Provide proof for Infringing URL ${AddListInput.listArray[i].input1} in item ${i + 1}.`;
+				} else if (!AddListInput.listArray[i].Description || AddListInput.listArray[i].Description.trim() === "") {
 					isValid = false;
-					errorMessage = `Description is missing in item ${index + 1}.`;
-				} 
-				// Check if the URL is a duplicate in the list
-				else if (urlSet.has(item.input1.trim())) {
-					isValid = false;
-					errorMessage = `Duplicate Infringing URL (${item.input1}) found in the list at item ${index + 1}. Please remove the duplicate.`;
-				} 
-				// Add the URL to the Set for tracking duplicates
-				else {
-					urlSet.add(item.input1.trim());
-					// Check if the URL exists in the database
-					if (await GetExitsInfringingUrl.run({ infringing_url: item.input1.trim() })) {
+					errorMessage = `Description is missing in item ${i + 1}.`;
+				} else if (urlSet.has(AddListInput.listArray[i].input1.trim())) {
+					isValid = false;List1.listData
+					errorMessage = `Duplicate Infringing URL (${AddListInput.listArray.input1}) found in the list at item ${i + 1}. Please remove the duplicate.`;
+				} else {
+					urlSet.add(AddListInput.listArray[i].input1.trim());
+					let data = await GetExitsInfringingUrl.run({infringing_url: AddListInput.listArray[i].input1.trim()});
+					if (data && data.length>0) {
 						isValid = false;
-						errorMessage = `This Infringing URL (${item.input1}) has already been submitted. To proceed with the complaint, please remove the duplicate URL from the list or use a different Infringing URL. For assistance, contact SAIP.`;
+						errorMessage = `This Infringing URL (${AddListInput.listArray[i].input1}) has already been submitted. To proceed with the complaint, please remove the duplicate URL from the list or use a different Infringing URL. For assistance, contact SAIP.`;
 					}
 				}
-			})
+			}
 		}
 		// Show alert if validation fails
 		if (!isValid) {

@@ -43,6 +43,7 @@ export default {
 	// Function to handle input changes
 	handleInputChange(id, field, value) {
 		// Update the specific field of the relevant input row
+		console.log()
 		this.listArray = this.listArray.map(item => 
 																				item.id === id ? { ...item, [field]: value } : item
 																			 );

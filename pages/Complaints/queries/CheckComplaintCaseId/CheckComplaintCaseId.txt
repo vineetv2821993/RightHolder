@@ -1,0 +1,3 @@
+SELECT complaint_Case_id 
+FROM taoq_research.complaints_form 
+WHERE complaint_Case_id = '{{this.params.complaint_Case_id}}';

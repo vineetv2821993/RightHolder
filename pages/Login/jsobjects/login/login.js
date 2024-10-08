@@ -48,7 +48,7 @@ export default {
 					storeValue("rightHolderUserId",data[0].id);
 					let checkData = await checkRightHolderInfoExit.run({id:data[0].id});
 					let isExpire = await this.checkExpireUser(data[0].id);
-					if(!isExpire){
+					if(isExpire){
 						await updateExpireDate.run({id:data[0].id});
 					}
 					if (checkData && checkData.length > 0) {

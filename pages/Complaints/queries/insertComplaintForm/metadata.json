@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO taoq_research.complaints_form (\n\tcomplaint_form_id,\n\tcomplaint_Case_id,\n\tcategory_type, \n\tdescription, \n\tacknowledgment, \n\toriginal_work, \n\tinfringing_url, \n\tdocumentProof,\n\trightHolderUserId, \n\tinserted_at, \n\tupdated_at\n) VALUES (\n\t'{{this.params.complaint_form_id}}',\n\t'{{this.params.complaint_Case_id}}',\n\t'{{this.params.category_type}}',       -- Category type (from Select2 widget)\n\t'{{this.params.description}}',         -- Description field\n\t{{this.params.acknowledgment ? 1 : 0}}, -- Acknowledgment flag (converted to tinyint)\n\t'{{this.params.original_work}}',       -- Original work field\n\t'{{this.params.infringing_url}}',      -- Infringing URL field\n\t'{{this.params.documentProff}}',\n\t'{{appsmith.store.rightHolderUserId}}', -- rightHolderUserId from Appsmith store\n\t'{{this.params.inserted_at}}', -- Inserted timestamp\n\t'{{this.params.updated_at}}'  -- Updated timestamp\n);\n",
+      "body": "INSERT INTO test_taoq_reach.complaints_form (\n\tcomplaint_form_id,\n\tcomplaint_request_id,\n\tcomplaint_Case_id,\n\tcategory_type, \n\tdescription, \n\tacknowledgment, \n\toriginal_work, \n\tinfringing_url, \n\tdocumentProof,\n\trightHolderUserId, \n\tinserted_at, \n\tupdated_at\n) VALUES (\n\t'{{this.params.complaint_form_id}}',\n\t'{{this.params.complaint_request_id}}',\n\t'{{this.params.complaint_Case_id}}',\n\t'{{this.params.category_type}}',       -- Category type (from Select2 widget)\n\t'{{this.params.description}}',         -- Description field\n\t{{this.params.acknowledgment ? 1 : 0}}, -- Acknowledgment flag (converted to tinyint)\n\t'{{this.params.original_work}}',       -- Original work field\n\t'{{this.params.infringing_url}}',      -- Infringing URL field\n\t'{{this.params.documentProff}}',\n\t'{{appsmith.store.rightHolderUserId}}', -- rightHolderUserId from Appsmith store\n\t'{{this.params.inserted_at}}', -- Inserted timestamp\n\t'{{this.params.updated_at}}'  -- Updated timestamp\n);\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -13,7 +13,7 @@
           "value": true
         }
       ],
-      "timeoutInMillisecond": 10000
+      "timeoutInMillisecond": 100000
     },
     "confirmBeforeExecute": false,
     "datasource": {

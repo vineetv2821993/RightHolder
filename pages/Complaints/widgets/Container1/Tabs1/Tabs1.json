@@ -161,7 +161,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onTabSelected": "{{GetViewComplaintStatus.run()}}",
-  "originalBottomRow": 111,
+  "originalBottomRow": 112,
   "originalTopRow": 7,
   "parentColumnSpace": 17.828125,
   "parentId": "3ybwtybvv6",

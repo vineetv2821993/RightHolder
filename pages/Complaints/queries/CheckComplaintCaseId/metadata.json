@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "66f3bdc1af2b8e5a2a63d6e6_4fd6a695-a3db-4b38-887d-98944fc6b2cd",
-  "id": "Complaints_CountComplaintForm",
+  "gitSyncId": "66fb995faf2b8e5a2a63f337_348d1c0f-68d0-4457-ade5-481e2e8ca7e1",
+  "id": "Complaints_CheckComplaintCaseId",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT count(*)  as count FROM complaints_form \nINNER JOIN rightHolderProfile on rightHolderProfile.rightHolderUserId = complaints_form.rightHolderUserId\nwhere rightHolderProfile.company_name ='{{Input12.text}}';",
+      "body": "SELECT complaint_Case_id \nFROM taoq_research.complaints_form \nWHERE complaint_Case_id = '{{this.params.complaint_Case_id}}';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 100000
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
-    "name": "CountComplaintForm",
+    "executeOnLoad": false,
+    "name": "CheckComplaintCaseId",
     "pageId": "Complaints",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

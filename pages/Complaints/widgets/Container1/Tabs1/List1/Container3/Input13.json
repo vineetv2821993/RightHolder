@@ -59,7 +59,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onTextChanged": "{{ AddListInput.handleInputChange(currentItem.id, 'input1', Input1.text) }}\n",
+  "onTextChanged": "{{ AddListInput.handleInputChange(currentItem.id, 'input1', Input13.text) }}\n",
   "parentColumnSpace": 6.8542633056640625,
   "parentId": "1ly038mit7",
   "parentRowSpace": 10,

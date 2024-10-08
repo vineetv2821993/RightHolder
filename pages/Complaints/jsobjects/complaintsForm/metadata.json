@@ -6,6 +6,11 @@
     "pageId": "Complaints",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "variables": []
+    "variables": [
+      {
+        "name": "newComplaintCaseId",
+        "value": "''"
+      }
+    ]
   }
 }
