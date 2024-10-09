@@ -54,7 +54,7 @@ export default {
 		const passwordHash = CryptoJS.SHA256(Input5.text).toString(); // Hash the password
 		if(this.validateData()){
 			// Prepare the payload for the insert operation
-			this.exitQuery = `SELECT id FROM test_taoq_reach.rightHolder WHERE email = '${Input4.text}' or username ='${Input3.text}'`;
+			this.exitQuery = `SELECT id FROM taoq_research.rightHolder WHERE email = '${Input4.text}' or username ='${Input3.text}'`;
 
 			// Run the exit query to check if the user exists
 			const result = await ExitRightHolder.run();

@@ -19,7 +19,7 @@
   "flexVerticalAlignment": "start",
   "hideCard": false,
   "iconSVG": "/static/media/icon.fdb987a7ceacf7001426460138f7cd09.svg",
-  "image": "{{List1.listData[List1.pageNo-1].FilePicker1}}",
+  "image": "{{GetRightHolderInfo.data[0].copyRightLetter}}",
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,

@@ -1,4 +1,4 @@
-INSERT INTO test_taoq_reach.complaints_form (
+INSERT INTO taoq_research.complaints_form (
 	complaint_form_id,
 	complaint_request_id,
 	complaint_Case_id,
