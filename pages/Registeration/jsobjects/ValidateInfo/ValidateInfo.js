@@ -79,7 +79,7 @@ export default {
 		}
 		if(!Select2Copy || !Select2Copy.selectedOptionValue){
 			isValid = false;
-			showAlert("Select2Copy selection is required", "error");
+			showAlert("Country selection is required", "error");
 		}
 		if(!FilePicker1 || !FilePicker1.files || FilePicker1.files.length === 0){
 			isValid = false;

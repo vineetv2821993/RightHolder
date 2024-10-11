@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 101,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "TERTIARY",
@@ -17,8 +17,10 @@
       "key": "isVisible"
     }
   ],
-  "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    },
     {
       "key": "isVisible"
     }
@@ -29,19 +31,19 @@
     }
   ],
   "hideCard": false,
-  "iconName": "delete",
+  "iconName": "cross",
   "iconSVG": "/static/media/icon.e5045469a82b76384d0c537fc9545012.svg",
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "{{List1.listData.length>1? true:false}}",
-  "key": "zamsmklumj",
-  "leftColumn": 61,
+  "isVisible": "{{FilePicker1.files.length>0 ?\ntrue : false\n}}",
+  "key": "gmywrfy382",
+  "leftColumn": 59,
   "minWidth": 50,
-  "mobileBottomRow": 4,
-  "mobileLeftColumn": 60,
-  "mobileRightColumn": 64,
-  "mobileTopRow": 0,
+  "mobileBottomRow": 26,
+  "mobileLeftColumn": 58,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 22,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -50,13 +52,13 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{AddListInput.deleteInputField(currentItem.id);}}",
-  "parentColumnSpace": 16.272790908813477,
-  "parentId": "9269kbgio6",
+  "onClick": "{{resetWidget(\"FilePicker1\", true);}}",
+  "parentColumnSpace": 12.59375,
+  "parentId": "fptruhz2e1",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 64,
+  "rightColumn": 61,
   "searchTags": [
     "click",
     "submit"
@@ -65,9 +67,9 @@
     "Buttons"
   ],
   "thumbnailSVG": "/static/media/thumbnail.b02b764a52db45d332efa723178a50a4.svg",
-  "topRow": 0,
+  "topRow": 97,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "rj4c4dpcpv",
-  "widgetName": "IconButton4"
+  "widgetId": "igayi7ai93",
+  "widgetName": "IconButton6Copy"
 }

@@ -43,8 +43,8 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{closeModal(Modal4.name);}}",
-  "parentId": "6f4ukeb0bt",
+  "onClick": "{{closeModal(Modal4.name).then(() => {\n  showModal(Modal3.name);\n});}}",
+  "parentId": "qy9ig3r716",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -63,6 +63,6 @@
   "topRow": 55,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "aobazppkaa",
+  "widgetId": "0w5i3uayok",
   "widgetName": "Button8"
 }

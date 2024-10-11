@@ -81,7 +81,7 @@ export default {
 						await insertComplaintsStatusForm.run({
 							complaint_status_id: complaint_status_id,
 							complaint_form_id: complaint_form_id,
-							status: 'InProgress',
+							status: 'Under Review',
 							reason_of_approve_reject: null,
 							status_updated_by: null,
 							inserted_at: moment().format('YYYY-MM-DD HH:mm:ss'),

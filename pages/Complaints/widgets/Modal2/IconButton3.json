@@ -43,7 +43,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{closeModal(Modal2.name);}}",
-  "parentId": "4d1n10bhkk",
+  "parentId": "13s5td54bm",
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
   "rightColumn": 64,
@@ -58,6 +58,6 @@
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "4gfwi1c4my",
+  "widgetId": "eo97ecdw7p",
   "widgetName": "IconButton3"
 }

@@ -56,7 +56,7 @@
       },
       "openParentPropertyPane": true,
       "parentColumnSpace": 1,
-      "parentId": "wnhezoxab8",
+      "parentId": "zyfmo6bv2c",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -64,7 +64,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "mytfydqkv7",
+      "widgetId": "w2r1zr1x8f",
       "widgetName": "Canvas15"
     }
   ],
@@ -105,7 +105,11 @@
       "key": "primaryKeys"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onItemClick"
+    }
+  ],
   "enhancements": true,
   "flexVerticalAlignment": "start",
   "gridType": "vertical",
@@ -121,8 +125,8 @@
   "key": "vk5xiolwc7",
   "leftColumn": 2,
   "listData": "{{AddListInput.listArray}}",
-  "mainCanvasId": "mytfydqkv7",
-  "mainContainerId": "mlujt8agm8",
+  "mainCanvasId": "w2r1zr1x8f",
+  "mainContainerId": "n5yviulpbq",
   "minWidth": 450,
   "mobileBottomRow": 97,
   "mobileLeftColumn": 6,
@@ -136,11 +140,12 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
+  "onItemClick": "",
   "originalBottomRow": 55,
   "originalTopRow": 15,
   "pageSize": 1,
   "parentColumnSpace": 19.4447021484375,
-  "parentId": "6q67higads",
+  "parentId": "b2jh9snvh2",
   "parentRowSpace": 10,
   "primaryKeys": "{{List1.listData.map((currentItem, currentIndex) => currentItem[\"id\"] )}}",
   "renderMode": "CANVAS",
@@ -157,6 +162,6 @@
   "topRow": 30,
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
-  "widgetId": "wnhezoxab8",
+  "widgetId": "zyfmo6bv2c",
   "widgetName": "List1"
 }

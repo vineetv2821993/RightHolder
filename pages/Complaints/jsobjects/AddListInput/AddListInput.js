@@ -23,7 +23,11 @@ export default {
 		this.lsitPageNo = Math.ceil(totalItems / itemsPerPage); // Calculate the page 
 
 	},
-
+	removeFileListOnCrosssClick(){
+		resetWidget("FilePicker1", true);
+		List1.listData[List1.pageNo-1].FilePicker1 = "";
+		this.listArray[List1.pageNo-1].FilePicker1 = "";
+	},
 	// Function to delete an input field container
 	deleteInputField(id) {
 		// Filter out the container with the matching ID

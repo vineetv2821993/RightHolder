@@ -1,14 +1,14 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 107,
+  "bottomRow": 1082,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1070,
+      "bottomRow": 1060,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -32,7 +32,7 @@
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 1070,
+      "minHeight": 990,
       "minWidth": 450,
       "mobileBottomRow": 0,
       "mobileLeftColumn": 0,
@@ -47,7 +47,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "f5jof22ggq",
+      "parentId": "yccv1xw7q4",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -56,7 +56,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "kwaf34scgz",
+      "widgetId": "eru1fa3m8k",
       "widgetName": "Canvas17"
     }
   ],
@@ -68,17 +68,17 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "height": 1070,
+  "height": 1060,
   "hideCard": false,
   "iconSVG": "/static/media/icon.47fe8500526372db96cb58a82187ffeb.svg",
   "isCanvas": true,
   "isDeprecated": false,
   "isLoading": false,
   "key": "p1gbdzcoc6",
-  "leftColumn": 0,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 24,
-  "minHeight": 1070,
+  "minHeight": 1060,
   "mobileBottomRow": 0,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 0,
@@ -95,7 +95,7 @@
   "parentId": "0",
   "parentRowSpace": 1,
   "renderMode": "CANVAS",
-  "rightColumn": 0,
+  "rightColumn": 1,
   "searchTags": [
     "dialog",
     "popup",
@@ -106,10 +106,10 @@
     "Layout"
   ],
   "thumbnailSVG": "/static/media/thumbnail.c20e144182d9af35cde59e39d9afe632.svg",
-  "topRow": 0,
+  "topRow": 22,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "f5jof22ggq",
+  "widgetId": "yccv1xw7q4",
   "widgetName": "Modal3",
   "width": 678
 }

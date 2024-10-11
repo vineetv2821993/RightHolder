@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 43,
+  "bottomRow": 46,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -31,7 +31,7 @@
     }
   },
   "columnOrder": [
-    "customColumn1",
+    "Date",
     "complaint_Case_id",
     "OrginalWebsite",
     "InfringingUrl",
@@ -39,9 +39,11 @@
     "reason_of_approve_reject",
     "Status"
   ],
-  "columnUpdatedAt": 1728298286744,
+  "columnUpdatedAt": 1728298219990,
   "columnWidthMap": {
-    "OrginalWebsite": 228,
+    "Date": 252,
+    "OrginalWebsite": 245,
+    "complaint_Case_id": 296,
     "reason_of_approve_reject": 259
   },
   "defaultPageSize": 0,
@@ -86,10 +88,19 @@
       "key": "primaryColumns.complaint_Case_id.computedValue"
     },
     {
+      "key": "primaryColumns.Date.computedValue"
+    },
+    {
       "key": "totalRecordsCount"
     },
     {
-      "key": "primaryColumns.customColumn1.computedValue"
+      "key": "primaryColumns.Status.textColor"
+    },
+    {
+      "key": "primaryColumns.OrginalWebsite.displayText"
+    },
+    {
+      "key": "primaryColumns.InfringingUrl.displayText"
     }
   ],
   "dynamicPropertyPathList": [
@@ -98,6 +109,9 @@
     },
     {
       "key": "primaryColumns.Status.cellBackground"
+    },
+    {
+      "key": "primaryColumns.Status.textColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -116,7 +130,7 @@
   "isSortable": true,
   "isVisible": true,
   "isVisibleDownload": true,
-  "isVisibleFilters": false,
+  "isVisibleFilters": true,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
   "key": "or38kprknm",
@@ -137,25 +151,61 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onPageChange": "{{GetViewComplaintStatus.run()}}",
-  "originalBottomRow": 43,
-  "originalTopRow": 8,
+  "originalBottomRow": 46,
+  "originalTopRow": 11,
   "parentColumnSpace": 10.981458187103271,
-  "parentId": "fqqkcr24s8",
+  "parentId": "0n2tyzfuxb",
   "parentRowSpace": 10,
   "primaryColumns": {
-    "InfringingUrl": {
-      "alias": "InfringingUrl",
-      "allowCellWrapping": true,
+    "Date": {
+      "alias": "Date",
+      "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"InfringingUrl\"]))}}",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( moment(currentRow[\"Date\"]).format('YYYY-MM-DD HH:mm:ss')))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
-      "horizontalAlignment": "CENTER",
+      "horizontalAlignment": "LEFT",
+      "id": "Date",
+      "index": 5,
+      "inputFormat": "YYYY-MM-DD HH:mm",
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Date",
+      "notation": "standard",
+      "originalId": "Date",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "InfringingUrl": {
+      "alias": "InfringingUrl",
+      "allowCellWrapping": true,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "url",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"InfringingUrl\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "displayText": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"InfringingUrl\"]))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
       "id": "InfringingUrl",
       "index": 2,
       "isCellEditable": false,
@@ -166,7 +216,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Infringing URl",
+      "label": "Infringing URL",
       "notation": "standard",
       "originalId": "InfringingUrl",
       "sticky": "",
@@ -182,14 +232,15 @@
       "allowCellWrapping": true,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "text",
+      "columnType": "url",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"OrginalWebsite\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
+      "displayText": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"OrginalWebsite\"]))}}",
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
-      "horizontalAlignment": "CENTER",
+      "horizontalAlignment": "LEFT",
       "id": "OrginalWebsite",
       "index": 1,
       "isCellEditable": false,
@@ -215,7 +266,7 @@
       "alias": "Status",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"] === 'Approved' ? \"#0fd926\" : (currentRow[\"Status\"] === 'InProgress' ? \"#808080\" : (currentRow[\"Status\"] === 'Rejected' ? \"#ef4444\" : (\n\tcurrentRow[\"Status\"] === 'Blocked' ? \"#14e82e\" :\"#d6ea0d\"\n))) ))}}",
+      "cellBackground": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"] === 'Approved' ? \"#0fd926\" : (currentRow[\"Status\"] === 'Under Review' ? \"#808080\" : (currentRow[\"Status\"] === 'Rejected' ? \"#ef4444\" : (\n\tcurrentRow[\"Status\"] === 'Blocked' ? \"#06402B\" :\"#d6ea0d\"\n)))))}}",
       "columnType": "text",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"]))}}",
       "currencyCode": "USD",
@@ -238,7 +289,7 @@
       "notation": "standard",
       "originalId": "Status",
       "sticky": "right",
-      "textColor": "#fff",
+      "textColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"] === 'Submitted For Blocking' ? \"#00000\" :\"#FFFFFF\"))}}",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -313,39 +364,6 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "customColumn1": {
-      "alias": "Date",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( moment(currentRow[\"Date\"]).format('YYYY-MM-DD HH:mm:ss')))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "customColumn1",
-      "index": 6,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": true,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Date",
-      "labelColor": "#FFFFFF",
-      "notation": "standard",
-      "originalId": "customColumn1",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "reason_of_approve_reject": {
       "alias": "reason_of_approve_reject",
       "allowCellWrapping": true,
@@ -383,7 +401,7 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 53,
+  "rightColumn": 52,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "tableData": "{{GetViewComplaintStatus.data}}",
@@ -393,11 +411,11 @@
   ],
   "textSize": "0.875rem",
   "thumbnailSVG": "/static/media/thumbnail.d0492f06681daa69baf92b07d3829dfc.svg",
-  "topRow": 8,
+  "topRow": 11,
   "totalRecordsCount": "{{countViewComplaintStatus.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "c2wfo4mbc9",
+  "widgetId": "c8muohds8b",
   "widgetName": "Table1"
 }

@@ -44,7 +44,7 @@
   "isLoading": false,
   "isVisible": "{{FilePicker1.files.length>0?true:false}}",
   "key": "ryq5qsucyg",
-  "leftColumn": 38,
+  "leftColumn": 39,
   "maxZoomLevel": 1,
   "mobileBottomRow": 15,
   "mobileLeftColumn": 44,
@@ -61,10 +61,10 @@
   },
   "onClick": "{{showModal(Modal5.name);}}",
   "parentColumnSpace": 9.581333875656128,
-  "parentId": "1ly038mit7",
+  "parentId": "9269kbgio6",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 50,
+  "rightColumn": 49,
   "tags": [
     "Media"
   ],
@@ -72,6 +72,6 @@
   "topRow": 6,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "0ya4plyk5c",
+  "widgetId": "gbyrk67tgt",
   "widgetName": "Image3"
 }

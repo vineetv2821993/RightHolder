@@ -1,8 +1,8 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
-  "boxShadow": "none",
+  "bottomRow": 29,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "TERTIARY",
   "displayName": "Icon button",
@@ -12,36 +12,23 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "isVisible"
     }
   ],
-  "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "hideCard": false,
-  "iconName": "delete",
+  "iconName": "info-sign",
   "iconSVG": "/static/media/icon.e5045469a82b76384d0c537fc9545012.svg",
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "{{List1.listData.length>1? true:false}}",
-  "key": "zamsmklumj",
-  "leftColumn": 61,
+  "isVisible": true,
+  "key": "h6pv488zuf",
+  "leftColumn": 53,
   "minWidth": 50,
-  "mobileBottomRow": 4,
-  "mobileLeftColumn": 60,
-  "mobileRightColumn": 64,
-  "mobileTopRow": 0,
+  "mobileBottomRow": 29,
+  "mobileLeftColumn": 54,
+  "mobileRightColumn": 58,
+  "mobileTopRow": 25,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -50,13 +37,12 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{AddListInput.deleteInputField(currentItem.id);}}",
-  "parentColumnSpace": 16.272790908813477,
-  "parentId": "9269kbgio6",
+  "parentColumnSpace": 19.4447021484375,
+  "parentId": "b2jh9snvh2",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 64,
+  "rightColumn": 56,
   "searchTags": [
     "click",
     "submit"
@@ -65,9 +51,10 @@
     "Buttons"
   ],
   "thumbnailSVG": "/static/media/thumbnail.b02b764a52db45d332efa723178a50a4.svg",
-  "topRow": 0,
+  "tooltip": "Please Click On Add Button to add more Infriging URL",
+  "topRow": 25,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "rj4c4dpcpv",
-  "widgetName": "IconButton4"
+  "widgetId": "3024qkjrcn",
+  "widgetName": "IconButton8"
 }
