@@ -43,7 +43,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{closeModal(Modal4.name);}}",
+  "onClick": "{{closeModal(Modal4.name).then(() => {\n  showModal(Modal3.name);\n});}}",
   "parentId": "kuh7t7oylu",
   "placement": "CENTER",
   "recaptchaType": "V3",

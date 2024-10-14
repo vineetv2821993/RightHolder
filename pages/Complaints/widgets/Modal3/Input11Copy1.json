@@ -16,9 +16,17 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "hideCard": false,
   "iconAlign": "left",
@@ -28,9 +36,9 @@
   "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": "{{GetRightHolderInfo.data.length >0 && GetRightHolderInfo.data[0].reasonStatus && GetRightHolderInfo.data[0].Status === \"Rejected\" ? true: false}}",
   "key": "xie9ha061z",
-  "label": "Reason By SAIP",
+  "label": "Reason Of Rejection By SAIP",
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelStyle": "BOLD",

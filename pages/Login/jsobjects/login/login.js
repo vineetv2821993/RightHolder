@@ -52,7 +52,7 @@ export default {
 						await updateExpireDate.run({id:data[0].id});
 					}
 					if (checkData && checkData.length > 0) {
-						if (checkData[0].Status === "InProgress") {
+						if (checkData[0].Status === "Under Review") {
 							this.modalText = `Dear ${checkData[0].rightHolderName},
 Thank you for your submission. Your details are currently being reviewed by SAIP team.
 We understand that waiting can be challenging, and we appreciate your patience as we work through this process.

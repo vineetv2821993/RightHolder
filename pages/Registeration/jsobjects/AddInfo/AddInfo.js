@@ -45,7 +45,7 @@ export default {
 						state: State.text,
 						country: Select2Copy.selectedOptionLabel, // Replace with actual country value
 						acknowledgment: Checkbox1Copy.isChecked,
-						status: "InProgress",
+						status: "Under Review",
 						digitalSignature: DigitalSignature.text,
 						document: FilePicker1.files.length > 0 ?FilePicker1.files[0].data
 						: null,

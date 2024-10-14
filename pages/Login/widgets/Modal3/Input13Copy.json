@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 94,
+  "bottomRow": 87,
   "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-  "defaultText": "{{GetRightHolderInfo.data[0].digitalSignature}}",
+  "defaultText": "{{GetRightHolderInfo.data[0].reasonStatus ? GetRightHolderInfo.data[0].reasonStatus : \"\"}}",
   "displayName": "Input",
   "dynamicBindingPathList": [
     {
@@ -16,9 +16,17 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "hideCard": false,
   "iconAlign": "left",
@@ -28,9 +36,9 @@
   "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
-  "key": "xie9ha061z",
-  "label": "Digital Signature",
+  "isVisible": "{{GetRightHolderInfo.data.length>0  && GetRightHolderInfo.data[0].reasonStatus && GetRightHolderInfo.data[0].Status === \"Rejected\" ? true: false}}",
+  "key": "z2lfiw8wqa",
+  "label": "Reason Of Rejection By SAIP",
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelStyle": "BOLD",
@@ -40,10 +48,10 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 89,
+  "mobileBottomRow": 77,
   "mobileLeftColumn": 10,
   "mobileRightColumn": 30,
-  "mobileTopRow": 82,
+  "mobileTopRow": 70,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -52,15 +60,13 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 81,
-  "originalTopRow": 74,
-  "parentColumnSpace": 6.9375,
+  "parentColumnSpace": 10.40625,
   "parentId": "fj0705d68m",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 58,
+  "rightColumn": 59,
   "searchTags": [
     "form",
     "text input",
@@ -73,9 +79,9 @@
     "Inputs"
   ],
   "thumbnailSVG": "/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
-  "topRow": 87,
+  "topRow": 80,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "v1g43xj8ym",
-  "widgetName": "Input11"
+  "widgetId": "9tqhhq1exl",
+  "widgetName": "Input13Copy"
 }

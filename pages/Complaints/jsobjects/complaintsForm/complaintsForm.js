@@ -117,7 +117,15 @@ export default {
 			} else {
 				showAlert("All forms successfully submitted", "info");
 				closeModal(Modal2.name);
-				resetWidget("Select2", true);
+				AddListInput.listArray= [
+					{ 
+						id: this.index, 
+						input1: '', 
+						Description: '',
+						FilePicker1:'' 
+					}
+				],
+					resetWidget("Select2", true);
 				resetWidget("originalWork", true);
 				resetWidget("List1", true);
 				resetWidget("Checkbox1", true);
