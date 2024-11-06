@@ -32,7 +32,7 @@
   "isRequired": true,
   "isVisible": true,
   "key": "arrqi1tdjt",
-  "label": "© holder's First name",
+  "label": "© holder's first name",
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelStyle": "BOLD",
@@ -60,7 +60,7 @@
   "originalBottomRow": 25,
   "originalTopRow": 18,
   "parentColumnSpace": 12.125,
-  "parentId": "fptruhz2e1",
+  "parentId": "4zci28ji3l",
   "parentRowSpace": 10,
   "placeholderText": "You must be the rights holder or an authorized agent thereof",
   "renderMode": "CANVAS",
@@ -83,6 +83,6 @@
   "type": "INPUT_WIDGET_V2",
   "validation": "",
   "version": 2,
-  "widgetId": "l2i3hon6hg",
+  "widgetId": "9z2920nzzz",
   "widgetName": "HolderName"
 }

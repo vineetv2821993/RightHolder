@@ -1,0 +1,1 @@
+SELECT username , email_verified FROM taoq_research.rightHolder WHERE id = '{{this.params.id}}';

@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66fb995faf2b8e5a2a63f337_01ed91de-9616-4758-8271-56d4ae5abeda",
+  "id": "VerifyEmail_resentEmail",
+  "unpublishedCollection": {
+    "name": "resentEmail",
+    "pageId": "VerifyEmail",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

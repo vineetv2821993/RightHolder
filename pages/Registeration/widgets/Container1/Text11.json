@@ -41,10 +41,10 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 7,
+  "originalBottomRow": 5,
   "originalTopRow": 1,
   "overflow": "NONE",
-  "parentId": "fptruhz2e1",
+  "parentId": "4zci28ji3l",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 46,
@@ -66,6 +66,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "fn5ejfmlxc",
+  "widgetId": "2jofbncbg0",
   "widgetName": "Text11"
 }

@@ -1,0 +1,74 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 90,
+  "bottomRowBeforeCollapse": 107,
+  "boxShadow": "none",
+  "defaultImage": "{{FilePicker1Copy.files.length >0 ? FilePicker1Copy.files[0].data: ''}}",
+  "displayName": "Image",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "defaultImage"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.fdb987a7ceacf7001426460138f7cd09.svg",
+  "image": "",
+  "imageShape": "RECTANGLE",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": "{{FilePicker1Copy.files.length>0 ?\ntrue : false\n}}",
+  "key": "jhxegbv4bv",
+  "leftColumn": 44,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 113,
+  "mobileLeftColumn": 42,
+  "mobileRightColumn": 54,
+  "mobileTopRow": 101,
+  "needsErrorInfo": false,
+  "objectFit": "cover",
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "onClick": "{{showModal(OpenFileImageProofCopy.name);}}",
+  "originalBottomRow": 107,
+  "originalTopRow": 95,
+  "parentColumnSpace": 16.052734375,
+  "parentId": "4zci28ji3l",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 55,
+  "tags": [
+    "Media"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.74089bb21dfcb5890f6b106f93c3b9c8.svg",
+  "topRow": 78,
+  "topRowBeforeCollapse": 95,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "fcfed4i78p",
+  "widgetName": "Image2Copy"
+}

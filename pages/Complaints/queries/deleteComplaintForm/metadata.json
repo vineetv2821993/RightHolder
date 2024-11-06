@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "delete from complaints_form where complaint_form_id ={{this.params.complaint_form_id}};",
+      "body": "delete from taoq_research.complaints_form where complaint_form_id ={{this.params.complaint_form_id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

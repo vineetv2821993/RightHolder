@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 40,
+  "bottomRow": 43,
   "boxShadow": "none",
   "buttonColor": "#006d6a",
   "buttonStyle": "PRIMARY",
@@ -13,6 +13,7 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -26,7 +27,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "oskvmnqzhp",
-  "leftColumn": 11,
+  "leftColumn": 14,
   "minWidth": 120,
   "mobileBottomRow": 22,
   "mobileLeftColumn": 31,
@@ -41,15 +42,15 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{closeModal(Modal1.name).then(() => {\n  resetWidget(\"Modal1\", false);\n});}}",
-  "originalBottomRow": 22,
-  "originalTopRow": 18,
-  "parentId": "evx3s0cymc",
+  "originalBottomRow": 46,
+  "originalTopRow": 42,
+  "parentId": "wxx1vj6y0v",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 27,
+  "rightColumn": 30,
   "searchTags": [
     "click",
     "submit"
@@ -59,9 +60,9 @@
   ],
   "text": "Close",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 36,
+  "topRow": 39,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "egz1pvwooq",
+  "widgetId": "sjk93a93e3",
   "widgetName": "Button3"
 }

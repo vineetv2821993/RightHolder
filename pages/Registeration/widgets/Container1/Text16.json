@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 53,
+  "bottomRow": 48,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -41,11 +41,11 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 53,
-  "originalTopRow": 48,
+  "originalBottomRow": 49,
+  "originalTopRow": 44,
   "overflow": "NONE",
   "parentColumnSpace": 16.052734375,
-  "parentId": "fptruhz2e1",
+  "parentId": "4zci28ji3l",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -60,14 +60,14 @@
     "Suggested",
     "Content"
   ],
-  "text": "Confirm Phone Number",
+  "text": "Confirm Phone Number  <span style=\"color: red;\">*</span>",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 48,
+  "topRow": 44,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "0h30n3iaye",
+  "widgetId": "zz1ymn10w1",
   "widgetName": "Text16"
 }

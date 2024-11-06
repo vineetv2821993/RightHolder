@@ -51,10 +51,15 @@ export default {
 	},
 	creatRightHolderUser: async function() {
 		const userId = this.generateUUID(); // Generate a UUID for the new user
+		const verifyId = this.generateUUID(); // Generate a UUID for the new user
+
 		const passwordHash = CryptoJS.SHA256(Input5.text).toString(); // Hash the password
 		if(this.validateData()){
+			const verificationToken = this.generateUUID(); 
 			// Prepare the payload for the insert operation
 			this.exitQuery = `SELECT id FROM taoq_research.rightHolder WHERE email = '${Input4.text}' or username ='${Input3.text}'`;
+
+			const verificationExpires = moment().add(2, 'hours').format('YYYY-MM-DD HH:mm:ss');
 
 			// Run the exit query to check if the user exists
 			const result = await ExitRightHolder.run();
@@ -71,13 +76,28 @@ export default {
 					inserted_at: moment().format('YYYY-MM-DD HH:mm:ss'),
 					updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
 				};
+				const tokenPayload = {
+					id: verifyId,
+					user_id: userId,
+					token: verificationToken,
+					expire_at: verificationExpires
+				};
 
 				// Insert user into the rightHolder table using Appsmith's API or SQL Query
 				try {
 					const response = await Insert_User.run(userPayload);
 					if (response) {
+						await Insert_Verification_Token.run(tokenPayload); // Add the token to the new table
 						showAlert('User created successfully!', 'success'); // Show success message
-						await closeModal(Modal1.name);			
+
+						await storeValue("signUpRightHolderName",Input3.text);
+						await storeValue("signUpRightHolderEmail",Input4.text);
+						await storeValue("emailVerifyToken",verificationToken);
+						await closeModal(Modal1.name);
+						await showModal(Modal7.name);
+
+						// Send the verification email
+						await verifyEmail.run(); // Call your email function
 						await	resetWidget(Modal1.name);
 					}
 				} catch (err) {

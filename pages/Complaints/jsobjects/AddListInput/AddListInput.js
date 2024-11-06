@@ -1,7 +1,7 @@
 export default {
 	index:1,
 	// Initial list array to hold dynamic fields, starting with one entry
-	listArray: [{ id: this.index, input1: '', Description: '',FilePicker1:'' }],
+	listArray: [{ id: this.index, input1: '', Description: '', FilePicker1: [] }],
 	lsitPageNo:1,
 
 	// Function to add new input fields dynamically
@@ -23,11 +23,7 @@ export default {
 		this.lsitPageNo = Math.ceil(totalItems / itemsPerPage); // Calculate the page 
 
 	},
-	removeFileListOnCrosssClick(){
-		resetWidget("FilePicker1", true);
-		List1.listData[List1.pageNo-1].FilePicker1 = "";
-		this.listArray[List1.pageNo-1].FilePicker1 = "";
-	},
+
 	// Function to delete an input field container
 	deleteInputField(id) {
 		// Filter out the container with the matching ID
@@ -43,14 +39,35 @@ export default {
 		console.log("Updated List after delete: ", this.listArray);
 
 	},
-
+	removeFileListOnCrosssClick(id) {
+		const index = this.listArray.findIndex(item => item.id === id);
+		if (index !== -1) {
+			List1.listData[List1.pageNo-1].FilePicker1 = [];
+			this.listArray[index].FilePicker1 = []; // Reset the file array
+			resetWidget("FilePicker1", true); // Reset the FilePicker widget
+		}
+		console.log("File list after reset: ", this.listArray);
+	},
 	// Function to handle input changes
 	handleInputChange(id, field, value) {
 		// Update the specific field of the relevant input row
-		console.log()
-		this.listArray = this.listArray.map(item => 
-																				item.id === id ? { ...item, [field]: value } : item
-																			 );
+		console.log(field,"field",value)
+		if (field === "FilePicker1") {
+			const index = this.listArray.findIndex(item => item.id === id);
+			if (index !== -1) {
+				if (this.listArray[index].FilePicker1.length < 3) {
+					this.listArray[index].FilePicker1.push(value); // Add new file
+				} else {
+					console.warn("Cannot add more than 3 files."); // Warning when trying to add more than 3
+				}
+			}
+		}
+		else{
+			this.listArray = this.listArray.map(item => 
+																					item.id === id ? { ...item, [field]: value } : item
+																				 );
+		}
+
 		// Log the changes for debugging
 		console.log("Updated Input Fields: ", this.listArray);
 

@@ -1,0 +1,5 @@
+UPDATE taoq_research.right_holder_email_verification
+SET 
+token = '{{this.params.verificationToken}}',
+expire_at = '{{moment().add(2, 'hours').format('YYYY-MM-DD HH:mm:ss')}}'
+WHERE rightHolder_id = '{{this.params.user_id}}';

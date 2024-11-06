@@ -44,7 +44,7 @@
   "originalBottomRow": 7,
   "originalTopRow": 1,
   "overflow": "NONE",
-  "parentId": "13s5td54bm",
+  "parentId": "i7xzg1w6fk",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 57,
@@ -58,7 +58,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "Are you Sure wants to add this complaint.",
+  "text": "Are you sure wants to add this Complaints ?",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
@@ -66,6 +66,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "pm7nl9cpk7",
+  "widgetId": "8u0dg4l6j8",
   "widgetName": "Text14"
 }

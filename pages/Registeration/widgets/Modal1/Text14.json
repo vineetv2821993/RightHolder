@@ -44,7 +44,7 @@
   "originalBottomRow": 7,
   "originalTopRow": 1,
   "overflow": "NONE",
-  "parentId": "ebmg65kh7s",
+  "parentId": "qr4enm462n",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 53,
@@ -58,7 +58,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "Are you sure wants all the information is correct?",
+  "text": "Are you sure wants all the information is correct ?",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
@@ -66,6 +66,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "6q2lim3jpt",
+  "widgetId": "3iaafe9tos",
   "widgetName": "Text14"
 }

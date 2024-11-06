@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 79,
+  "bottomRow": 77,
   "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "defaultText": "{{GetRightHolderInfo.data[0].Status}}",
   "displayName": "Input",
@@ -33,7 +33,7 @@
   "label": "Status",
   "labelAlignment": "left",
   "labelPosition": "Left",
-  "labelStyle": "BOLD",
+  "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": "19",
   "leftColumn": 10,
@@ -53,7 +53,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "parentColumnSpace": 10.40625,
-  "parentId": "fj0705d68m",
+  "parentId": "93qq05sh0b",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -71,9 +71,9 @@
     "Inputs"
   ],
   "thumbnailSVG": "/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
-  "topRow": 72,
+  "topRow": 70,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "tkdl4is9v8",
+  "widgetId": "689ad3yblg",
   "widgetName": "Input13"
 }

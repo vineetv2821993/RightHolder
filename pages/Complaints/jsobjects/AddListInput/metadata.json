@@ -13,7 +13,7 @@
       },
       {
         "name": "listArray",
-        "value": "[{\n  id: AddListInput.index,\n  input1: '',\n  Description: '',\n  FilePicker1: ''\n}]"
+        "value": "[{\n  id: AddListInput.index,\n  input1: '',\n  Description: '',\n  FilePicker1: []\n}]"
       },
       {
         "name": "lsitPageNo",

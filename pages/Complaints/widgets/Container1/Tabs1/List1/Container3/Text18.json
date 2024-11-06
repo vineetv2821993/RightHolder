@@ -43,11 +43,11 @@
   },
   "overflow": "NONE",
   "parentColumnSpace": 9.581333875656128,
-  "parentId": "9269kbgio6",
+  "parentId": "qwbs4tkpbp",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 14,
+  "rightColumn": 12,
   "searchTags": [
     "typography",
     "paragraph",
@@ -58,7 +58,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "Screenshot Of Proof",
+  "text": "Screenshot Of Proof's   <span style=\"color: red;\">*</span>",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
@@ -66,6 +66,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "y6q19wp18l",
+  "widgetId": "s36rox6m5s",
   "widgetName": "Text18"
 }

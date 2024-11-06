@@ -4,7 +4,7 @@
   ],
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 91,
+  "bottomRow": 96,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "displayName": "FilePicker",
@@ -30,7 +30,7 @@
   "isVisible": true,
   "key": "lxdcwmz572",
   "label": "Select Files",
-  "leftColumn": 22,
+  "leftColumn": 21,
   "maxFileSize": "5",
   "maxNumFiles": "1",
   "minWidth": 120,
@@ -49,11 +49,11 @@
   "originalBottomRow": 91,
   "originalTopRow": 87,
   "parentColumnSpace": 16.052734375,
-  "parentId": "fptruhz2e1",
+  "parentId": "4zci28ji3l",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 38,
+  "rightColumn": 37,
   "searchTags": [
     "upload"
   ],
@@ -62,9 +62,9 @@
     "Inputs"
   ],
   "thumbnailSVG": "/static/media/thumbnail.164363adea04c44e54b1fd47657a579e.svg",
-  "topRow": 87,
+  "topRow": 92,
   "type": "FILE_PICKER_WIDGET_V2",
   "version": 1,
-  "widgetId": "9m08gwjjcn",
+  "widgetId": "7awpx7knzj",
   "widgetName": "FilePicker2"
 }

@@ -1,0 +1,6 @@
+UPDATE complaints_title
+SET 
+  complaint_form_id = '{{this.params.complaint_form_id}}',
+  updated_at = '{{this.params.updated_at}}'
+WHERE 
+  id = '{{this.params.id}}';

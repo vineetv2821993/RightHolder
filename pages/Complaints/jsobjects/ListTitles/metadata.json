@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66fb995faf2b8e5a2a63f337_532fc542-d90a-4809-8da6-3387166364e0",
+  "id": "Complaints_ListTitles",
+  "unpublishedCollection": {
+    "name": "ListTitles",
+    "pageId": "Complaints",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "index",
+        "value": "1"
+      },
+      {
+        "name": "titleList",
+        "value": "[{\n  id: 1,\n  titleName: \"\",\n  FilePicker2: []\n}]"
+      }
+    ]
+  }
+}

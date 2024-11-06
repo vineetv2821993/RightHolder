@@ -1,1 +1,1 @@
-SELECT * FROM rightHolderProfile where rightHolderUserId='{{appsmith.store.rightHolderUserId}}';
+SELECT * FROM taoq_research.rightHolderProfile where rightHolderUserId='{{appsmith.store.rightHolderUserId}}';

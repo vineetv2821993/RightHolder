@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 263,
+  "bottomRow": 242,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
@@ -47,7 +47,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "z1xqn7kgtg",
+      "parentId": "v7a2cxd8i3",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -56,7 +56,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "13s5td54bm",
+      "widgetId": "i7xzg1w6fk",
       "widgetName": "Canvas14"
     }
   ],
@@ -75,7 +75,7 @@
   "isDeprecated": false,
   "isLoading": false,
   "key": "ssxxapqpb1",
-  "leftColumn": 1,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 24,
   "minHeight": 240,
@@ -95,7 +95,7 @@
   "parentId": "0",
   "parentRowSpace": 1,
   "renderMode": "CANVAS",
-  "rightColumn": 1,
+  "rightColumn": 0,
   "searchTags": [
     "dialog",
     "popup",
@@ -106,10 +106,10 @@
     "Layout"
   ],
   "thumbnailSVG": "/static/media/thumbnail.c20e144182d9af35cde59e39d9afe632.svg",
-  "topRow": 23,
+  "topRow": 2,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "z1xqn7kgtg",
+  "widgetId": "v7a2cxd8i3",
   "widgetName": "Modal2",
   "width": 648
 }

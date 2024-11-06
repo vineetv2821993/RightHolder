@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 698,
+  "bottomRow": 521,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
@@ -47,7 +47,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "8rpjsdwo3f",
+      "parentId": "giahcs7u2r",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -56,7 +56,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "5o2n8mtxaq",
+      "widgetId": "6le1lvok9p",
       "widgetName": "Canvas3"
     }
   ],
@@ -105,10 +105,10 @@
     "Layout"
   ],
   "thumbnailSVG": "/static/media/thumbnail.c20e144182d9af35cde59e39d9afe632.svg",
-  "topRow": 178,
+  "topRow": 1,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "8rpjsdwo3f",
+  "widgetId": "giahcs7u2r",
   "widgetName": "OpenFileImageCopyright",
   "width": 790
 }

@@ -1,0 +1,13 @@
+INSERT INTO taoq_research.right_holder_email_verification (
+	id,
+	rightHolder_id,
+	token,
+	created_at,
+	expire_at
+) VALUES (
+	'{{this.params.id}}',
+	'{{this.params.user_id}}',
+	'{{this.params.token}}',
+	CURRENT_TIMESTAMP,
+	'{{this.params.expire_at}}'
+);

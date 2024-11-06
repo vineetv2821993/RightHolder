@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO taoq_research.rightHolder (\n\tid,\n\tusername,\n\tpassword_hash,\n\temail,\n\tinserted_at,\n\tupdated_at\n) VALUES (\n\t'{{this.params.id}}',\n\t'{{this.params.username}}',\n\t'{{this.params.password_hash}}',\n\t'{{this.params.email}}',\n\t'{{this.params.inserted_at}}',\n\t'{{this.params.updated_at}}'\n);\n",
+      "body": "INSERT INTO taoq_research.rightHolder (\n\tid,\n\tusername,\n\tpassword_hash,\n\temail,\n\tinserted_at,\n\tupdated_at\n) VALUES (\n\t'{{this.params.id}}',\n\t'{{this.params.username}}',\n\t'{{this.params.password_hash}}',\n\t'{{this.params.email}}',\n\t'{{this.params.inserted_at}}',\n\t'{{this.params.updated_at}}'\n);",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

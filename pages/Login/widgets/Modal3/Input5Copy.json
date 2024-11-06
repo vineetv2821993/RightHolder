@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 43,
+  "bottomRow": 42,
   "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "defaultText": "{{GetRightHolderInfo.data[0].phoneNumber}}",
   "displayName": "Input",
@@ -55,7 +55,7 @@
   "originalBottomRow": 45,
   "originalTopRow": 38,
   "parentColumnSpace": 6.9375,
-  "parentId": "fj0705d68m",
+  "parentId": "93qq05sh0b",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -73,9 +73,9 @@
     "Inputs"
   ],
   "thumbnailSVG": "/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
-  "topRow": 36,
+  "topRow": 35,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "xcaxilkg58",
+  "widgetId": "2zai6m6y9k",
   "widgetName": "Input5Copy"
 }

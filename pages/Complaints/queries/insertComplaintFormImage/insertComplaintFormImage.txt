@@ -1,0 +1,13 @@
+INSERT INTO taoq_research.complaint_form_screenshot (
+	image_id,
+	image_data,
+	complaint_form_id,
+	inserted_at,
+	updated_at
+) VALUES (
+	'{{this.params.image_id}}',               -- Assuming image_id is generated/unique
+	FROM_BASE64('{{this.params.image_data}}'), -- Base64 image data
+	'{{this.params.complaint_form_id}}',      -- Associated complaint form ID
+	'{{this.params.inserted_at}}',             -- Inserted timestamp
+	'{{this.params.updated_at}}'                -- Updated timestamp
+);

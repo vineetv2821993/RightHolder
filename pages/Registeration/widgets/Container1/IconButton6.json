@@ -1,7 +1,8 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 88,
+  "bottomRow": 106,
+  "bottomRowBeforeCollapse": 86,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "TERTIARY",
@@ -36,9 +37,9 @@
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "{{FilePicker2.files.length>0 ?\ntrue : false\n}}",
+  "isVisible": "{{FilePicker1.files.length>0 ?\ntrue : false\n}}",
   "key": "gmywrfy382",
-  "leftColumn": 58,
+  "leftColumn": 55,
   "minWidth": 50,
   "mobileBottomRow": 26,
   "mobileLeftColumn": 58,
@@ -52,13 +53,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{resetWidget(\"FilePicker2\", true);}}",
+  "onClick": "{{resetWidget(\"FilePicker1\", true);}}",
+  "originalBottomRow": 86,
+  "originalTopRow": 82,
   "parentColumnSpace": 12.59375,
-  "parentId": "fptruhz2e1",
+  "parentId": "4zci28ji3l",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 60,
+  "rightColumn": 57,
   "searchTags": [
     "click",
     "submit"
@@ -67,9 +70,10 @@
     "Buttons"
   ],
   "thumbnailSVG": "/static/media/thumbnail.b02b764a52db45d332efa723178a50a4.svg",
-  "topRow": 84,
+  "topRow": 102,
+  "topRowBeforeCollapse": 82,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "qw1n7514z4",
+  "widgetId": "otsurgidqb",
   "widgetName": "IconButton6"
 }

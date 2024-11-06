@@ -33,6 +33,10 @@
     {
       "id": "Registeration",
       "isDefault": false
+    },
+    {
+      "id": "VerifyEmail",
+      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {

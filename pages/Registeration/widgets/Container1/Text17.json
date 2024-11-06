@@ -42,10 +42,10 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "originalBottomRow": 101,
-  "originalTopRow": 86,
+  "originalTopRow": 88,
   "overflow": "NONE",
   "parentColumnSpace": 16.052734375,
-  "parentId": "fptruhz2e1",
+  "parentId": "4zci28ji3l",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -60,14 +60,14 @@
     "Suggested",
     "Content"
   ],
-  "text": "Please upload your Valid Copyright Ownership Document/Authorised Representative Letter/Trademark Certificate",
+  "text": "Please upload your Valid Copyright Ownership Document/Authorised Representative Letter/Trademark Certificate   <span style=\"color: red;\">*</span>",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 86,
+  "topRow": 88,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "6xaqv83f76",
+  "widgetId": "x7dgq5yxy6",
   "widgetName": "Text17"
 }

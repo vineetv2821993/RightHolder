@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 47,
+  "bottomRow": 44,
   "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "defaultText": "",
   "displayName": "Input",
@@ -34,7 +34,7 @@
   "labelTextColor": "#231f20",
   "labelTextSize": "1rem",
   "labelWidth": "14",
-  "leftColumn": 29,
+  "leftColumn": 28,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -50,15 +50,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 48,
+  "originalBottomRow": 47,
   "originalTopRow": 41,
   "parentColumnSpace": 12.125,
-  "parentId": "fptruhz2e1",
+  "parentId": "4zci28ji3l",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 42,
+  "rightColumn": 41,
   "searchTags": [
     "form",
     "text input",
@@ -72,9 +72,9 @@
     "Inputs"
   ],
   "thumbnailSVG": "/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
-  "topRow": 41,
+  "topRow": 38,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "wes7qjsff8",
+  "widgetId": "o6dh6ke2c3",
   "widgetName": "phoneNumber"
 }

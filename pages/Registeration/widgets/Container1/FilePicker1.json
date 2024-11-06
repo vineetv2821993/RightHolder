@@ -4,7 +4,7 @@
   ],
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 102,
+  "bottomRow": 107,
   "boxShadow": "none",
   "buttonColor": "#034059",
   "displayName": "FilePicker",
@@ -27,7 +27,7 @@
   "isVisible": true,
   "key": "caopdsmnd2",
   "label": "Select Files",
-  "leftColumn": 22,
+  "leftColumn": 21,
   "maxFileSize": 5,
   "maxNumFiles": 1,
   "minWidth": 120,
@@ -43,14 +43,14 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 102,
-  "originalTopRow": 98,
+  "originalBottomRow": 101,
+  "originalTopRow": 97,
   "parentColumnSpace": 12.15625,
-  "parentId": "fptruhz2e1",
+  "parentId": "4zci28ji3l",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 38,
+  "rightColumn": 37,
   "searchTags": [
     "upload"
   ],
@@ -59,9 +59,9 @@
     "Inputs"
   ],
   "thumbnailSVG": "/static/media/thumbnail.164363adea04c44e54b1fd47657a579e.svg",
-  "topRow": 98,
+  "topRow": 103,
   "type": "FILE_PICKER_WIDGET_V2",
   "version": 1,
-  "widgetId": "gjkxfnojra",
+  "widgetId": "x8v45mn3pu",
   "widgetName": "FilePicker1"
 }

@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66fb995faf2b8e5a2a63f337_65dba112-3cb9-47d0-ac7b-96e91c386d54",
+  "id": "Login_ResendEMail",
+  "unpublishedCollection": {
+    "name": "ResendEMail",
+    "pageId": "Login",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

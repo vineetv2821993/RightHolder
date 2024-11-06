@@ -1,0 +1,1 @@
+DELETE FROM taoq_research.right_holder_email_verification WHERE token ='{{this.params.token}}'

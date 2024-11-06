@@ -3,7 +3,7 @@
   "alignWidget": "LEFT",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 70,
+  "bottomRow": 86,
   "defaultCheckedState": false,
   "displayName": "Checkbox",
   "dynamicBindingPathList": [
@@ -21,12 +21,12 @@
   "isRequired": true,
   "isVisible": true,
   "key": "j3m3hhcqur",
-  "label": "Acknowledgment, Good faith belief, Authority to act",
+  "label": "",
   "labelPosition": "Left",
   "labelStyle": "BOLD",
   "labelTextColor": "#231f20",
   "labelTextSize": "1rem",
-  "leftColumn": 17,
+  "leftColumn": 38,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -42,14 +42,14 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 68,
-  "originalTopRow": 64,
+  "originalBottomRow": 86,
+  "originalTopRow": 82,
   "parentColumnSpace": 12.15625,
-  "parentId": "b2jh9snvh2",
+  "parentId": "vqp8f6z5w4",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 48,
+  "rightColumn": 40,
   "searchTags": [
     "boolean"
   ],
@@ -57,9 +57,9 @@
     "Toggles"
   ],
   "thumbnailSVG": "/static/media/thumbnail.aa4d27836e27bb6c4c45db14dee8f2b2.svg",
-  "topRow": 64,
+  "topRow": 82,
   "type": "CHECKBOX_WIDGET",
   "version": 1,
-  "widgetId": "3jidpm92nj",
+  "widgetId": "6thh3pwd9u",
   "widgetName": "Checkbox1"
 }

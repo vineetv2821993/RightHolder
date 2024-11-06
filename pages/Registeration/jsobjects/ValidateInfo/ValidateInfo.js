@@ -89,6 +89,10 @@ export default {
 			isValid = false;
 			showAlert("At least one copy rigth letter file needs to be uploaded", "error");
 		}
+		if(!FilePicker1Copy || !FilePicker1Copy.files || FilePicker1Copy.files.length === 0){
+			isValid = false;
+			showAlert("At least one content Content Ownership Certificate needs to be uploaded", "error");
+		}
 		if(isValid){
 			showModal(Modal1.name)
 		}

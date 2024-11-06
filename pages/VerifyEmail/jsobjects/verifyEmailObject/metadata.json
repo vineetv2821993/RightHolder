@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66fb995faf2b8e5a2a63f337_a64411e0-500b-44db-80ea-9e3af127b521",
+  "id": "VerifyEmail_verifyEmailObject",
+  "unpublishedCollection": {
+    "name": "verifyEmailObject",
+    "pageId": "VerifyEmail",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "rightHolderData",
+        "value": "\"\""
+      },
+      {
+        "name": "loginTimeout",
+        "value": "null"
+      }
+    ]
+  }
+}

@@ -43,7 +43,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{closeModal(OpenFileImageProofCopy.name);}}",
-  "parentId": "qh14fulcso",
+  "parentId": "y94spbt2qk",
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
   "rightColumn": 64,
@@ -58,6 +58,6 @@
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "qmyri8ezea",
+  "widgetId": "ajmfjbtpu3",
   "widgetName": "IconButton2Copy"
 }

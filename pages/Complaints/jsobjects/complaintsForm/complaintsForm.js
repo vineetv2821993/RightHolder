@@ -1,12 +1,13 @@
 export default {
-	newComplaintCaseId:'',
+	newComplaintCaseId: '',
 	generateUUID() {
-		return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-			const r = Math.random() * 16 | 0,
-						v = c === 'x' ? r : (r & 0x3 | 0x8);
+		return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+			const r = Math.random() * 16 | 0;
+			const v = c === 'x' ? r : (r & 0x3 | 0x8);
 			return v.toString(16);
 		});
 	},
+
 	async checkExpireUser() {
 		// Fetch the expire_at value from the database
 		let expireDate = await checkExpire.run({id:appsmith.store.rightHolderUserId});
@@ -28,9 +29,8 @@ export default {
 	},
 	async submitForm() {
 		if (!await this.checkExpireUser()) {
-			let complaint_Case_id = await CountComplaintForm.run();
+			const complaint_Case_id = await CountComplaintForm.run();
 			let countIndex = complaint_Case_id[0].count;
-			let indexCount=countIndex;
 			let errors = []; // To collect error messages
 
 			try {
@@ -38,44 +38,52 @@ export default {
 					let isUnique = false;
 					let complaint_form_id = this.generateUUID();
 					let complaint_status_id = this.generateUUID();
-					console.log("isUnique",isUnique,i);
+
+					// Generate a unique complaint_case_id
 					while (!isUnique) {
-						countIndex += 1;
+						countIndex++;
+						const indexCount = countIndex < 10 ? `0${countIndex}` : countIndex;
 
-						if (countIndex < 10) {
-							indexCount = `0${countIndex}`;
-						}
-						else{
-							indexCount=countIndex;
-						}
-						console.log("isUnique",isUnique,i,countIndex);
-
-
-						// Check if the complaint_Case_id is unique
+						// Create new complaint case ID
 						this.newComplaintCaseId = `${Input12.text}-${complaint_Case_id[0].count}-${indexCount}-${moment().format("YYYY-MM-DD")}`;
-						let existingRecord = await CheckComplaintCaseId.run({ complaint_Case_id:this.newComplaintCaseId });
-						console.log("existingRecord",existingRecord);
+						let existingRecord = await CheckComplaintCaseId.run({ complaint_Case_id: this.newComplaintCaseId });
+
+						// Proceed if the ID is unique
 						if (!existingRecord || existingRecord.length === 0) {
-							isUnique = true; // Proceed if the ID is unique
+							isUnique = true;
 						}
 					}
-					console.log("conyins",`${Input12.text}-${complaint_Case_id[0].count}-${countIndex}-${moment().format("YYYY-MM-DD")}`);
-					// Proceed with inserting the form
+
+					// Insert the form
 					try {
 						await insertComplaintForm.run({
 							complaint_form_id: complaint_form_id,
 							complaint_request_id: `${Input12.text}-${complaint_Case_id[0].count}-${moment().format("YYYY-MM-DD")}`,
-							complaint_Case_id: `${this.newComplaintCaseId}`,
+							complaint_Case_id: this.newComplaintCaseId,
 							category_type: Select2.selectedOptionLabel,
 							acknowledgment: Checkbox1.isChecked,
 							original_work: originalWork.text,
 							rightHolderUserId: appsmith.store.rightHolderUserId,
-							infringing_url:AddListInput.listArray[i].input1,
-							documentProff: AddListInput.listArray[i].FilePicker1,
+							infringing_url: AddListInput.listArray[i].input1,
 							description: AddListInput.listArray[i].Description,
 							inserted_at: moment().format('YYYY-MM-DD HH:mm:ss'),
 							updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
 						});
+
+						// Insert images
+						for (let j = 0; j < AddListInput.listArray[i].FilePicker1[0].length; j++) {
+							const image_id = this.generateUUID();
+							// Removing prefix to keep only the actual Base64 data
+							const base64Data = AddListInput.listArray[i].FilePicker1[0][j].data.replace(/^data:image\/\w+;base64,/, '');
+
+							await insertComplaintFormImage.run({
+								image_id: image_id,
+								image_data:  base64Data,
+								complaint_form_id: complaint_form_id,
+								inserted_at: moment().format('YYYY-MM-DD HH:mm:ss'),
+								updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
+							});
+						}
 
 						// Insert into complaint status form
 						await insertComplaintsStatusForm.run({
@@ -88,19 +96,27 @@ export default {
 							updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
 						});
 
+						await UpdateComplaintTitle.run({
+							complaint_form_id: complaint_form_id,
+							updated_at: moment().format('YYYY-MM-DD HH:mm:ss'),
+							id: Select3.selectedOptionValue
+						})
+
 					} catch (ex) {
-						console.error("Error while inserting forms for item " + i + ":", ex);
+						console.error(`Error while inserting forms for item ${i}:`, ex);
 
 						// Rollback if an error occurs
 						try {
-							await deleteComplaintForm.run({ complaint_form_id: complaint_form_id });
 							await deleteComplaintsStatusForm.run({ complaint_status_id: complaint_status_id });
+
+							await deleteComplaintForm.run({ complaint_form_id: complaint_form_id });
+
 						} catch (rollbackEx) {
-							console.error("Error during rollback for complaint ID " + complaint_form_id + ":", rollbackEx);
-							errors.push("Error during rollback for complaint ID " + complaint_form_id);
+							console.error(`Error during rollback for complaint ID ${complaint_form_id}:`, rollbackEx);
+							errors.push(`Error during rollback for complaint ID ${complaint_form_id}`);
 						}
 
-						errors.push("Error inserting form for item " + i + ": " + ex.message);
+						errors.push(`Error inserting form for item ${i}: ${ex.message}`);
 					}
 				}
 			} catch (outerEx) {
@@ -108,33 +124,35 @@ export default {
 				errors.push("An unexpected error occurred during submission. Please try again later.");
 			}
 
+			// Show alerts based on errors
 			if (errors.length > 0) {
 				showAlert("Some errors occurred:\n" + errors.join("\n"), "error");
-				resetWidget("Select2", true);
-				resetWidget("originalWork", true);
-				resetWidget("List1", true);
-				resetWidget("Checkbox1", true);
+				this.resetWidgets();
 			} else {
+				this.resetForm();
 				showAlert("All forms successfully submitted", "info");
+				resetWidget("Select3",true);
 				closeModal(Modal2.name);
-				AddListInput.listArray= [
-					{ 
-						id: this.index, 
-						input1: '', 
-						Description: '',
-						FilePicker1:'' 
-					}
-				],
-					resetWidget("Select2", true);
-				resetWidget("originalWork", true);
-				resetWidget("List1", true);
-				resetWidget("Checkbox1", true);
 			}
 		} else {
 			// Session expired message and redirection to login
 			showAlert("Session has expired, please login again", "warning");
 			navigateTo('Login', {}, 'SAME_WINDOW');
 		}
-	}
+	},
 
-}
+	resetWidgets() {
+		resetWidget("Select2", true);
+		resetWidget("originalWork", true);
+		resetWidget("List1", true);
+		resetWidget("Checkbox1", true);
+	},
+
+	resetForm() {
+		AddListInput.listArray = [
+			{ id: this.index, 
+			 input1: '', Description: '', FilePicker1: [] }
+		];
+		this.resetWidgets();
+	}
+};

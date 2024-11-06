@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 34,
+  "bottomRow": 40,
   "boxShadow": "none",
   "buttonColor": "#078467",
   "buttonVariant": "PRIMARY",
@@ -26,7 +26,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "oskvmnqzhp",
-  "leftColumn": 40,
+  "leftColumn": 42,
   "minWidth": 120,
   "mobileBottomRow": 34,
   "mobileLeftColumn": 38,
@@ -41,15 +41,17 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{showModal(Modal1.name).then(() => {\n  resetWidget(\"Modal1\", true);\n});}}",
+  "originalBottomRow": 40,
+  "originalTopRow": 36,
   "parentColumnSpace": 9.65267562866211,
-  "parentId": "844122fsmy",
+  "parentId": "x81u8s3xh8",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 60,
+  "rightColumn": 62,
   "searchTags": [
     "click",
     "submit"
@@ -59,9 +61,9 @@
   ],
   "text": "Sign Up for SAIP",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 30,
+  "topRow": 36,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "9wo1b0hzxs",
+  "widgetId": "sdn8d0e5js",
   "widgetName": "Button2"
 }

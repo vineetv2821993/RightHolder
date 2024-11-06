@@ -25,7 +25,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "yaidg678k9",
-  "leftColumn": 24,
+  "leftColumn": 19,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -42,10 +42,10 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "overflow": "NONE",
-  "parentId": "evx3s0cymc",
+  "parentId": "wxx1vj6y0v",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 40,
+  "rightColumn": 35,
   "searchTags": [
     "typography",
     "paragraph",
@@ -64,6 +64,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "pzahqmojxr",
+  "widgetId": "0tsz3l4p6t",
   "widgetName": "Text4"
 }

@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 87,
+  "bottomRow": 86,
   "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "defaultText": "{{GetRightHolderInfo.data[0].reasonStatus ?GetRightHolderInfo.data[0].reasonStatus : \"\" }}",
   "displayName": "Input",
@@ -38,7 +38,7 @@
   "isRequired": false,
   "isVisible": "{{GetRightHolderInfo.data.length >0 && GetRightHolderInfo.data[0].reasonStatus && GetRightHolderInfo.data[0].Status === \"Rejected\" ? true: false}}",
   "key": "xie9ha061z",
-  "label": "Reason Of Rejection By SAIP",
+  "label": "Reason By SAIP",
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelStyle": "BOLD",
@@ -63,7 +63,7 @@
   "originalBottomRow": 81,
   "originalTopRow": 74,
   "parentColumnSpace": 6.9375,
-  "parentId": "eru1fa3m8k",
+  "parentId": "bxm82u3pro",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -81,9 +81,9 @@
     "Inputs"
   ],
   "thumbnailSVG": "/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
-  "topRow": 80,
+  "topRow": 79,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "wbz6qhvgqj",
+  "widgetId": "9j0d88r8sy",
   "widgetName": "Input11Copy1"
 }

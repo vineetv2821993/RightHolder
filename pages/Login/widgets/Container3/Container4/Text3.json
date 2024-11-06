@@ -25,7 +25,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "yaidg678k9",
-  "leftColumn": 15,
+  "leftColumn": 37,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -41,15 +41,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 37,
+  "originalBottomRow": 35,
   "originalTopRow": 30,
   "overflow": "NONE",
   "parentColumnSpace": 9.65267562866211,
-  "parentId": "844122fsmy",
+  "parentId": "x81u8s3xh8",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 35,
+  "rightColumn": 64,
   "searchTags": [
     "typography",
     "paragraph",
@@ -60,7 +60,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "Don't have an account?",
+  "text": "Don't have an account ? Please Sign Up.",
   "textAlign": "LEFT",
   "textColor": "#ffffff",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
@@ -68,6 +68,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "q2oa7l9yjd",
+  "widgetId": "1ue0z3pz26",
   "widgetName": "Text3"
 }

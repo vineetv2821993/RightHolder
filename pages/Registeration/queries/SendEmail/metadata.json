@@ -10,11 +10,11 @@
       "formData": {
         "command": "SEND",
         "send": {
-          "attachments": "[{{FilePicker2.files[0]}},{{FilePicker1.files[0]}}]",
+          "attachments": "[{{FilePicker2.files[0]}},{{FilePicker1.files[0]}},{{FilePicker1Copy.files[0]}}]",
           "bodyType": "text/html",
           "from": "saip@naxap.com",
           "subject": "Email Subject",
-          "to": "jasmeet.singh@bytescare.com"
+          "to": "{{appsmith.store.signUpRightHolderEmail}}"
         }
       },
       "paginationType": "NONE",
@@ -33,6 +33,9 @@
       },
       {
         "key": "formData.send.attachments"
+      },
+      {
+        "key": "formData.send.to"
       }
     ],
     "executeOnLoad": false,

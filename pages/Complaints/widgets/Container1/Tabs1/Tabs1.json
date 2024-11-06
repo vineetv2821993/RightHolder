@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 113,
+  "bottomRow": 112,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -50,7 +50,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "95xdh7ti28",
+      "parentId": "nkcv8w2sus",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -61,12 +61,12 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "j2bips6f9n",
+      "widgetId": "90clsrleqb",
       "widgetName": "Canvas110"
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1200,
+      "bottomRow": 1100,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -105,7 +105,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "95xdh7ti28",
+      "parentId": "nkcv8w2sus",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -116,8 +116,63 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "b2jh9snvh2",
+      "widgetId": "vqp8f6z5w4",
       "widgetName": "Canvas2"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 1010,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "h8yw2ya2h5",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 1040,
+      "minWidth": 450,
+      "mobileBottomRow": 1041,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 1105.34375,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "onCanvasUI": {
+        "disableParentSelection": true,
+        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+      },
+      "parentColumnSpace": 1,
+      "parentId": "nkcv8w2sus",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 1105.34375,
+      "tabId": "tabel4pclirgd",
+      "tabName": "Add  Multiple Titles",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "knjujjn84x",
+      "widgetName": "Canvas111"
     }
   ],
   "defaultTab": "Add Complaints",
@@ -146,7 +201,7 @@
   "key": "cv1hn3sp9i",
   "leftColumn": 1,
   "maxDynamicHeight": 105,
-  "minDynamicHeight": 104,
+  "minDynamicHeight": 70,
   "minWidth": 450,
   "mobileBottomRow": 30,
   "mobileLeftColumn": 10,
@@ -162,13 +217,13 @@
   },
   "onTabSelected": "{{GetViewComplaintStatus.run();\ncountViewComplaintStatus.run()}}",
   "originalBottomRow": 112,
-  "originalTopRow": 8,
+  "originalTopRow": 7,
   "parentColumnSpace": 17.828125,
-  "parentId": "eo00ptlfau",
+  "parentId": "27bj57qnrt",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 62,
   "shouldScrollContents": true,
   "shouldShowTabs": true,
   "tabsObj": {
@@ -179,7 +234,7 @@
       "isVisible": true,
       "label": "View Complaints",
       "positioning": "vertical",
-      "widgetId": "j2bips6f9n"
+      "widgetId": "90clsrleqb"
     },
     "tab2": {
       "id": "tab2",
@@ -188,16 +243,23 @@
       "isVisible": true,
       "label": "Add Complaints",
       "positioning": "vertical",
-      "widgetId": "b2jh9snvh2"
+      "widgetId": "vqp8f6z5w4"
+    },
+    "tabel4pclirgd": {
+      "id": "tabel4pclirgd",
+      "index": 2,
+      "isVisible": true,
+      "label": "Add  Multiple Titles",
+      "widgetId": "knjujjn84x"
     }
   },
   "tags": [
     "Layout"
   ],
   "thumbnailSVG": "/static/media/thumbnail.902d280515fd575657e8ccf99545112b.svg",
-  "topRow": 8,
+  "topRow": 7,
   "type": "TABS_WIDGET",
   "version": 3,
-  "widgetId": "95xdh7ti28",
+  "widgetId": "nkcv8w2sus",
   "widgetName": "Tabs1"
 }

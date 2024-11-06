@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT count(*)  as count FROM complaints_form \nINNER JOIN rightHolderProfile on rightHolderProfile.rightHolderUserId = complaints_form.rightHolderUserId\nwhere rightHolderProfile.company_name ='{{Input12.text}}';",
+      "body": "SELECT count(*)  as count FROM taoq_research.complaints_form \nINNER JOIN rightHolderProfile on rightHolderProfile.rightHolderUserId = complaints_form.rightHolderUserId\nwhere rightHolderProfile.company_name ='{{Input12.text}}';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

@@ -44,7 +44,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{closeModal(OpenFileImageProofCopy.name);}}",
-  "parentId": "qh14fulcso",
+  "parentId": "y94spbt2qk",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -63,6 +63,6 @@
   "topRow": 46,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "tj635fttrs",
+  "widgetId": "pw23ohenqs",
   "widgetName": "Button4Copy"
 }
