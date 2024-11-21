@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 5,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -47,7 +47,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 20,
+  "rightColumn": 19,
   "searchTags": [
     "typography",
     "paragraph",
@@ -58,14 +58,14 @@
     "Suggested",
     "Content"
   ],
-  "text": "OwnerShip Certificate   <span style=\"color: red;\">*</span>",
+  "text": "Titles   <span style=\"color: red;\">*</span>",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 9,
+  "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "7wijmf8pdk",
-  "widgetName": "Text33"
+  "widgetId": "kkkcibuyig",
+  "widgetName": "Text33Copy"
 }

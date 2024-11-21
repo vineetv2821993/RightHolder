@@ -11,7 +11,7 @@ export default {
 		const newId = this.index;
 
 		// Add a new input field object to the array
-		this.listArray.push({ id: newId, input1: '', Description: '',files:'' });
+		this.listArray.push({ id: newId, input1: '', Description: '',FilePicker1: []});
 
 		// Log the updated list data to the console
 		console.log("Updated List: ", this.listArray);

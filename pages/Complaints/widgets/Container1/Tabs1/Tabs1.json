@@ -215,7 +215,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onTabSelected": "{{GetViewComplaintStatus.run();\ncountViewComplaintStatus.run()}}",
+  "onTabSelected": "{{GetViewComplaintStatus.run();\ncountViewComplaintStatus.run();\ngetAllTitlesByRightHolder.run()}}",
   "originalBottomRow": 112,
   "originalTopRow": 7,
   "parentColumnSpace": 17.828125,

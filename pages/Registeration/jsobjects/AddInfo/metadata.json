@@ -6,6 +6,11 @@
     "pageId": "Registeration",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "variables": []
+    "variables": [
+      {
+        "name": "insertQuery",
+        "value": "''"
+      }
+    ]
   }
 }

@@ -52,7 +52,7 @@
   },
   "onClick": "{{ListTitles.deleteInputField(currentItem.id);}}",
   "parentColumnSpace": 7.882606208324432,
-  "parentId": "97oklcjn7a",
+  "parentId": "7asv3b6wmq",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -68,6 +68,6 @@
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "d9sninh0i1",
+  "widgetId": "j64i1zbcmr",
   "widgetName": "IconButton11"
 }
