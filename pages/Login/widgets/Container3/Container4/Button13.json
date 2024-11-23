@@ -18,6 +18,7 @@
       "key": "onClick"
     }
   ],
+  "googleRecaptchaKey": "",
   "hideCard": false,
   "iconSVG": "/static/media/icon.7a418b9e1899a550d7e8f33b48cbde12.svg",
   "isDefaultClickDisabled": true,
@@ -42,10 +43,10 @@
   },
   "onClick": "{{login.signInRightHolder();}}",
   "parentColumnSpace": 12.076637268066406,
-  "parentId": "x81u8s3xh8",
+  "parentId": "85d9kvqehc",
   "parentRowSpace": 10,
   "placement": "CENTER",
-  "recaptchaType": "V3",
+  "recaptchaType": "V2",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
@@ -62,6 +63,6 @@
   "topRow": 22,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "wg6el2yr73",
-  "widgetName": "Button1"
+  "widgetId": "5a4cswvuur",
+  "widgetName": "Button13"
 }

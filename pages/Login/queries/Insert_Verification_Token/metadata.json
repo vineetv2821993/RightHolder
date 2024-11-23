@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO taoq_research.right_holder_email_verification (\n\tid,\n\trightHolder_id,\n\ttoken,\n\tcreated_at,\n\texpire_at\n) VALUES (\n\t'{{this.params.id}}',\n\t'{{this.params.user_id}}',\n\t'{{this.params.token}}',\n\tCURRENT_TIMESTAMP,\n\t'{{this.params.expire_at}}'\n);\n",
+      "body": "INSERT INTO taoq_research.right_holder_email_verification (\n\tid,\n\trightHolder_id,\n\ttoken,\n\tcreated_at,\n\texpire_at\n) VALUES (\n\t'{{this.params.id}}',\n\t'{{this.params.user_id}}',\n\t'{{this.params.token}}',\n\tCURRENT_TIMESTAMP,\n\t'{{this.params.expire_at}}'\n);",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

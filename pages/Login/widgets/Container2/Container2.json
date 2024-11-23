@@ -17,7 +17,7 @@
       "leftColumn": 0,
       "minHeight": 76.5,
       "parentColumnSpace": 1,
-      "parentId": "i732fxerks",
+      "parentId": "31jeulscpi",
       "parentRowSpace": 1,
       "props": {
         "canExtend": false,
@@ -30,7 +30,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "kcpi5gaav7",
+      "widgetId": "zpi9zsudp5",
       "widgetName": "Canvas3Copy"
     }
   ],
@@ -89,6 +89,6 @@
   "topRow": 2,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "i732fxerks",
+  "widgetId": "31jeulscpi",
   "widgetName": "Container2"
 }

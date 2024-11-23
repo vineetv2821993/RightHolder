@@ -23,6 +23,7 @@ export default {
 			await verifyEmail.run(); // Run the email verification function
 			closeModal(Modal7Copy.name);
 			showModal(Modal7.name);
+			showAlert("We have resend verify email to your email address","success");
 
 		} catch (error) {
 			showAlert('Failed to send verification email. Please try again later.', 'error'); // Error message

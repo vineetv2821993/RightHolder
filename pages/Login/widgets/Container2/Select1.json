@@ -1,0 +1,79 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "defaultOptionValue": "English",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.c94480439adb48de6883bb496aa5ef7d.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "wgia6snp0e",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelText": "",
+  "labelTextColor": "#00a09b",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 59,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 44,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "optionLabel": "code",
+  "optionValue": "name",
+  "originalBottomRow": 21,
+  "originalTopRow": 17,
+  "parentColumnSpace": 20.728515625,
+  "parentId": "zpi9zsudp5",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"English\",\n    \"code\": \"EN\"\n  },\n  {\n    \"name\": \"Arabic\",\n    \"code\": \"AR\"\n  }\n]",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.9aef24cb159e9c6e4d0f1d7ca4fb0c79.svg",
+  "topRow": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "kz046r8aoq",
+  "widgetName": "Select1"
+}

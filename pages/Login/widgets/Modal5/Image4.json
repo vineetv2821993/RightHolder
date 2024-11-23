@@ -41,7 +41,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "parentColumnSpace": 9.65625,
-  "parentId": "pnk0l9fnxu",
+  "parentId": "20jhl5dhyy",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 56,
@@ -52,6 +52,6 @@
   "topRow": 3,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "dxc0vj00pf",
+  "widgetId": "wcfu94le78",
   "widgetName": "Image4"
 }

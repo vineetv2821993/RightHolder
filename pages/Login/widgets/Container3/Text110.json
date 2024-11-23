@@ -15,6 +15,11 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "textAlign"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1.875rem",
@@ -45,7 +50,7 @@
   "originalTopRow": 1,
   "overflow": "NONE",
   "parentColumnSpace": 13.05859375,
-  "parentId": "daplvu03uq",
+  "parentId": "7leu3q4kti",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -68,6 +73,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "27azlitgb3",
+  "widgetId": "a1o6us3m55",
   "widgetName": "Text110"
 }

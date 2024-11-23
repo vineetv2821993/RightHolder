@@ -51,7 +51,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "parentColumnSpace": 12.076637268066406,
-  "parentId": "x81u8s3xh8",
+  "parentId": "85d9kvqehc",
   "parentRowSpace": 10,
   "placeholderText": "Password",
   "renderMode": "CANVAS",
@@ -74,6 +74,6 @@
   "topRow": 12,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "r0sfg1wagw",
+  "widgetId": "dke85basot",
   "widgetName": "Input2"
 }

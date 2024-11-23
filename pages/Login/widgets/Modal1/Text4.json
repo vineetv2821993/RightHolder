@@ -25,7 +25,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "yaidg678k9",
-  "leftColumn": 19,
+  "leftColumn": 24,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -42,10 +42,10 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "overflow": "NONE",
-  "parentId": "wxx1vj6y0v",
+  "parentId": "y5tplb9rv1",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 35,
+  "rightColumn": 40,
   "searchTags": [
     "typography",
     "paragraph",
@@ -56,7 +56,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "Sign UP",
+  "text": "Sign Up",
   "textAlign": "LEFT",
   "textColor": "#006d6a",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
@@ -64,6 +64,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "0tsz3l4p6t",
+  "widgetId": "7hijsjijig",
   "widgetName": "Text4"
 }

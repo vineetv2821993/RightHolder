@@ -48,7 +48,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "parentColumnSpace": 12.076637268066406,
-  "parentId": "x81u8s3xh8",
+  "parentId": "85d9kvqehc",
   "parentRowSpace": 10,
   "placeholderText": "Email",
   "renderMode": "CANVAS",
@@ -70,6 +70,6 @@
   "topRow": 3,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "8ul3xfng4b",
+  "widgetId": "2wdzbasgjt",
   "widgetName": "Input14"
 }

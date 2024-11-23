@@ -25,7 +25,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "yaidg678k9",
-  "leftColumn": 37,
+  "leftColumn": 35,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -45,7 +45,7 @@
   "originalTopRow": 30,
   "overflow": "NONE",
   "parentColumnSpace": 9.65267562866211,
-  "parentId": "x81u8s3xh8",
+  "parentId": "85d9kvqehc",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -68,6 +68,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "1ue0z3pz26",
+  "widgetId": "g1ox6e4vg8",
   "widgetName": "Text3"
 }

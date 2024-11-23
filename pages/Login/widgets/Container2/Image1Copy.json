@@ -19,7 +19,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "xb2mxu6p0u",
-  "leftColumn": 14,
+  "leftColumn": 11,
   "maxZoomLevel": 1,
   "mobileBottomRow": 12,
   "mobileLeftColumn": 51,
@@ -35,10 +35,10 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "parentColumnSpace": 2.8828125,
-  "parentId": "kcpi5gaav7",
+  "parentId": "zpi9zsudp5",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 47,
+  "rightColumn": 44,
   "tags": [
     "Media"
   ],
@@ -46,6 +46,6 @@
   "topRow": 0,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "iahs3k18e2",
+  "widgetId": "tcgxdp5a5l",
   "widgetName": "Image1Copy"
 }

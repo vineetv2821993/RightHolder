@@ -19,6 +19,7 @@
       "key": "onClick"
     }
   ],
+  "googleRecaptchaKey": "6Lck7ncqAAAAAEMI7fIJtGn0J1sLDg6cPAGLzX_p",
   "hideCard": false,
   "iconSVG": "/static/media/icon.7a418b9e1899a550d7e8f33b48cbde12.svg",
   "isDefaultClickDisabled": true,
@@ -44,9 +45,9 @@
   "onClick": "{{CreateAccount.creatRightHolderUser();}}",
   "originalBottomRow": 46,
   "originalTopRow": 42,
-  "parentId": "wxx1vj6y0v",
+  "parentId": "y5tplb9rv1",
   "placement": "CENTER",
-  "recaptchaType": "V3",
+  "recaptchaType": "V2",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
@@ -63,6 +64,6 @@
   "topRow": 39,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "zy0uxhfszu",
+  "widgetId": "wsr4ilm7b1",
   "widgetName": "Button4"
 }

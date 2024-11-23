@@ -22,7 +22,7 @@ export default {
 		return false;  // Session is still valid
 	},
 	async signInRightHolder() {
-		if(!Input14.text){
+		if(!Input1.text){
 			showAlert("Email Address  or User Name is required", "error");
 		}
 		else if(!Input2.text){
@@ -93,7 +93,6 @@ Would you like to view your profile?
 						showModal(Modal7Copy.name)
 					}
 				}
-
 				else
 				{
 					showAlert("invalid username or email Address and password","error");

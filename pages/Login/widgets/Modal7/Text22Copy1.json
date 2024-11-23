@@ -1,14 +1,11 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 8,
+  "bottomRow": 17,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
-    },
-    {
-      "key": "fontFamily"
     },
     {
       "key": "borderRadius"
@@ -16,23 +13,23 @@
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
-  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
+  "fontFamily": "System Default",
+  "fontSize": "1.875rem",
   "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.301748e14b0306a7b94ece2d9e2c11cc.svg",
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "qnlelymef0",
-  "leftColumn": 3,
+  "key": "pj9ak9hopa",
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 9,
-  "mobileLeftColumn": 3,
-  "mobileRightColumn": 19,
-  "mobileTopRow": 5,
+  "mobileBottomRow": 16,
+  "mobileLeftColumn": 26,
+  "mobileRightColumn": 42,
+  "mobileTopRow": 12,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -41,15 +38,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 9,
-  "originalTopRow": 5,
+  "originalBottomRow": 17,
+  "originalTopRow": 12,
   "overflow": "NONE",
   "parentColumnSpace": 6.9375,
-  "parentId": "wxx1vj6y0v",
+  "parentId": "ctw8r5zztb",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 53,
+  "rightColumn": 64,
   "searchTags": [
     "typography",
     "paragraph",
@@ -60,14 +57,14 @@
     "Suggested",
     "Content"
   ],
-  "text": "Rightsholder First Name <span style=\"color: red;\">*</span>",
-  "textAlign": "LEFT",
-  "textColor": "#231F20",
+  "text": "Verify Your Email Address",
+  "textAlign": "CENTER",
+  "textColor": "#3f3f46",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 4,
+  "topRow": 12,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "5ex7fo2y0k",
-  "widgetName": "Text21Copy3"
+  "widgetId": "jhlkcg4dyc",
+  "widgetName": "Text22Copy1"
 }
