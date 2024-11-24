@@ -1,1 +1,1 @@
-SELECT username , email FROM rightHolder WHERE id = '{{appsmith.store.rightHolderUserId}}' LIMIT 1;
+SELECT username , email FROM taoq_research.rightHolder WHERE id = '{{appsmith.store.rightHolderUserId}}' LIMIT 1;

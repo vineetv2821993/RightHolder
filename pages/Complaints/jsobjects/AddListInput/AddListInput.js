@@ -4,6 +4,7 @@ export default {
 	listArray: [{ id: this.index, input1: '', Description: '', FilePicker1: [] }],
 	lsitPageNo:1,
 
+
 	// Function to add new input fields dynamically
 	Button5onClick() {
 		// Generate a unique ID for each new entry
@@ -33,7 +34,7 @@ export default {
 
 			// Remove the element at the found index using splice
 			this.listArray.splice(index, 1);
-			List1.listData.push(this.listArray);
+			List1.listData.push([...this.listArray]);
 		}
 		// Log the updated list data to the console
 		console.log("Updated List after delete: ", this.listArray);
@@ -50,28 +51,38 @@ export default {
 	},
 	// Function to handle input changes
 	handleInputChange(id, field, value) {
-		// Update the specific field of the relevant input row
-		console.log(field,"field",value)
+		console.log(field, "field", value);
 		if (field === "FilePicker1") {
 			const index = this.listArray.findIndex(item => item.id === id);
 			if (index !== -1) {
-				if (this.listArray[index].FilePicker1.length < 3) {
-					this.listArray[index].FilePicker1.push(value); // Add new file
+				const currentFiles = this.listArray[index].FilePicker1 || [];
+				const newFiles = value.filter(
+					file => !currentFiles.some(existingFile => existingFile.name === file.name)
+				);
+				// Remove files that are no longer present in the value array
+				const updatedFiles = currentFiles.filter(
+					existingFile => value.some(file => file.name === existingFile.name)
+				);
+
+				// Combine updated existing files with new files
+				const combinedFiles = [...updatedFiles, ...newFiles];
+
+				// Check the file count limit
+				if (combinedFiles.length <= 3) {
+					this.listArray[index].FilePicker1 = combinedFiles;
 				} else {
-					console.warn("Cannot add more than 3 files."); // Warning when trying to add more than 3
+					console.warn("Cannot add more than 3 files.");
 				}
 			}
-		}
-		else{
-			this.listArray = this.listArray.map(item => 
+		} else {
+			this.listArray = this.listArray.map(item =>
 																					item.id === id ? { ...item, [field]: value } : item
 																				 );
 		}
 
-		// Log the changes for debugging
 		console.log("Updated Input Fields: ", this.listArray);
+		List1.listData.push([...this.listArray]);
+	}
 
-		// Update the List1 widget data
-		List1.listData.push(this.listArray);
-	},
+
 }

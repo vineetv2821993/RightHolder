@@ -21,6 +21,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "isVisible"
+    },
+    {
+      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -34,7 +37,7 @@
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "{{FilePicker1.files.length>0? true : false}}",
+  "isVisible": "{{AddListInput.listArray[currentIndex].FilePicker1.length>0}}",
   "key": "dc0kpcjlv9",
   "leftColumn": 38,
   "minWidth": 50,
@@ -50,9 +53,9 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{imageParsing.imageRendering(FilePicker1.files);}}",
+  "onClick": "{{imageParsing.imageRendering(AddListInput.listArray[currentIndex].FilePicker1);}}",
   "parentColumnSpace": 16.272790908813477,
-  "parentId": "qwbs4tkpbp",
+  "parentId": "p461iqp2qr",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -69,6 +72,6 @@
   "topRow": 8,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "wmtbw15cg4",
+  "widgetId": "6m8hyba5cl",
   "widgetName": "IconButton9"
 }

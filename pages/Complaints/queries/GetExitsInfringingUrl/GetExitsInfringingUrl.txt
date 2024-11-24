@@ -1,1 +1,1 @@
-SELECT complaint_form_id FROM complaints_form where infringing_url = '{{this.params.infringing_url}}';
+SELECT complaint_form_id FROM taoq_research.complaints_form where infringing_url = '{{this.params.infringing_url}}';

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 63,
+  "bottomRow": 62,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -41,11 +41,11 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 63,
-  "originalTopRow": 59,
+  "originalBottomRow": 62,
+  "originalTopRow": 58,
   "overflow": "NONE",
   "parentColumnSpace": 16.052734375,
-  "parentId": "4zci28ji3l",
+  "parentId": "z0k93pzm0u",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -64,10 +64,10 @@
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 59,
+  "topRow": 58,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "1lm17yleou",
+  "widgetId": "vo4rln8jcq",
   "widgetName": "Text16CopyCopy"
 }

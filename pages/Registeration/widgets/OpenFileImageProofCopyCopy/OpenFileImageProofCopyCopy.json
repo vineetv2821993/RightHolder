@@ -47,7 +47,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "hnq1fr6jk3",
+      "parentId": "59s4pl6l7l",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -56,7 +56,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "whu7ki1l9f",
+      "widgetId": "8352jz94p1",
       "widgetName": "Canvas3CopyCopy"
     }
   ],
@@ -108,7 +108,7 @@
   "topRow": 52,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "hnq1fr6jk3",
+  "widgetId": "59s4pl6l7l",
   "widgetName": "OpenFileImageProofCopyCopy",
   "width": 790
 }

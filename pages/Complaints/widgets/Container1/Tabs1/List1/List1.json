@@ -9,7 +9,7 @@
   "animateLoading": true,
   "backgroundColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 82,
+  "bottomRow": 84,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -56,7 +56,7 @@
       },
       "openParentPropertyPane": true,
       "parentColumnSpace": 1,
-      "parentId": "b6t8l0ru44",
+      "parentId": "o9mgvir2jg",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -64,7 +64,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "spnsrgm0ib",
+      "widgetId": "x22m17i4tp",
       "widgetName": "Canvas15"
     }
   ],
@@ -125,8 +125,8 @@
   "key": "vk5xiolwc7",
   "leftColumn": 2,
   "listData": "{{AddListInput.listArray}}",
-  "mainCanvasId": "spnsrgm0ib",
-  "mainContainerId": "soxmkalcs0",
+  "mainCanvasId": "x22m17i4tp",
+  "mainContainerId": "0732facs6a",
   "minWidth": 450,
   "mobileBottomRow": 97,
   "mobileLeftColumn": 6,
@@ -141,11 +141,11 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onItemClick": "",
-  "originalBottomRow": 82,
-  "originalTopRow": 40,
+  "originalBottomRow": 84,
+  "originalTopRow": 42,
   "pageSize": 1,
   "parentColumnSpace": 19.4447021484375,
-  "parentId": "vqp8f6z5w4",
+  "parentId": "is8dccds7t",
   "parentRowSpace": 10,
   "primaryKeys": "{{List1.listData.map((currentItem, currentIndex) => currentItem[\"id\"] )}}",
   "renderMode": "CANVAS",
@@ -159,9 +159,9 @@
   ],
   "templateHeight": 160,
   "thumbnailSVG": "/static/media/thumbnail.469b7e8d3a04de93014af9a7bc9ebe56.svg",
-  "topRow": 40,
+  "topRow": 42,
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
-  "widgetId": "b6t8l0ru44",
+  "widgetId": "o9mgvir2jg",
   "widgetName": "List1"
 }

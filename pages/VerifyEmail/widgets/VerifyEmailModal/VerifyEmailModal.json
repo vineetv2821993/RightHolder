@@ -47,7 +47,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "m2q8jloedk",
+      "parentId": "u2sorf3paa",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -56,7 +56,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "zoz2iuer89",
+      "widgetId": "5c5tt1xldr",
       "widgetName": "Canvas21Copy"
     }
   ],
@@ -109,7 +109,7 @@
   "topRow": 26,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "m2q8jloedk",
+  "widgetId": "u2sorf3paa",
   "widgetName": "VerifyEmailModal",
   "width": 1156
 }

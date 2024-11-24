@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 106,
+  "bottomRow": 108,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -41,11 +41,11 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 106,
-  "originalTopRow": 86,
+  "originalBottomRow": 108,
+  "originalTopRow": 88,
   "overflow": "NONE",
   "parentColumnSpace": 12.15625,
-  "parentId": "vqp8f6z5w4",
+  "parentId": "is8dccds7t",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -64,10 +64,10 @@
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 86,
+  "topRow": 88,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "qgu5a9i35v",
+  "widgetId": "fhpymp6mzr",
   "widgetName": "Text12"
 }

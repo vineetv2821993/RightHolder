@@ -50,10 +50,10 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 47,
-  "originalTopRow": 41,
+  "originalBottomRow": 44,
+  "originalTopRow": 38,
   "parentColumnSpace": 12.125,
-  "parentId": "4zci28ji3l",
+  "parentId": "z0k93pzm0u",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -75,6 +75,6 @@
   "topRow": 38,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "o6dh6ke2c3",
+  "widgetId": "3rkuojr8ft",
   "widgetName": "phoneNumber"
 }

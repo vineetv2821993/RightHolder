@@ -1,0 +1,1 @@
+SELECT * FROM complaint_form_screenshot LIMIT 10;

@@ -24,7 +24,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "h6pv488zuf",
-  "leftColumn": 38,
+  "leftColumn": 39,
   "minWidth": 50,
   "mobileBottomRow": 29,
   "mobileLeftColumn": 54,
@@ -38,12 +38,14 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
+  "originalBottomRow": 83,
+  "originalTopRow": 79,
   "parentColumnSpace": 19.4447021484375,
-  "parentId": "4zci28ji3l",
+  "parentId": "z0k93pzm0u",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 41,
+  "rightColumn": 42,
   "searchTags": [
     "click",
     "submit"
@@ -56,6 +58,6 @@
   "topRow": 79,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "xt8dmugulv",
+  "widgetId": "u0kq30eilu",
   "widgetName": "IconButton8CopyCopy"
 }

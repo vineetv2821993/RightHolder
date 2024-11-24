@@ -1,0 +1,1 @@
+SELECT name , ownershipImage FROM complaints_title where rightHolderUserId = '{{appsmith.store.rightHolderUserId}}';

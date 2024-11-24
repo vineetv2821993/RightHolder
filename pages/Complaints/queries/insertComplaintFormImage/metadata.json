@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO taoq_research.complaint_form_screenshot (\n\timage_id,\n\timage_data,\n\tcomplaint_form_id,\n\tinserted_at,\n\tupdated_at\n) VALUES (\n\t'{{this.params.image_id}}',               -- Assuming image_id is generated/unique\n\tFROM_BASE64('{{this.params.image_data}}'), -- Base64 image data\n\t'{{this.params.complaint_form_id}}',      -- Associated complaint form ID\n\t'{{this.params.inserted_at}}',             -- Inserted timestamp\n\t'{{this.params.updated_at}}'                -- Updated timestamp\n);\n",
+      "body": "INSERT INTO taoq_research.complaint_form_screenshot (\n\timage_id,\n\timage_data,\n\tcomplaint_form_id,\n\tinserted_at,\n\tupdated_at\n) VALUES (\n\t'{{this.params.image_id}}',               -- Assuming image_id is generated/unique\n\tFROM_BASE64('{{this.params.image_data}}'), -- Base64 image data\n\t'{{this.params.complaint_form_id}}',      -- Associated complaint form ID\n\t'{{this.params.inserted_at}}',             -- Inserted timestamp\n\t'{{this.params.updated_at}}'                -- Updated timestamp\n);",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

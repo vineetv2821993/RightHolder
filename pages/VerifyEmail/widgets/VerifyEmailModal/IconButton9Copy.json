@@ -43,7 +43,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{closeModal(VerifyEmailModal.name);}}",
-  "parentId": "zoz2iuer89",
+  "parentId": "5c5tt1xldr",
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
   "rightColumn": 64,
@@ -58,6 +58,6 @@
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "nfgxo1ob47",
+  "widgetId": "pxsa67kgo9",
   "widgetName": "IconButton9Copy"
 }

@@ -47,7 +47,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "u0cnzy98fo",
+      "parentId": "zipt6rs11s",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -56,7 +56,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "l9cvtlnnki",
+      "widgetId": "xcjteig8d5",
       "widgetName": "Canvas2Copy"
     }
   ],
@@ -110,7 +110,7 @@
   "topRow": 175,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "u0cnzy98fo",
+  "widgetId": "zipt6rs11s",
   "widgetName": "Modal1Copy",
   "width": 782
 }

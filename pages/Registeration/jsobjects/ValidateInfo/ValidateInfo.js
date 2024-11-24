@@ -1,5 +1,5 @@
 export default {
-	validate () {
+	async validate () {
 		let lengthCheck;
 		let lengthCheck1;
 		let isValid = true;
@@ -92,11 +92,14 @@ export default {
 		if(!FilePicker1Copy || !FilePicker1Copy.files || FilePicker1Copy.files.length === 0){
 			isValid = false;
 			showAlert("At least one content Content Ownership Certificate needs to be uploaded", "error");
-		}
+		}  
+		let data = await getAllTitlesByRightHolder.run();
+		if(data && data.length === 0){
+			isValid = false;
+			showAlert("Please Add Atleast one title, By clicking on the Add Title Button", "warning");
+		}  
 		if(isValid){
 			showModal(Modal1.name)
 		}
 	},
-
-
 }

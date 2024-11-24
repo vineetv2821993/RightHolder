@@ -50,16 +50,15 @@ export default {
 						country: Select2Copy.selectedOptionLabel, // Replace with actual country value
 						acknowledgment: Checkbox1Copy.isChecked,
 						status: "Under Review",
-						digitalSignature: DigitalSignature.text,
 						document: FilePicker1.files.length > 0 ?FilePicker1.files[0].data.replace(/^data:image\/\w+;base64,/, '')
 						: null,
 						copyRightLetter: FilePicker2.files.length>0 ? FilePicker2.files[0].data.replace(/^data:image\/\w+;base64,/, '') : null,
 						contentOwnerShip : FilePicker1Copy.files.length > 0 ?FilePicker1Copy.files[0].data.replace(/^data:image\/\w+;base64,/, '') : null,
+						digitalSignature: DigitalSignature.text,
 						inserted_at: moment().format('YYYY-MM-DD HH:mm:ss'),
 						updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
 					}
 				);
-
 
 				showAlert("form sucessfully submitted","info");
 				resetWidget(Modal1.name);

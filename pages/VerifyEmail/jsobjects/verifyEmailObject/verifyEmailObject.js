@@ -30,7 +30,7 @@ export default {
 				// Set a timeout to automatically navigate to the login page after 30 seconds
 				this.loginTimeout = setTimeout(() => {
 					navigateTo('Login', {}, 'SAME_WINDOW');
-				}, 30000); // 30 seconds
+				}, 10000); // 10 seconds
 			} else {
 				// Token expired
 				await deleteVerificationEntry.run({ token: token });
@@ -38,11 +38,12 @@ export default {
 			}
 		} else {
 			let data = await getRightHolder.run({ id: appsmith.store.rightHolderUserId });
+			console.log("dirext login",data)
 			if (data[0].email_verified) {
 				showModal(Modal1Copy.name);
 				this.loginTimeout = setTimeout(() => {
 					navigateTo('Login', {}, 'SAME_WINDOW');
-				}, 30000); // 30 seconds
+				}, 10000); // 10 seconds
 			}
 		}
 	},

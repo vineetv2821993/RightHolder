@@ -14,12 +14,12 @@
     }
   ],
   "dynamicTriggerPathList": [],
-  "enableDownload": false,
-  "enableRotation": false,
+  "enableDownload": true,
+  "enableRotation": true,
   "flexVerticalAlignment": "start",
   "hideCard": false,
   "iconSVG": "/static/media/icon.fdb987a7ceacf7001426460138f7cd09.svg",
-  "image": "{{FilePicker2.files.length >0 ?FilePicker2.files[0].data : ''}}",
+  "image": "{{ListTitles.titleList[viewTitlePriiviewImage.index].FilePicker2.length >0 ? ListTitles.titleList[viewTitlePriiviewImage.index].FilePicker2[0].data: \"\"}}",
   "imageShape": "RECTANGLE",
   "isDeprecated": false,
   "isLoading": false,
@@ -41,7 +41,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "parentColumnSpace": 6.9375,
-  "parentId": "g37eanh57g",
+  "parentId": "akt25xrt8p",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 63,
@@ -52,6 +52,6 @@
   "topRow": 4,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "tcrswlykz4",
+  "widgetId": "f7421j9f3o",
   "widgetName": "Image6"
 }

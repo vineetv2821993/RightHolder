@@ -1,0 +1,15 @@
+INSERT INTO taoq_research.complaints_title (
+	id,
+	name,
+	ownershipImage,
+	rightHolderUserId,
+	inserted_at,
+	updated_at
+) VALUES (
+	'{{this.params.id}}',
+	'{{this.params.name}}',
+	FROM_BASE64('{{this.params.ownershipImage}}'), -- Convert Base64 to binary using UNHEX
+	'{{appsmith.store.rightHolderUserId}}',
+	'{{this.params.inserted_at}}',
+	'{{this.params.updated_at}}'
+);

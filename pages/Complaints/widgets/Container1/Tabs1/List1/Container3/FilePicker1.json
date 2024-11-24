@@ -1,6 +1,5 @@
 {
   "allowedFileTypes": [
-    "image/*",
     ".png",
     "image/jpeg"
   ],
@@ -19,7 +18,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onFilesSelected"
@@ -34,18 +37,18 @@
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": false,
   "isVisible": true,
-  "key": "imyd370trj",
+  "key": "lxdcwmz572",
   "label": "Select Files",
   "leftColumn": 16,
-  "maxFileSize": 5,
-  "maxNumFiles": "3",
+  "maxFileSize": "5",
+  "maxNumFiles": "5",
   "minWidth": 120,
-  "mobileBottomRow": 8,
-  "mobileLeftColumn": 45,
-  "mobileRightColumn": 61,
-  "mobileTopRow": 4,
+  "mobileBottomRow": 92,
+  "mobileLeftColumn": 22,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 88,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -54,9 +57,11 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onFilesSelected": "{{AddListInput.handleInputChange(currentItem.id, 'FilePicker1', FilePicker1.files ? FilePicker1.files.length > 0 ? FilePicker1.files : '' : '');}}",
-  "parentColumnSpace": 9.581333875656128,
-  "parentId": "qwbs4tkpbp",
+  "onFilesSelected": "{{AddListInput.handleInputChange(currentItem.id, 'FilePicker1', FilePicker1.files);}}",
+  "originalBottomRow": 127,
+  "originalTopRow": 123,
+  "parentColumnSpace": 16.052734375,
+  "parentId": "p461iqp2qr",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -72,6 +77,6 @@
   "topRow": 8,
   "type": "FILE_PICKER_WIDGET_V2",
   "version": 1,
-  "widgetId": "2pt6qjc2wl",
+  "widgetId": "7i94k6d8d4",
   "widgetName": "FilePicker1"
 }

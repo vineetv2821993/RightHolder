@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 43,
+  "bottomRow": 45,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -135,7 +135,7 @@
   "isVisibleSearch": true,
   "key": "or38kprknm",
   "label": "Data",
-  "leftColumn": 10,
+  "leftColumn": 12,
   "minWidth": 450,
   "mobileBottomRow": 41,
   "mobileLeftColumn": 3,
@@ -151,10 +151,10 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onPageChange": "{{GetViewComplaintStatus.run()}}",
-  "originalBottomRow": 43,
-  "originalTopRow": 8,
+  "originalBottomRow": 45,
+  "originalTopRow": 7,
   "parentColumnSpace": 10.981458187103271,
-  "parentId": "jj9xtwa5fr",
+  "parentId": "9cx99k5w6k",
   "parentRowSpace": 10,
   "primaryColumns": {
     "Date": {
@@ -401,7 +401,7 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 52,
+  "rightColumn": 54,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "tableData": "{{GetViewComplaintStatus.data}}",
@@ -411,11 +411,11 @@
   ],
   "textSize": "0.875rem",
   "thumbnailSVG": "/static/media/thumbnail.d0492f06681daa69baf92b07d3829dfc.svg",
-  "topRow": 8,
+  "topRow": 7,
   "totalRecordsCount": "{{countViewComplaintStatus.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "mbrxvye902",
+  "widgetId": "xo0mzbeiki",
   "widgetName": "Table1"
 }

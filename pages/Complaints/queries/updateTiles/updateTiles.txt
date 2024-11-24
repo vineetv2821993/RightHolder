@@ -1,0 +1,7 @@
+UPDATE taoq_research.complaints_title
+SET
+    name = '{{this.params.name}}',
+		ownershipImage = FROM_BASE64('{{this.params.ownershipImage}}'),
+    updated_at = '{{this.params.updated_at}}'
+WHERE
+    id = '{{this.params.id}}';

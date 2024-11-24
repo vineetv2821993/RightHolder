@@ -14,8 +14,8 @@
     }
   ],
   "dynamicTriggerPathList": [],
-  "enableDownload": false,
-  "enableRotation": false,
+  "enableDownload": true,
+  "enableRotation": true,
   "flexVerticalAlignment": "start",
   "hideCard": false,
   "iconSVG": "/static/media/icon.fdb987a7ceacf7001426460138f7cd09.svg",
@@ -41,7 +41,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "parentColumnSpace": 6.9375,
-  "parentId": "y94spbt2qk",
+  "parentId": "xxhzbcmsos",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 59,
@@ -52,6 +52,6 @@
   "topRow": 0,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "nowjhacg0g",
+  "widgetId": "s82s2z2k09",
   "widgetName": "Image3Copy"
 }

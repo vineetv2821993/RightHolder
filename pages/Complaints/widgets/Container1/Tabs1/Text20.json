@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 40,
+  "bottomRow": 42,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -41,11 +41,11 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 40,
-  "originalTopRow": 36,
+  "originalBottomRow": 42,
+  "originalTopRow": 38,
   "overflow": "NONE",
   "parentColumnSpace": 16.116043090820312,
-  "parentId": "vqp8f6z5w4",
+  "parentId": "is8dccds7t",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -64,10 +64,10 @@
   "textAlign": "CENTER",
   "textColor": "#034059",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 36,
+  "topRow": 38,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "akn13fxfft",
+  "widgetId": "tlrso0iwyr",
   "widgetName": "Text20"
 }

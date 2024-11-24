@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 124,
+  "bottomRow": 113,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -41,11 +41,11 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 124,
-  "originalTopRow": 119,
+  "originalBottomRow": 113,
+  "originalTopRow": 109,
   "overflow": "NONE",
   "parentColumnSpace": 12.15625,
-  "parentId": "4zci28ji3l",
+  "parentId": "z0k93pzm0u",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -64,10 +64,10 @@
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 119,
+  "topRow": 109,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "dartb1iuga",
+  "widgetId": "wo6uf8lbwj",
   "widgetName": "Text13Copy2"
 }

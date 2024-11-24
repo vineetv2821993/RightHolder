@@ -10,42 +10,61 @@ export default {
 		this.titleList.push({ id: newId, titleName: "", FilePicker2: [] }); // Add new entry
 		this.updateListData(); // Refresh the List widget data
 	},
+	deleteInputField(id) {
+		// Filter out the container with the matching ID
 
-	// Function to delete a title entry by ID
-	deleteInputField: (id) => {
-		this.titleList = this.titleList.filter(item => item.id !== id); // Remove entry by ID
-		this.updateListData(); // Refresh the List widget data
+		const index = this.titleList.findIndex(item => item.id === id);
+		// Check if the element is found
+		if (index !== -1) {
+			console.log("asd")
+			// Remove the element at the found index using splice
+			this.titleList.splice(index, 1);
+			List1.listData.push([...this.titleList]);
+		}
 	},
 
 	// Function to reset the file list for a title entry
 	removeFileListOnCrossClick: (id) => {
 		const index = this.titleList.findIndex(item => item.id === id);
 		if (index !== -1) {
-			List2.listData[List1.pageNo-1].FilePicker2 = [];
+			List2.listData[index].FilePicker2 = [];
 			this.titleList[index].FilePicker2 = []; // Reset the file array
-			resetWidget("FilePicker2", true); // Reset the FilePicker widget
 		}
 	},
+	handleInputChange(id, field, value) {
+		console.log(field, "field", value);
+		if (field === "FilePicker2") {
+			const index = this.titleList.findIndex(item => item.id === id);
+			if (index !== -1) {
+				const currentFiles = this.titleList[index].FilePicker2 || [];
+				const newFiles = value.filter(
+					file => !currentFiles.some(existingFile => existingFile.name === file.name)
+				);
+				// Remove files that are no longer present in the value array
+				const updatedFiles = currentFiles.filter(
+					existingFile => value.some(file => file.name === existingFile.name)
+				);
 
-	// Function to handle input changes for title name and file selection
-	handleInputChange: (id, field, value) => {
-		const entry = this.titleList.find(item => item.id === id);
-		if (entry) {
-			if (field === "FilePicker2") {
-				if (entry.FilePicker2.length < 3) {
-					entry.FilePicker2.push(value); // Add new file if under limit
+				// Combine updated existing files with new files
+				const combinedFiles = [...updatedFiles, ...newFiles];
+
+				// Check the file count limit
+				if (combinedFiles.length <= 3) {
+					this.titleList[index].FilePicker2 = combinedFiles;
 				} else {
-					console.warn("Cannot add more than 3 files."); // Limit check
+					console.warn("Cannot add more than 3 files.");
 				}
-			} else {
-				entry[field] = value; // Update title name
 			}
+		} else {
+			this.titleList = this.titleList.map(item =>
+																					item.id === id ? { ...item, [field]: value } : item
+																				 );
 		}
-		this.updateListData(); // Refresh the List widget data
+		this.	updateListData();
 	},
 
 	// Helper function to update the List widget data
 	updateListData: () => {
-		List2.listData.push(this.titleList);
+		List2.listData.push([...this.titleList]);
 	}
 };

@@ -1,0 +1,1 @@
+DELETE from taoq_research.complaints_title WHERE id in ({{this.params.selectedIds}});

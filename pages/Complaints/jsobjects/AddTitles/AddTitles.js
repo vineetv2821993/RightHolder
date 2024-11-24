@@ -39,13 +39,13 @@ export default {
 				const titleItem = ListTitles.titleList[i];
 				console.log("titleItem",titleItem);
 				// Check if FilePicker2 exists and has data
-				if (!titleItem.FilePicker2 || !titleItem.FilePicker2.length || !titleItem.FilePicker2[0][0].data) {
+				if (!titleItem.FilePicker2 || !titleItem.FilePicker2.length || !titleItem.FilePicker2[0].data) {
 					showAlert("Invalid image data format for title: " + titleItem.titleName, "error");
 					continue; // Skip to the next title
 				}
 
 				// Extract and decode the Base64 data portion from ownershipImage.data
-				const base64Data = titleItem.FilePicker2[0][0].data.split(',')[1];
+				const base64Data = titleItem.FilePicker2[0].data.split(',')[1];
 				if (!base64Data) {
 					showAlert("Invalid image data format for title: " + titleItem.titleName, "error");
 					continue; // Skip to the next title
@@ -68,7 +68,6 @@ export default {
 					updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
 				});
 			}
-
 			showAlert("Complaint title(s) added successfully!", "success");
 
 			ListTitles.titleList= [

@@ -41,11 +41,11 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 25,
+  "originalBottomRow": 24,
   "originalTopRow": 20,
   "overflow": "NONE",
   "parentColumnSpace": 19.4447021484375,
-  "parentId": "vqp8f6z5w4",
+  "parentId": "is8dccds7t",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -68,6 +68,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "mhhc59asr4",
+  "widgetId": "xhagvn631r",
   "widgetName": "Text22Copy"
 }

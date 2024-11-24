@@ -43,11 +43,11 @@
   },
   "overflow": "NONE",
   "parentColumnSpace": 9.581333875656128,
-  "parentId": "qwbs4tkpbp",
+  "parentId": "p461iqp2qr",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 12,
+  "rightColumn": 13,
   "searchTags": [
     "typography",
     "paragraph",
@@ -66,6 +66,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "s36rox6m5s",
+  "widgetId": "xd37d4qg6z",
   "widgetName": "Text18"
 }

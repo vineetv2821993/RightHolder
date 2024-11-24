@@ -43,10 +43,10 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 101,
-  "originalTopRow": 97,
+  "originalBottomRow": 83,
+  "originalTopRow": 79,
   "parentColumnSpace": 12.15625,
-  "parentId": "4zci28ji3l",
+  "parentId": "z0k93pzm0u",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -62,6 +62,6 @@
   "topRow": 79,
   "type": "FILE_PICKER_WIDGET_V2",
   "version": 1,
-  "widgetId": "bjuj9jq493",
+  "widgetId": "z0hycq9v93",
   "widgetName": "FilePicker1Copy"
 }

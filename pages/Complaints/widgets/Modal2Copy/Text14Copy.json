@@ -44,7 +44,7 @@
   "originalBottomRow": 7,
   "originalTopRow": 1,
   "overflow": "NONE",
-  "parentId": "ezt99xpca5",
+  "parentId": "6mbb2jm6bx",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 57,
@@ -66,6 +66,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "99f88skhix",
+  "widgetId": "bjo6ux03gk",
   "widgetName": "Text14Copy"
 }

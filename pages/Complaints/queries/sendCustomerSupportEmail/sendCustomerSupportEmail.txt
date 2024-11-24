@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Customer Query</title>
+<style>
+body {Customer Inquiry: Request for Support
+			font-family: Arial, sans-serif;
+			line-height: 1.6;
+			color: #333;
+		 }
+.content {
+	margin: 20px;
+}
+.signature {
+	margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<div class="content">
+<p>Dear Saip Team,</p>
+<p>I hope this email finds you well.</p>
+<blockquote style="background-color: #f9f9f9; border-left: 4px solid #ccc; padding: 10px; margin: 10px 0;">
+{{RichTextEditor1.text}}
+</blockquote>
+<p>Could you please look into this and provide a solution or response?</p>
+<p>Thank you for your assistance.</p>
+<div class="signature">
+Best regards,<br>
+<br>
+{{appsmith.store.signUpRightHolderName}}<br>
+{{appsmith.store.signUpRightHolderEmail}}<br>
+{{appsmith.store.rightHolderInfoPhoneNumber}}<br>
+{{appsmith.store.rightHolderInfoCompanyName}}
+</div>
+</div>
+</body>
+</html>

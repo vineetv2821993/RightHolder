@@ -1,0 +1,1 @@
+DELETE from complaints_title WHERE id = '{{Table1Copy.triggeredRow.id}}';

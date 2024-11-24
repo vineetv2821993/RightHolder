@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66fb995faf2b8e5a2a63f337_5918337f-6c3f-4b7c-8dc1-ff4fc1190120",
+  "id": "Registeration_AddTitles",
+  "unpublishedCollection": {
+    "name": "AddTitles",
+    "pageId": "Registeration",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

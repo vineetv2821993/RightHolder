@@ -71,10 +71,10 @@ export default {
 						});
 
 						// Insert images
-						for (let j = 0; j < AddListInput.listArray[i].FilePicker1[0].length; j++) {
+						for (let j = 0; j < AddListInput.listArray[i].FilePicker1.length; j++) {
 							const image_id = this.generateUUID();
 							// Removing prefix to keep only the actual Base64 data
-							const base64Data = AddListInput.listArray[i].FilePicker1[0][j].data.replace(/^data:image\/\w+;base64,/, '');
+							const base64Data = AddListInput.listArray[i].FilePicker1[j].data.replace(/^data:image\/\w+;base64,/, '');
 
 							await insertComplaintFormImage.run({
 								image_id: image_id,
@@ -150,7 +150,7 @@ export default {
 
 	resetForm() {
 		AddListInput.listArray = [
-			{ id: this.index, 
+			{ id: 1, 
 			 input1: '', Description: '', FilePicker1: [] }
 		];
 		this.resetWidgets();

@@ -62,10 +62,10 @@ Hi SAIP Team,
 <p> We have attached the Copyright Ownership Document and Identification Proof for verfication </p>
 
 <p>For your convenience, you can click the link below to access the Dashboard directly:</p>
+
 <p><a href="https://saip.bytes.care/app/saip-vms/dashboard-66cc3795ec80177fd0d752e0?branch=master" target="_blank">
 https://saip.bytes.care/app/saip-vms/dashboard-66cc3795ec80177fd0d752e0?branch=master
 </a></p>
-
 
 
 <p> We kindly ask that you prioritize the verification of this information and update the Approved/Rejected Status in the Dashboard for {{HolderName.text}} rightHolder profile.</p>
