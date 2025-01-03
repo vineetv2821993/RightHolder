@@ -44,7 +44,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{closeModal(OpenFileImageCopyright.name);}}",
-  "parentId": "3eguk61slm",
+  "parentId": "gpqwfxruwe",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -63,6 +63,6 @@
   "topRow": 46,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "vbtusna31j",
+  "widgetId": "9vwzfvdl1h",
   "widgetName": "Button4"
 }

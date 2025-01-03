@@ -1,0 +1,1 @@
+SELECT id, name , ownershipImage FROM complaints_title where rightHolderUserId = '{{appsmith.store.rightHolderUserId}}' and Status="Approved";

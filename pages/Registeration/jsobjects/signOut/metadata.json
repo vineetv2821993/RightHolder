@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66fb995faf2b8e5a2a63f337_4b3ad94f-ccb2-4a9e-aed0-fc0f2f7447b6",
+  "id": "Registeration_signOut",
+  "unpublishedCollection": {
+    "name": "signOut",
+    "pageId": "Registeration",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

@@ -58,7 +58,7 @@
   },
   "onClick": "{{saveTitleView.Image5onClick(ListTitles.titleList[currentIndex].FilePicker2Copy[0].data);}}",
   "parentColumnSpace": 7.882606208324432,
-  "parentId": "euo6ecqkj8",
+  "parentId": "zq6rxqoa9f",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 62,
@@ -69,6 +69,6 @@
   "topRow": 9,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "rpe4twurhh",
+  "widgetId": "aj21ntcehe",
   "widgetName": "Image5"
 }

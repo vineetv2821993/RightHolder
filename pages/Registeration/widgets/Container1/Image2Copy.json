@@ -1,10 +1,10 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 88,
-  "bottomRowBeforeCollapse": 88,
+  "bottomRow": 91,
+  "bottomRowBeforeCollapse": 91,
   "boxShadow": "none",
-  "defaultImage": "{{FilePicker1Copy.files.length >0 ? FilePicker1Copy.files[0].data: ''}}",
+  "defaultImage": "{{FilePicker1Copy.files.length >0 ? FilePicker1Copy\n.files[0].data:''}}",
   "displayName": "Image",
   "dynamicBindingPathList": [
     {
@@ -20,9 +20,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "isVisible"
-    },
-    {
-      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -41,7 +38,7 @@
   "isLoading": false,
   "isVisible": "{{FilePicker1Copy.files.length>0 ?\ntrue : false\n}}",
   "key": "jhxegbv4bv",
-  "leftColumn": 43,
+  "leftColumn": 45,
   "maxZoomLevel": 1,
   "mobileBottomRow": 113,
   "mobileLeftColumn": 42,
@@ -57,21 +54,21 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{showModal(OpenFileImageProofCopyCopy.name);}}",
-  "originalBottomRow": 88,
-  "originalTopRow": 76,
+  "originalBottomRow": 91,
+  "originalTopRow": 79,
   "parentColumnSpace": 16.052734375,
-  "parentId": "z0k93pzm0u",
+  "parentId": "dt6fy6k6pa",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 54,
+  "rightColumn": 56,
   "tags": [
     "Media"
   ],
   "thumbnailSVG": "/static/media/thumbnail.74089bb21dfcb5890f6b106f93c3b9c8.svg",
-  "topRow": 76,
-  "topRowBeforeCollapse": 76,
+  "topRow": 79,
+  "topRowBeforeCollapse": 79,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "41e4fzvxjs",
+  "widgetId": "pw2wwbeal5",
   "widgetName": "Image2Copy"
 }

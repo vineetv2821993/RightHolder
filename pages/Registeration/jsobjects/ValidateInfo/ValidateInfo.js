@@ -59,7 +59,11 @@ export default {
 			isValid = false;
 			showAlert("Company Name is required", "error");
 		}
-
+		const existingCompany = await getCompanyByPhoneNumber.run();
+		if (existingCompany.length>0 && existingCompany[0].name !== CompanyName.text) {
+			isValid = false;
+			showAlert(`The phone number ${phoneNumber.text} is already associated with another company (${existingCompany[0].name})`, "error");
+		}
 		if(!DigitalSignature.text){
 			isValid = false;
 			showAlert("Digital Signature is required", "error");
@@ -102,4 +106,6 @@ export default {
 			showModal(Modal1.name)
 		}
 	},
+
+
 }

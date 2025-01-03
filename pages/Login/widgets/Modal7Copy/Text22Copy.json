@@ -42,7 +42,7 @@
   "originalTopRow": 13,
   "overflow": "NONE",
   "parentColumnSpace": 6.9375,
-  "parentId": "yiwrqq6oc3",
+  "parentId": "yinlnuj8hq",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -65,6 +65,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "r3d48dwk11",
+  "widgetId": "tuux8myouc",
   "widgetName": "Text22Copy"
 }

@@ -38,7 +38,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "parentColumnSpace": 19.4447021484375,
-  "parentId": "z0k93pzm0u",
+  "parentId": "dt6fy6k6pa",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -55,6 +55,6 @@
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "8oixno22sm",
+  "widgetId": "ktqovuat06",
   "widgetName": "IconButton8Copy1"
 }

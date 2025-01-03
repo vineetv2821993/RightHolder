@@ -1,0 +1,2 @@
+INSERT INTO taoq_research.password_reset_otp (id, email, otp, expiry_at,created_at)
+VALUES ('{{this.params.id}}', '{{this.params.email}}', {{this.params.otp}},{{this.params.expiry_at}},{{this.params.created_at}} );

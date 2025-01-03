@@ -43,7 +43,7 @@
   },
   "onClick": "{{viewTitlesObject.viewTitle();}}",
   "parentColumnSpace": 16.052734375,
-  "parentId": "z0k93pzm0u",
+  "parentId": "dt6fy6k6pa",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -60,6 +60,6 @@
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "zrp1tlonjy",
+  "widgetId": "sfom0rithv",
   "widgetName": "IconButton13"
 }

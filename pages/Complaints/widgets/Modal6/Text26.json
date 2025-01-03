@@ -44,15 +44,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 14,
+  "originalBottomRow": 58,
   "originalTopRow": 9,
   "overflow": "NONE",
   "parentColumnSpace": 13.75,
-  "parentId": "18zn5d30xm",
+  "parentId": "43kz8cjcbc",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 60,
+  "rightColumn": 56,
   "searchTags": [
     "typography",
     "paragraph",
@@ -71,6 +71,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "vz7pnczhbg",
+  "widgetId": "xerdxohuqr",
   "widgetName": "Text26"
 }

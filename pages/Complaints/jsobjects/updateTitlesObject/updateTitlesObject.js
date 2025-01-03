@@ -18,12 +18,12 @@ export default {
 				ownershipImage: base64Data,
 				updated_at: moment().format("YYYY-MM-DD HH:mm:ss") // Format the date using Moment.js
 			};
-			console.log(updateObject);
 			// Run the update query
 			await updateTiles.run(updateObject);
 			// Show success alert
 			showAlert("Title updated successfully!", "success");
 			await getAllTitlesByRightHolder.run();
+			await getTitlesServerFilters.run();
 			closeModal(Modal13.name);
 		} catch (error) {
 			// Catch and display any errors

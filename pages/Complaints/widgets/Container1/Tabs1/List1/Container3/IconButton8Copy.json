@@ -39,7 +39,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "parentColumnSpace": 19.4447021484375,
-  "parentId": "p461iqp2qr",
+  "parentId": "5kdu99bpnk",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -52,10 +52,10 @@
     "Buttons"
   ],
   "thumbnailSVG": "/static/media/thumbnail.b02b764a52db45d332efa723178a50a4.svg",
-  "tooltip": "Please upload up to 3 files in JPG or PNG format. Each file must be 5MB or smaller. Files that exceed the limit or are in unsupported formats cannot be uploaded.",
+  "tooltip": "Please upload up to 5 files in JPG or PNG format. Each file must be 5MB or smaller. Files that exceed the limit or are in unsupported formats cannot be uploaded.",
   "topRow": 8,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "eidrgwc86i",
+  "widgetId": "59jec19rjz",
   "widgetName": "IconButton8Copy"
 }

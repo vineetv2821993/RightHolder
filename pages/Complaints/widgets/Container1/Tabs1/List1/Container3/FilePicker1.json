@@ -21,6 +21,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "onFilesSelected"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -38,7 +41,7 @@
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": "true",
   "key": "lxdcwmz572",
   "label": "Select Files",
   "leftColumn": 16,
@@ -61,7 +64,7 @@
   "originalBottomRow": 127,
   "originalTopRow": 123,
   "parentColumnSpace": 16.052734375,
-  "parentId": "p461iqp2qr",
+  "parentId": "5kdu99bpnk",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -77,6 +80,6 @@
   "topRow": 8,
   "type": "FILE_PICKER_WIDGET_V2",
   "version": 1,
-  "widgetId": "7i94k6d8d4",
+  "widgetId": "ob3ffn50fd",
   "widgetName": "FilePicker1"
 }

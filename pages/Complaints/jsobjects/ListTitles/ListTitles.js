@@ -16,7 +16,6 @@ export default {
 		const index = this.titleList.findIndex(item => item.id === id);
 		// Check if the element is found
 		if (index !== -1) {
-			console.log("asd")
 			// Remove the element at the found index using splice
 			this.titleList.splice(index, 1);
 			List1.listData.push([...this.titleList]);

@@ -60,7 +60,7 @@
   },
   "onTextChanged": "{{ ListTitles.handleInputChange(currentItem.id, 'titleName', Input14.text) }}\n",
   "parentColumnSpace": 7.882606208324432,
-  "parentId": "fcml19tj5n",
+  "parentId": "6gn9laf72z",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -81,6 +81,6 @@
   "topRow": 1,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "h6afioddnd",
+  "widgetId": "1x0uad1bu7",
   "widgetName": "Input14"
 }

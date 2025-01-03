@@ -4,7 +4,7 @@
   "bottomRow": 301,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
-  "canOutsideClickClose": true,
+  "canOutsideClickClose": false,
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -47,7 +47,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "tueupw9rc2",
+      "parentId": "7jvkcb4aat",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -56,7 +56,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "ztytcgm7vu",
+      "widgetId": "24hsu2ab0q",
       "widgetName": "Canvas14Copy"
     }
   ],
@@ -68,6 +68,7 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
   "height": 240,
   "hideCard": false,
   "iconSVG": "/static/media/icon.47fe8500526372db96cb58a82187ffeb.svg",
@@ -109,7 +110,7 @@
   "topRow": 61,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "tueupw9rc2",
+  "widgetId": "7jvkcb4aat",
   "widgetName": "Modal2Copy",
   "width": 648
 }

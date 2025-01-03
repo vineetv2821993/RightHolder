@@ -49,8 +49,10 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
+  "originalBottomRow": 52,
+  "originalTopRow": 11,
   "parentColumnSpace": 15.851066589355469,
-  "parentId": "efb50v6rzs",
+  "parentId": "u4qtjd94vm",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -66,6 +68,6 @@
   "topRow": 10,
   "type": "RICH_TEXT_EDITOR_WIDGET",
   "version": 1,
-  "widgetId": "bzcz1h1njl",
+  "widgetId": "47j0ui02tx",
   "widgetName": "RichTextEditor1"
 }

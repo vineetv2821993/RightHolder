@@ -15,7 +15,7 @@ export default {
 
 			return true;  // User not found
 		}
-		const expireAt = moment(expireDate[0].expire_at).format('YYYY-MM-DD HH:mm:ss');
+		const expireAt = moment.utc(expireDate[0].expire_at).format('YYYY-MM-DD HH:mm:ss');
 
 		const currentTime = moment().format('YYYY-MM-DD HH:mm:ss')
 
@@ -32,8 +32,8 @@ export default {
 	},
 
 	async submitRightHolderForm(){
+		let rightHolderInfoId= this.generateUUID();
 		try{
-			let rightHolderInfoId= this.generateUUID();
 			if(!await this.checkExpireUser()){
 				await AddRightHolderInfo.run(
 					{
@@ -50,24 +50,38 @@ export default {
 						country: Select2Copy.selectedOptionLabel, // Replace with actual country value
 						acknowledgment: Checkbox1Copy.isChecked,
 						status: "Under Review",
-						document: FilePicker1.files.length > 0 ?FilePicker1.files[0].data.replace(/^data:image\/\w+;base64,/, '')
-						: null,
-						copyRightLetter: FilePicker2.files.length>0 ? FilePicker2.files[0].data.replace(/^data:image\/\w+;base64,/, '') : null,
-						contentOwnerShip : FilePicker1Copy.files.length > 0 ?FilePicker1Copy.files[0].data.replace(/^data:image\/\w+;base64,/, '') : null,
 						digitalSignature: DigitalSignature.text,
 						inserted_at: moment().format('YYYY-MM-DD HH:mm:ss'),
 						updated_at: moment().format('YYYY-MM-DD HH:mm:ss')
 					}
 				);
+				await UpdateContentOwerShip.run({
+					id: rightHolderInfoId,
+					contentOwnerShip:FilePicker1Copy.files.length > 0 ?FilePicker1Copy.files[0].data.replace(/^data:image\/\w+;base64,/, '') : null
+
+				})
+				await UpdateIndentificationProff.run({
+					id: rightHolderInfoId,
+					indentificationProff: FilePicker1.files.length > 0 ?FilePicker1.files[0].data.replace(/^data:image\/\w+;base64,/, '')
+					: null
+				})
+				await UpdateCopyRigthLetter.run({
+					id: rightHolderInfoId,
+					copyRightLetter: FilePicker2.files.length>0 ? FilePicker2.files[0].data.replace(/^data:image\/\w+;base64,/, '') : null
+				})
+				// await removeValue("indentificationProff");
+				// await removeValue("copyRightLetter");
+				// await removeValue("contentOwnerShip");
 
 				showAlert("form sucessfully submitted","info");
 				resetWidget(Modal1.name);
 				storeValue("rightHolderInfoId",rightHolderInfoId);
-				await showModal(Modal1Copy.name);
 				setTimeout(function() {
 					navigateTo('Login', {}, 'SAME_WINDOW');
 				}, 15000);
+				await showModal(Modal1Copy.name);
 				await SendEmail.run();
+
 			}
 			else{
 				showAlert("Session is expire , please login again","warning");
@@ -75,7 +89,15 @@ export default {
 			}
 		}
 		catch(ex){
-			showAlert(`error inserting the form,Please try after some time${ex.message}`,"error");
+			console.log(ex.message);
+			if(ex.message !='Payload too large. File size cannot exceed 100MB.'){
+				deleteRightHolder.run({
+					id: rightHolderInfoId
+				})	
+				showAlert(`error inserting the form,Please try after some time${ex.message}`,"error");
+			}
+			console.log(ex);
+
 		}
 	}
 }

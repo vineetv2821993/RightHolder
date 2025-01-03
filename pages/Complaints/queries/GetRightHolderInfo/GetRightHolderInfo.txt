@@ -1,1 +1,1 @@
-SELECT * FROM taoq_research.rightHolderProfile where rightHolderUserId='{{appsmith.store.rightHolderUserId}}';
+SELECT fullName,rightHolderName,email, company_name,phoneNumber,address,city,state,country,digitalSignature,document,copyRightLetter,contentOwnerShip,Status,reasonStatus,rightHolderUserId FROM taoq_research.rightHolderProfile where rightHolderUserId='{{appsmith.store.rightHolderUserId}}';

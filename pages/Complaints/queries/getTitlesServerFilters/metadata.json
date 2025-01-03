@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT id, name , ownershipImage FROM complaints_title where rightHolderUserId = '{{appsmith.store.rightHolderUserId}}' and complaints_title.name like '%{{Table1Copy.searchText || \"\"}}%'\nORDER BY {{Table1Copy.sortOrder.column || 'complaints_title.name'}} {{Table1Copy.sortOrder.order || \"ASC\"}}\nLIMIT {{Table1Copy.pageSize}}\nOFFSET {{(Table1Copy.pageNo - 1) * Table1Copy.pageSize}};",
+      "body": "SELECT id, name , ownershipImage,Status,rejectedReason ,inserted_at as InsertedDate FROM complaints_title where rightHolderUserId = '{{appsmith.store.rightHolderUserId}}' and complaints_title.name like '%{{Table1Copy.searchText || \"\"}}%' {{titleViewFilters.whereFilter}}\nORDER BY {{Table1Copy.sortOrder.column || 'complaints_title.name'}} {{Table1Copy.sortOrder.order || \"ASC\"}}\nLIMIT {{Table1Copy.pageSize}}\nOFFSET {{(Table1Copy.pageNo - 1) * Table1Copy.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "getTitlesServerFilters",
     "pageId": "Complaints",
     "userSetOnLoad": false

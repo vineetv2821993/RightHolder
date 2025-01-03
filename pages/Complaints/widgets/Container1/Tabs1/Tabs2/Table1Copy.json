@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "3",
-  "bottomRow": 38,
+  "bottomRow": 43,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -31,16 +31,20 @@
     }
   },
   "columnOrder": [
+    "InsertedDate",
     "name",
     "ownershipImage",
     "id",
+    "Status",
+    "rejectedReason",
     "customColumn1",
     "customColumn2"
   ],
-  "columnUpdatedAt": 1731908398755,
+  "columnUpdatedAt": 1734254382121,
   "columnWidthMap": {
     "customColumn1": 143,
-    "name": 254
+    "name": 254,
+    "rejectedReason": 236
   },
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": 0,
@@ -82,11 +86,32 @@
     },
     {
       "key": "totalRecordsCount"
+    },
+    {
+      "key": "primaryColumns.Status.computedValue"
+    },
+    {
+      "key": "primaryColumns.rejectedReason.computedValue"
+    },
+    {
+      "key": "primaryColumns.Status.cellBackground"
+    },
+    {
+      "key": "primaryColumns.InsertedDate.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.Status.cellBackground"
+    },
+    {
+      "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
   "dynamicTriggerPathList": [
@@ -101,6 +126,9 @@
     },
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
   "enableClientSideSearch": true,
@@ -114,12 +142,12 @@
   "isSortable": false,
   "isVisible": true,
   "isVisibleDownload": false,
-  "isVisibleFilters": true,
+  "isVisibleFilters": false,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
   "key": "xqhd5o9jfq",
   "label": "Data",
-  "leftColumn": 1,
+  "leftColumn": 2,
   "minWidth": 450,
   "mobileBottomRow": 34,
   "mobileLeftColumn": 15,
@@ -135,11 +163,82 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onPageChange": "{{getTitlesServerFilters.run()}}",
+  "onPageChange": "{{viewTitlesObject.mappTitleData();}}",
+  "onSearchTextChanged": "{{viewTitlesObject.mappTitleData();}}",
+  "originalBottomRow": 38,
+  "originalTopRow": 6,
   "parentColumnSpace": 6.9375,
-  "parentId": "wx07ljb15m",
+  "parentId": "8ltlycp10i",
   "parentRowSpace": 10,
   "primaryColumns": {
+    "InsertedDate": {
+      "alias": "InsertedDate",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( moment.utc(currentRow[\"InsertedDate\"]).format('YYYY-MM-DD HH:mm:ss')))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "InsertedDate",
+      "index": 5,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Inserted Date",
+      "notation": "standard",
+      "originalId": "InsertedDate",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "Status": {
+      "alias": "Status",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"] === 'Approved' ? \"#0fd926\" : (currentRow[\"Status\"] === 'Under Review' ? \"#808080\" : (currentRow[\"Status\"] === 'Rejected' ? \"#ef4444\" : (\n\tcurrentRow[\"Status\"] === 'Blocked' ? \"#14e82e\" :\"#d6ea0d\"\n))) ))}}",
+      "columnType": "text",
+      "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "Status",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Status",
+      "notation": "standard",
+      "originalId": "Status",
+      "sticky": "",
+      "textColor": "#fdfefe",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "customColumn1": {
       "alias": "Update",
       "allowCellWrapping": false,
@@ -322,25 +421,60 @@
       "validation": {},
       "verticalAlignment": "CENTER",
       "width": 150
+    },
+    "rejectedReason": {
+      "alias": "rejectedReason",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{Table1Copy.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rejectedReason\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "rejectedReason",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Rejection Reason",
+      "notation": "standard",
+      "originalId": "rejectedReason",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
     }
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 62,
+  "rightColumn": 63,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
-  "tableData": "{{getTitlesServerFilters.data}}",
+  "showInlineEditingOptionDropdown": true,
+  "tableData": "{{viewTitlesObject.titleData}}",
   "tags": [
     "Suggested",
     "Display"
   ],
   "textSize": "0.875rem",
   "thumbnailSVG": "/static/media/thumbnail.d0492f06681daa69baf92b07d3829dfc.svg",
-  "topRow": 6,
+  "topRow": 11,
   "totalRecordsCount": "{{countTitles.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "oixvc3vpp1",
+  "widgetId": "so2xu8q6lu",
   "widgetName": "Table1Copy"
 }

@@ -61,7 +61,7 @@
   },
   "onTextChanged": "{{ AddListInput.handleInputChange(currentItem.id, 'input1', Input13.text) }}\n",
   "parentColumnSpace": 6.8542633056640625,
-  "parentId": "p461iqp2qr",
+  "parentId": "5kdu99bpnk",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -82,6 +82,6 @@
   "topRow": 2,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "edtrfbwert",
+  "widgetId": "awvauq1i7m",
   "widgetName": "Input13"
 }

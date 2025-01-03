@@ -1,1 +1,3 @@
-SELECT name , ownershipImage FROM complaints_title where rightHolderUserId = '{{appsmith.store.rightHolderUserId}}';
+SELECT id, name , ownershipImage,Status,inserted_at as InsertedDate  FROM complaints_title where rightHolderUserId = '{{appsmith.store.rightHolderUserId}}'
+ and complaints_title.name like '%{{Table1.searchText || ""}}%' {{titleViewFilters.whereFilter}}
+ORDER BY {{Table1.sortOrder.column || 'complaints_title.name'}} {{Table1.sortOrder.order || "ASC"}};

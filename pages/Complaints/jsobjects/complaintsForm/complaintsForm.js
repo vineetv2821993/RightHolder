@@ -15,7 +15,7 @@ export default {
 
 			return true;  // User not found
 		}
-		const expireAt = moment(expireDate[0].expire_at).format('YYYY-MM-DD HH:mm:ss');
+		const expireAt = moment.utc(expireDate[0].expire_at).format('YYYY-MM-DD HH:mm:ss');
 
 
 		const currentTime = moment().format('YYYY-MM-DD HH:mm:ss')

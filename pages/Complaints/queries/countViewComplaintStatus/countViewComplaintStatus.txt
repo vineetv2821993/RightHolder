@@ -1,2 +1,2 @@
 SELECT count(*) as count FROM complaint_status Inner JOIN complaints_form on complaint_status.complaint_form_id = complaints_form.complaint_form_id
-WHERE  complaints_form.rightHolderUserId = '{{appsmith.store.rightHolderUserId}}'  
+WHERE  complaints_form.rightHolderUserId = '{{appsmith.store.rightHolderUserId}}' and complaints_form.infringing_url like '%{{Table1.searchText || ""}}%' {{complaintsViewFilters.whereFilter}};

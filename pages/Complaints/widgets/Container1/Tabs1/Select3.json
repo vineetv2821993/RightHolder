@@ -64,7 +64,7 @@
   "originalBottomRow": 39,
   "originalTopRow": 32,
   "parentColumnSpace": 15.851066589355469,
-  "parentId": "is8dccds7t",
+  "parentId": "f83wpoir1a",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
@@ -74,7 +74,7 @@
     "dropdown"
   ],
   "serverSideFiltering": false,
-  "sourceData": "{{getAllTitlesByRightHolder.data.map( (obj) =>{ return  {'label': obj.id, 'value': obj.name } })}}",
+  "sourceData": "{{getApprovedTitles.data.map( (obj) =>{ return  {'label': obj.id, 'value': obj.name } })}}",
   "tags": [
     "Suggested",
     "Select"
@@ -83,6 +83,6 @@
   "topRow": 29,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "1b3w2tgbbn",
+  "widgetId": "ii1nvfzwzm",
   "widgetName": "Select3"
 }

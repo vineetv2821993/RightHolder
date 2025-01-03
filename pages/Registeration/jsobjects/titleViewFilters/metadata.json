@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66fb995faf2b8e5a2a63f337_cfde0d35-e6d7-459b-b8b0-bec2edc45918",
+  "id": "Registeration_titleViewFilters",
+  "unpublishedCollection": {
+    "name": "titleViewFilters",
+    "pageId": "Registeration",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "whereFilter",
+        "value": "\"\""
+      }
+    ]
+  }
+}

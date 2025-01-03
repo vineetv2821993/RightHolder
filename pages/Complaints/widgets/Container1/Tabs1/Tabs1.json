@@ -5,12 +5,12 @@
   "borderColor": "#e0dede",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 84,
+  "bottomRow": 133,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 690,
+      "bottomRow": 1180,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -50,7 +50,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "r8ly9e0qrb",
+      "parentId": "ivyr2gt3uv",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -61,12 +61,12 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "8yidd5410r",
+      "widgetId": "96wwm0uulx",
       "widgetName": "Canvas110"
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1120,
+      "bottomRow": 1180,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -106,7 +106,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "r8ly9e0qrb",
+      "parentId": "ivyr2gt3uv",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -117,12 +117,12 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "is8dccds7t",
+      "widgetId": "f83wpoir1a",
       "widgetName": "Canvas22"
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 690,
+      "bottomRow": 1180,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -162,7 +162,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "r8ly9e0qrb",
+      "parentId": "ivyr2gt3uv",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -172,12 +172,12 @@
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "8spm2874dn",
+      "widgetId": "ao6sm601dm",
       "widgetName": "Canvas111"
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 690,
+      "bottomRow": 1180,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -217,7 +217,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "r8ly9e0qrb",
+      "parentId": "ivyr2gt3uv",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -227,7 +227,7 @@
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "efb50v6rzs",
+      "widgetId": "u4qtjd94vm",
       "widgetName": "Canvas117"
     }
   ],
@@ -275,11 +275,11 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onTabSelected": "{{GetViewComplaintStatus.run();\ncountViewComplaintStatus.run();\ngetAllTitlesByRightHolder.run()}}",
-  "originalBottomRow": 126,
-  "originalTopRow": 8,
+  "onTabSelected": "{{GetViewComplaintStatus.run();\ncountViewComplaintStatus.run();\ngetAllTitlesByRightHolder.run();\ngetApprovedTitles.run()}}",
+  "originalBottomRow": 133,
+  "originalTopRow": 11,
   "parentColumnSpace": 17.828125,
-  "parentId": "c6vkmle01i",
+  "parentId": "j4itbnngh5",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -294,7 +294,7 @@
       "isVisible": true,
       "label": "View Complaints",
       "positioning": "vertical",
-      "widgetId": "8yidd5410r"
+      "widgetId": "96wwm0uulx"
     },
     "tab2": {
       "id": "tab2",
@@ -303,21 +303,21 @@
       "isVisible": true,
       "label": "Add Complaints",
       "positioning": "vertical",
-      "widgetId": "is8dccds7t"
+      "widgetId": "f83wpoir1a"
     },
     "tabebg826hf26": {
       "id": "tabebg826hf26",
       "index": 3,
       "isVisible": true,
       "label": "Customer Support",
-      "widgetId": "efb50v6rzs"
+      "widgetId": "u4qtjd94vm"
     },
     "tabel4pclirgd": {
       "id": "tabel4pclirgd",
       "index": 2,
       "isVisible": true,
       "label": "Manage Titles",
-      "widgetId": "8spm2874dn"
+      "widgetId": "ao6sm601dm"
     }
   },
   "tags": [
@@ -327,6 +327,6 @@
   "topRow": 11,
   "type": "TABS_WIDGET",
   "version": 3,
-  "widgetId": "r8ly9e0qrb",
+  "widgetId": "ivyr2gt3uv",
   "widgetName": "Tabs1"
 }

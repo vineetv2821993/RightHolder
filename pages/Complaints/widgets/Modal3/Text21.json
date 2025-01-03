@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 98,
+  "bottomRow": 94,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -25,7 +25,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "k37beilc5c",
-  "leftColumn": 10,
+  "leftColumn": 11,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -41,15 +41,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 98,
-  "originalTopRow": 93,
+  "originalBottomRow": 94,
+  "originalTopRow": 88,
   "overflow": "NONE",
   "parentColumnSpace": 10.40625,
-  "parentId": "zgn3c3qysj",
+  "parentId": "bstio99xco",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 26,
+  "rightColumn": 27,
   "searchTags": [
     "typography",
     "paragraph",
@@ -60,14 +60,14 @@
     "Suggested",
     "Content"
   ],
-  "text": "Please Upload Content Ownership Certificate",
+  "text": "Please Upload Copyright / Trademark / Ownership Document",
   "textAlign": "LEFT",
   "textColor": "#a9a7a7",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 93,
+  "topRow": 88,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "28vqpajcgf",
+  "widgetId": "fw29wp9y1s",
   "widgetName": "Text21"
 }

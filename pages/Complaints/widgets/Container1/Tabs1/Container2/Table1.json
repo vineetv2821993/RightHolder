@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 45,
+  "bottomRow": 53,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -43,7 +43,7 @@
   "columnWidthMap": {
     "Date": 252,
     "OrginalWebsite": 245,
-    "complaint_Case_id": 296,
+    "complaint_Case_id": 152,
     "reason_of_approve_reject": 259
   },
   "defaultPageSize": 0,
@@ -112,11 +112,20 @@
     },
     {
       "key": "primaryColumns.Status.textColor"
+    },
+    {
+      "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
   "enableClientSideSearch": true,
@@ -130,12 +139,12 @@
   "isSortable": true,
   "isVisible": true,
   "isVisibleDownload": false,
-  "isVisibleFilters": true,
+  "isVisibleFilters": false,
   "isVisiblePagination": true,
   "isVisibleSearch": true,
   "key": "or38kprknm",
   "label": "Data",
-  "leftColumn": 12,
+  "leftColumn": 2,
   "minWidth": 450,
   "mobileBottomRow": 41,
   "mobileLeftColumn": 3,
@@ -151,10 +160,11 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onPageChange": "{{GetViewComplaintStatus.run()}}",
-  "originalBottomRow": 45,
-  "originalTopRow": 7,
+  "onSearchTextChanged": "{{GetViewComplaintStatus.run();\ncountViewComplaintStatus.run()}}",
+  "originalBottomRow": 53,
+  "originalTopRow": 14,
   "parentColumnSpace": 10.981458187103271,
-  "parentId": "9cx99k5w6k",
+  "parentId": "ipanul2ps4",
   "parentRowSpace": 10,
   "primaryColumns": {
     "Date": {
@@ -163,7 +173,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( moment(currentRow[\"Date\"]).format('YYYY-MM-DD HH:mm:ss')))}}",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( moment.utc(currentRow[\"Date\"]).format('YYYY-MM-DD HH:mm:ss')))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -401,7 +411,7 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 54,
+  "rightColumn": 61,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "tableData": "{{GetViewComplaintStatus.data}}",
@@ -411,11 +421,11 @@
   ],
   "textSize": "0.875rem",
   "thumbnailSVG": "/static/media/thumbnail.d0492f06681daa69baf92b07d3829dfc.svg",
-  "topRow": 7,
+  "topRow": 14,
   "totalRecordsCount": "{{countViewComplaintStatus.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "xo0mzbeiki",
+  "widgetId": "rzijzdtj61",
   "widgetName": "Table1"
 }

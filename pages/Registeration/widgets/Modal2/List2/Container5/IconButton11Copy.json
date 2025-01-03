@@ -55,7 +55,7 @@
   },
   "onClick": "{{ListTitles.removeFileListOnCrossClick(currentItem.id);}}",
   "parentColumnSpace": 7.882606208324432,
-  "parentId": "euo6ecqkj8",
+  "parentId": "zq6rxqoa9f",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -71,6 +71,6 @@
   "topRow": 8,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "wb8zt8q0uk",
+  "widgetId": "ljpljt7s9b",
   "widgetName": "IconButton11Copy"
 }

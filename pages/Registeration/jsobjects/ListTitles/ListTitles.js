@@ -32,7 +32,7 @@ export default {
 			this.titleList[index].FilePicker2Copy = []; // Clear the file array for the selected item
 			List2.listData[index].FilePicker2Copy = [];
 			// Reset the FilePicker widget for the specific item
-			resetWidget('FilePicker2Copy');
+			resetWidget('FilePicker2Copy',true);
 
 			console.log("FilePicker reset for item:", id, this.titleList[index]);
 		} else {

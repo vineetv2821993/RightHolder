@@ -65,7 +65,7 @@ body {
 <div class="content">
 <p>Hello {{appsmith.store.signUpRightHolderName}},</p>
 <p>Thank you for signing up! Please verify your email by clicking the button below:</p>
-<a href='https://saip.bytes.care/app/protecting-your-intellectual-property/verifyemail-672b28a8af2b8e5a2a64b9af?branch=master&token={{appsmith.store.emailVerifyToken}}' class="btn">Verify Email</a>
+<a href='https://saip.bytes.care/app/test-protecting-your-intellectual-property/verifyemail-6728a0b2af2b8e5a2a64ac97?branch=master&token={{appsmith.store.emailVerifyToken}}' class="btn">Verify Email</a>
 </div>
 <div class="footer">
 <p>If you did not sign up for this account, please ignore this email.</p>

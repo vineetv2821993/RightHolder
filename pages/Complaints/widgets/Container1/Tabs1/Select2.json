@@ -63,7 +63,7 @@
   "originalBottomRow": 20,
   "originalTopRow": 13,
   "parentColumnSpace": 12.15625,
-  "parentId": "is8dccds7t",
+  "parentId": "f83wpoir1a",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
@@ -82,6 +82,6 @@
   "topRow": 13,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "1flh6z5rjf",
+  "widgetId": "tyvy1xqwmj",
   "widgetName": "Select2"
 }

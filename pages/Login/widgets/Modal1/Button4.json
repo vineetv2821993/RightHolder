@@ -13,7 +13,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -45,7 +49,7 @@
   "onClick": "{{CreateAccount.creatRightHolderUser();}}",
   "originalBottomRow": 46,
   "originalTopRow": 42,
-  "parentId": "y5tplb9rv1",
+  "parentId": "tdevolqcf8",
   "placement": "CENTER",
   "recaptchaType": "V2",
   "renderMode": "CANVAS",
@@ -64,6 +68,6 @@
   "topRow": 39,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "wsr4ilm7b1",
+  "widgetId": "t7ri82em06",
   "widgetName": "Button4"
 }

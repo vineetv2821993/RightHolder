@@ -41,11 +41,17 @@ export default {
 			}
 		}
 
+
+		if(!Checkbox1.isChecked){
+			isValid= false;
+			errorMessage = `Please confirm that all tiles are correct by selecting the checkbox.`;
+		}
 		// Show alert if validation fails
 		if (!isValid) {
 			showAlert(errorMessage, "error");
 		} else {
-			showModal(Modal2Copy.name);
+			await AddTitles.addTitles();
+			// showModal(Modal2Copy.name);
 		}
 	}
 };

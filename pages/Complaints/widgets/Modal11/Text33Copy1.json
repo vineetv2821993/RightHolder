@@ -43,7 +43,7 @@
   },
   "overflow": "NONE",
   "parentColumnSpace": 7.882606208324432,
-  "parentId": "f81t1ezd3v",
+  "parentId": "zj7splz4k7",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -66,6 +66,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "dfp3lj20bd",
+  "widgetId": "woho8zfzqm",
   "widgetName": "Text33Copy1"
 }

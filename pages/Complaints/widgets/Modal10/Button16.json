@@ -46,7 +46,7 @@
   "onClick": "{{DeleteTitles.run().then(() => {\n  showAlert('Title Deleted Sucessfully', 'success');\n  getTitlesServerFilters.run();\n  closeModal(Modal10.name);\n  countTitles.run();\n});}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
-  "parentId": "8wlfc238d7",
+  "parentId": "ciea58q6wg",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -65,6 +65,6 @@
   "topRow": 10,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "yqkq7d4dwc",
+  "widgetId": "835pwqe2q2",
   "widgetName": "Button16"
 }

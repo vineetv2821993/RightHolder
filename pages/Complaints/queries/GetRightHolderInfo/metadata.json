@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM taoq_research.rightHolderProfile where rightHolderUserId='{{appsmith.store.rightHolderUserId}}';",
+      "body": "SELECT fullName,rightHolderName,email, company_name,phoneNumber,address,city,state,country,digitalSignature,document,copyRightLetter,contentOwnerShip,Status,reasonStatus,rightHolderUserId FROM taoq_research.rightHolderProfile where rightHolderUserId='{{appsmith.store.rightHolderUserId}}';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

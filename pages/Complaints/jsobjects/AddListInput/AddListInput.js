@@ -1,5 +1,6 @@
 export default {
 	index:1,
+
 	// Initial list array to hold dynamic fields, starting with one entry
 	listArray: [{ id: this.index, input1: '', Description: '', FilePicker1: [] }],
 	lsitPageNo:1,
@@ -15,7 +16,7 @@ export default {
 		this.listArray.push({ id: newId, input1: '', Description: '',FilePicker1: []});
 
 		// Log the updated list data to the console
-		console.log("Updated List: ", this.listArray);
+
 
 		// Update the List1 widget data with the new input fields array
 		List1.listData.push(this.listArray);
@@ -37,7 +38,7 @@ export default {
 			List1.listData.push([...this.listArray]);
 		}
 		// Log the updated list data to the console
-		console.log("Updated List after delete: ", this.listArray);
+
 
 	},
 	removeFileListOnCrosssClick(id) {
@@ -47,11 +48,11 @@ export default {
 			this.listArray[index].FilePicker1 = []; // Reset the file array
 			resetWidget("FilePicker1", true); // Reset the FilePicker widget
 		}
-		console.log("File list after reset: ", this.listArray);
+
 	},
 	// Function to handle input changes
 	handleInputChange(id, field, value) {
-		console.log(field, "field", value);
+
 		if (field === "FilePicker1") {
 			const index = this.listArray.findIndex(item => item.id === id);
 			if (index !== -1) {
@@ -80,7 +81,7 @@ export default {
 																				 );
 		}
 
-		console.log("Updated Input Fields: ", this.listArray);
+
 		List1.listData.push([...this.listArray]);
 	}
 

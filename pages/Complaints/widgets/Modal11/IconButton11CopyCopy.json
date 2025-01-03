@@ -2,6 +2,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 14,
+  "bottomRowBeforeCollapse": 14,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "TERTIARY",
@@ -51,8 +52,10 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{resetWidget(\"FilePicker2Copy\", true);}}",
+  "originalBottomRow": 14,
+  "originalTopRow": 10,
   "parentColumnSpace": 7.882606208324432,
-  "parentId": "f81t1ezd3v",
+  "parentId": "zj7splz4k7",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -66,8 +69,9 @@
   ],
   "thumbnailSVG": "/static/media/thumbnail.b02b764a52db45d332efa723178a50a4.svg",
   "topRow": 10,
+  "topRowBeforeCollapse": 10,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "776us8dsxt",
+  "widgetId": "sunlx6m6e4",
   "widgetName": "IconButton11CopyCopy"
 }

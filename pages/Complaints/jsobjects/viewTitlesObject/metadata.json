@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66fb995faf2b8e5a2a63f337_8c57b9e8-82f2-4b85-96ef-d1c6df903fec",
+  "id": "Complaints_viewTitlesObject",
+  "unpublishedCollection": {
+    "name": "viewTitlesObject",
+    "pageId": "Complaints",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "titleData",
+        "value": "[]"
+      },
+      {
+        "name": "countData",
+        "value": "0"
+      }
+    ]
+  }
+}

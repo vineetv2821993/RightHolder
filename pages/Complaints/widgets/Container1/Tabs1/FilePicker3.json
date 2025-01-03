@@ -46,8 +46,10 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
+  "originalBottomRow": 57,
+  "originalTopRow": 53,
   "parentColumnSpace": 19.12603759765625,
-  "parentId": "efb50v6rzs",
+  "parentId": "u4qtjd94vm",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -63,6 +65,6 @@
   "topRow": 52,
   "type": "FILE_PICKER_WIDGET_V2",
   "version": 1,
-  "widgetId": "kxjf4lyk0n",
+  "widgetId": "98u56shknn",
   "widgetName": "FilePicker3"
 }

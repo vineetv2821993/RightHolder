@@ -1,0 +1,2 @@
+DELETE FROM taoq_research.rightHolderProfile
+WHERE id = '{{this.params.id}}';

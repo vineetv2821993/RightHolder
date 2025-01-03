@@ -44,7 +44,7 @@
   "onClick": "{{closeModal(Modal1.name).then(() => {\n  resetWidget(\"Modal1\", false);\n});}}",
   "originalBottomRow": 46,
   "originalTopRow": 42,
-  "parentId": "y5tplb9rv1",
+  "parentId": "tdevolqcf8",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -63,6 +63,6 @@
   "topRow": 39,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "azmrd0ng1d",
+  "widgetId": "3d4pxiyib6",
   "widgetName": "Button3"
 }

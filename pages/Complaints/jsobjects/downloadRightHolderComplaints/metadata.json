@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66fb995faf2b8e5a2a63f337_40e0a7a5-f41d-45d0-b41b-d88db4b480e5",
+  "id": "Complaints_downloadRightHolderComplaints",
+  "unpublishedCollection": {
+    "name": "downloadRightHolderComplaints",
+    "pageId": "Complaints",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

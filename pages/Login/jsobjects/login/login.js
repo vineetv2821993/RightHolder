@@ -9,7 +9,7 @@ export default {
 
 			return true;  // User not found
 		}
-		const expireAt = moment(expireDate[0].expire_at).format('YYYY-MM-DD HH:mm:ss');
+		const expireAt = moment.utc(expireDate[0].expire_at).format('YYYY-MM-DD HH:mm:ss');
 
 
 		const currentTime = moment().format('YYYY-MM-DD HH:mm:ss')
@@ -29,7 +29,7 @@ export default {
 			showAlert("Password is required", "error");
 		}
 		else{
-			this.exitQuery = `SELECT id FROM taoq_research.rightHolder WHERE email = '${Input14.text}' or username ='${Input14.text}'`;
+			this.exitQuery = `SELECT id FROM taoq_research.rightHolder WHERE email = '${Input1.text}' or username ='${Input1.text}'`;
 
 			// Run the exit query to check if the user exists
 			const result = await ExitRightHolder.run();
@@ -39,14 +39,14 @@ export default {
 				this.signInQuery = `
     SELECT id, username, email , email_verified
     FROM taoq_research.rightHolder
-    WHERE (email = '${Input14.text}')
+    WHERE (email = '${Input1.text}')
     AND password_hash = '${hashedPassword}'
 `;
-				console.log(	this.signInQuery );
+
 				let data = await signInRightHolder.run();
 				if(data && data.length >0){
 					storeValue("rightHolderUserId",data[0].id);
-					await storeValue("signUpRightHolderEmail",Input14.text);
+					await storeValue("signUpRightHolderEmail",Input1.text);
 					if(data[0].email_verified){
 						let checkData = await checkRightHolderInfoExit.run({id:data[0].id});
 						let isExpire = await this.checkExpireUser(data[0].id);
@@ -56,9 +56,9 @@ export default {
 						if (checkData && checkData.length > 0) {
 							if (checkData[0].Status === "Under Review") {
 								this.modalText = `Dear ${checkData[0].rightHolderName},
-Thank you for your submission. Your details are currently being reviewed by SAIP.
-We understand that waiting can be challenging, and we appreciate your patience as we work through this process.
-You will receive an email notification as soon as your verification is complete.
+Thank you for your submission. Your application is currently being reviewed by SAIP.
+We appreciate your patience as we work through this process.
+You will receive an email as soon as your verification is complete.
 
 Would you like to view your profile?
 `;

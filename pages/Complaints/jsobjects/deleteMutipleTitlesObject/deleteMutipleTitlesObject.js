@@ -4,7 +4,6 @@ export default {
 			// Extracting the ids from selected rows
 			let ids = Table1Copy.selectedRows.map(item => `'${item.id}'`);
 			ids = ids.join(", ");
-			console.log("ids", ids);
 			// Running the delete operation
 			await deleteMutipleTitles.run({ selectedIds: ids });
 

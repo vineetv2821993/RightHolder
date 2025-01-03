@@ -1,0 +1,54 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+  "displayName": "Image",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.fdb987a7ceacf7001426460138f7cd09.svg",
+  "image": "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",
+  "imageShape": "RECTANGLE",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "rl1ctjg0xg",
+  "leftColumn": 0,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 12,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 4,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "objectFit": "contain",
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "parentColumnSpace": 15.483642578125,
+  "parentId": "437ikmkfp6",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 3,
+  "tags": [
+    "Media"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.74089bb21dfcb5890f6b106f93c3b9c8.svg",
+  "topRow": 0,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "dzj7nncpxp",
+  "widgetName": "Image6"
+}

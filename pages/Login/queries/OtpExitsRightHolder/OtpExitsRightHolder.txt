@@ -1,0 +1,1 @@
+SELECT id,username FROM taoq_research.rightHolder WHERE email = '{{this.params.email}}';

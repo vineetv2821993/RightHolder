@@ -48,7 +48,7 @@ export default {
 					errorMessage = `The Infringing URL in item ${i + 1} is invalid. Please provide a valid URL.\n`;
 				} 
 				// Validate proof file input
-				else if (!AddListInput.listArray[i].FilePicker1 || AddListInput.listArray[i].FilePicker1[0].length>0 === "") {
+				else if (!AddListInput.listArray[i].FilePicker1 || AddListInput.listArray[i].FilePicker1.length>0 === "") {
 					isValid = false;
 					errorMessage = `Please provide proof for Infringing URL ${AddListInput.listArray[i].input1} in item ${i + 1}.`;
 				} 

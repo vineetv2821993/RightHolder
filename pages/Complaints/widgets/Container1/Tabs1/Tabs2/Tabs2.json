@@ -50,7 +50,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "0j0fseb3zs",
+      "parentId": "r9qctr1loj",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -61,7 +61,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "ttu3gm8f0o",
+      "widgetId": "58j0c6hf9y",
       "widgetName": "Canvas118"
     },
     {
@@ -106,7 +106,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "0j0fseb3zs",
+      "parentId": "r9qctr1loj",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -117,7 +117,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "wx07ljb15m",
+      "widgetId": "8ltlycp10i",
       "widgetName": "Canvas119"
     }
   ],
@@ -148,7 +148,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "rwlii228mw",
-  "leftColumn": 2,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 15,
   "minWidth": 450,
@@ -164,15 +164,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onTabSelected": "{{getTitlesServerFilters.run()\ncountTitles.run();}}",
+  "onTabSelected": "{{getTitlesServerFilters.run();\ncountTitles.run();\nviewTitlesObject.viewTitle();}}",
   "originalBottomRow": 67,
   "originalTopRow": 4,
   "parentColumnSpace": 19.12603759765625,
-  "parentId": "8spm2874dn",
+  "parentId": "ao6sm601dm",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 62,
   "shouldScrollContents": true,
   "shouldShowTabs": true,
   "tabsObj": {
@@ -182,7 +182,7 @@
       "isVisible": true,
       "label": "Add Titles",
       "positioning": "vertical",
-      "widgetId": "ttu3gm8f0o"
+      "widgetId": "58j0c6hf9y"
     },
     "tab2": {
       "id": "tab2",
@@ -190,7 +190,7 @@
       "isVisible": true,
       "label": "Edit / Delete Titles",
       "positioning": "vertical",
-      "widgetId": "wx07ljb15m"
+      "widgetId": "8ltlycp10i"
     }
   },
   "tags": [
@@ -200,6 +200,6 @@
   "topRow": 4,
   "type": "TABS_WIDGET",
   "version": 3,
-  "widgetId": "0j0fseb3zs",
+  "widgetId": "r9qctr1loj",
   "widgetName": "Tabs2"
 }

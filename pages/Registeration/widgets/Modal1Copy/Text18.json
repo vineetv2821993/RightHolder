@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 42,
+  "bottomRow": 30,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -41,11 +41,11 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 42,
+  "originalBottomRow": 30,
   "originalTopRow": 2,
   "overflow": "NONE",
   "parentColumnSpace": 10.3125,
-  "parentId": "xcjteig8d5",
+  "parentId": "mn6lrzvm3p",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -60,7 +60,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "Thank you for submitting your information and documents.\n\nWe have successfully received your request.\n\nWe have Sent email notification to SAIP.\n\nYour details are currently being verified by our team.\n\nWe kindly ask for your patience during this process, which may take 2 to 4 days.\n\nOnce your request is approved, we will notify you via email.\n\nIn the meantime, feel free to check your profile regularly for updates.\n\nThank you for your understanding.",
+  "text": "Thank you for submitting your information and documents.\n\nWe have successfully received your request.\n\nYour details are currently under review by our team.\n\nOnce your request is approved, we will notify you via email.\n\nIn the meantime, feel free to check your profile regularly for updates.\n\nThank you.",
   "textAlign": "CENTER",
   "textColor": "#006d6a",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
@@ -68,6 +68,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "v4n1d77o99",
+  "widgetId": "7ox9xwpagf",
   "widgetName": "Text18"
 }

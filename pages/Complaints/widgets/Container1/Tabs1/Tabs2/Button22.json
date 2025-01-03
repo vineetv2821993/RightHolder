@@ -1,7 +1,8 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 11,
+  "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -36,7 +37,7 @@
   "isLoading": false,
   "isVisible": "{{Table1Copy.selectedRows.length >0 ? true : false}}",
   "key": "dki1c1r0ca",
-  "leftColumn": 39,
+  "leftColumn": 12,
   "minWidth": 120,
   "mobileBottomRow": 6,
   "mobileLeftColumn": 45,
@@ -51,15 +52,17 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{showModal(Modal14.name);}}",
+  "originalBottomRow": 6,
+  "originalTopRow": 2,
   "parentColumnSpace": 13.733183860778809,
-  "parentId": "wx07ljb15m",
+  "parentId": "8ltlycp10i",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 52,
+  "rightColumn": 25,
   "searchTags": [
     "click",
     "submit"
@@ -69,9 +72,10 @@
   ],
   "text": "Delete Mutiple",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 2,
+  "topRow": 7,
+  "topRowBeforeCollapse": 2,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "kfwigbazj3",
+  "widgetId": "bolk8hcswm",
   "widgetName": "Button22"
 }

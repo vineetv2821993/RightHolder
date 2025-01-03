@@ -58,7 +58,7 @@
   },
   "onClick": "{{viewTitlePriiviewImage.prviewImage(currentIndex);}}",
   "parentColumnSpace": 7.882606208324432,
-  "parentId": "fcml19tj5n",
+  "parentId": "6gn9laf72z",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 62,
@@ -69,6 +69,6 @@
   "topRow": 9,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "9pbtx8ttf9",
+  "widgetId": "fek51fyt3a",
   "widgetName": "Image5"
 }

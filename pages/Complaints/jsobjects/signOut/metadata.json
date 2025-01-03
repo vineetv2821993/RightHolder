@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66fb995faf2b8e5a2a63f337_e23ce7a9-4d0e-4a2a-92c5-62a71fe50dcd",
+  "id": "Complaints_signOut",
+  "unpublishedCollection": {
+    "name": "signOut",
+    "pageId": "Complaints",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

@@ -47,7 +47,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "2yjyd11x3w",
+      "parentId": "mk06yiruz0",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -56,7 +56,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "y0fuh4q7nh",
+      "widgetId": "tamv6akct7",
       "widgetName": "Canvas124"
     }
   ],
@@ -109,7 +109,7 @@
   "topRow": 1,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "2yjyd11x3w",
+  "widgetId": "mk06yiruz0",
   "widgetName": "Modal14",
   "width": 786
 }

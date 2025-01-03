@@ -1,0 +1,3 @@
+UPDATE taoq_research.password_reset_otp
+SET otp = {{this.params.otp}}, expiry_at = '{{this.params.expiry_at}}'
+WHERE email = '{{this.params.email}}';

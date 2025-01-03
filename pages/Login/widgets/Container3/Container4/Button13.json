@@ -1,9 +1,9 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 26,
+  "bottomRow": 39,
   "boxShadow": "none",
-  "buttonColor": "#009a95",
+  "buttonColor": "#eab308",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "displayName": "Button",
@@ -12,13 +12,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
     }
   ],
-  "googleRecaptchaKey": "",
   "hideCard": false,
   "iconSVG": "/static/media/icon.7a418b9e1899a550d7e8f33b48cbde12.svg",
   "isDefaultClickDisabled": true,
@@ -26,13 +24,13 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "oskvmnqzhp",
-  "leftColumn": 22,
+  "key": "cwd8ayslzz",
+  "leftColumn": 2,
   "minWidth": 120,
-  "mobileBottomRow": 24,
-  "mobileLeftColumn": 16,
-  "mobileRightColumn": 32,
-  "mobileTopRow": 20,
+  "mobileBottomRow": 40,
+  "mobileLeftColumn": 4,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 36,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -41,16 +39,16 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{login.signInRightHolder();}}",
-  "parentColumnSpace": 12.076637268066406,
-  "parentId": "85d9kvqehc",
+  "onClick": "{{sendOTPObject.showFogetModal();}}",
+  "parentColumnSpace": 7.0444793701171875,
+  "parentId": "mikag7mpwe",
   "parentRowSpace": 10,
   "placement": "CENTER",
-  "recaptchaType": "V2",
+  "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 44,
+  "rightColumn": 23,
   "searchTags": [
     "click",
     "submit"
@@ -58,11 +56,11 @@
   "tags": [
     "Buttons"
   ],
-  "text": "Login",
+  "text": "Forgot Password",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 22,
+  "topRow": 35,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "5a4cswvuur",
+  "widgetId": "1274hgrjj8",
   "widgetName": "Button13"
 }

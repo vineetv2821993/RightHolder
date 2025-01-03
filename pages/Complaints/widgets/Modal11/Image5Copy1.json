@@ -48,7 +48,7 @@
   },
   "onClick": "{{showModal(Modal12.name);}}",
   "parentColumnSpace": 7.882606208324432,
-  "parentId": "f81t1ezd3v",
+  "parentId": "zj7splz4k7",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 62,
@@ -59,6 +59,6 @@
   "topRow": 11,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "vmbxq5ztq5",
+  "widgetId": "ma6ugk9pjr",
   "widgetName": "Image5Copy1"
 }

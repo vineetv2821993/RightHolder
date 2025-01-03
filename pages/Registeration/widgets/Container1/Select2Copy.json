@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 77,
+  "bottomRow": 74,
   "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "defaultOptionValue": "SA",
   "displayName": "Select",
@@ -55,15 +55,15 @@
   },
   "optionLabel": "name",
   "optionValue": "code",
-  "originalBottomRow": 77,
+  "originalBottomRow": 74,
   "originalTopRow": 70,
   "parentColumnSpace": 12.15625,
-  "parentId": "z0k93pzm0u",
+  "parentId": "dt6fy6k6pa",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 43,
+  "rightColumn": 42,
   "searchTags": [
     "dropdown"
   ],
@@ -77,6 +77,6 @@
   "topRow": 70,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "0j1wqyh5di",
+  "widgetId": "s72kons226",
   "widgetName": "Select2Copy"
 }

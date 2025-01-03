@@ -45,7 +45,7 @@
   "originalTopRow": 38,
   "overflow": "NONE",
   "parentColumnSpace": 16.052734375,
-  "parentId": "z0k93pzm0u",
+  "parentId": "dt6fy6k6pa",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -68,6 +68,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "ssfvw9djoh",
+  "widgetId": "5wy22ur6sq",
   "widgetName": "Text15"
 }

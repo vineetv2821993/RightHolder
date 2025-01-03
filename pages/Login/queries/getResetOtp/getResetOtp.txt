@@ -1,0 +1,3 @@
+SELECT  email, otp, expiry_at
+FROM taoq_research.password_reset_otp
+WHERE email = '{{this.params.email}}';

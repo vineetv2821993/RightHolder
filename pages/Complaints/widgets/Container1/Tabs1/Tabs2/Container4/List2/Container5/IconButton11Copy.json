@@ -21,9 +21,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "isVisible"
-    },
-    {
-      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -53,9 +50,9 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onClick": "{{ListTitles.removeFileListOnCrossClick(currentItem.id);}}",
+  "onClick": "{{ListTitles.removeFileListOnCrossClick(currentItem.id);\nresetWidget(\"List2\", true);}}",
   "parentColumnSpace": 7.882606208324432,
-  "parentId": "fcml19tj5n",
+  "parentId": "6gn9laf72z",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -71,6 +68,6 @@
   "topRow": 8,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "zkv5dt6ggm",
+  "widgetId": "i86xtgy1tn",
   "widgetName": "IconButton11Copy"
 }

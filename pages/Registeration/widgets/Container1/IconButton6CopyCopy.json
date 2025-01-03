@@ -1,8 +1,8 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 80,
-  "bottomRowBeforeCollapse": 80,
+  "bottomRow": 83,
+  "bottomRowBeforeCollapse": 83,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "TERTIARY",
@@ -39,7 +39,7 @@
   "isLoading": false,
   "isVisible": "{{FilePicker1Copy.files.length>0 ?\ntrue : false\n}}",
   "key": "gmywrfy382",
-  "leftColumn": 54,
+  "leftColumn": 56,
   "minWidth": 50,
   "mobileBottomRow": 26,
   "mobileLeftColumn": 58,
@@ -54,14 +54,14 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{resetWidget(\"FilePicker1Copy\", true);}}",
-  "originalBottomRow": 80,
-  "originalTopRow": 76,
+  "originalBottomRow": 83,
+  "originalTopRow": 79,
   "parentColumnSpace": 12.59375,
-  "parentId": "z0k93pzm0u",
+  "parentId": "dt6fy6k6pa",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 56,
+  "rightColumn": 58,
   "searchTags": [
     "click",
     "submit"
@@ -70,10 +70,10 @@
     "Buttons"
   ],
   "thumbnailSVG": "/static/media/thumbnail.b02b764a52db45d332efa723178a50a4.svg",
-  "topRow": 76,
-  "topRowBeforeCollapse": 76,
+  "topRow": 79,
+  "topRowBeforeCollapse": 79,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "cd0uqakplc",
+  "widgetId": "wknzptt854",
   "widgetName": "IconButton6CopyCopy"
 }

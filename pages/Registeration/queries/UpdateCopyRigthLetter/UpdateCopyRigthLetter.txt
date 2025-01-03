@@ -1,0 +1,3 @@
+UPDATE taoq_research.rightHolderProfile
+SET copyRightLetter= FROM_BASE64('{{this.params.copyRightLetter}}')
+WHERE id = '{{this.params.id}}';

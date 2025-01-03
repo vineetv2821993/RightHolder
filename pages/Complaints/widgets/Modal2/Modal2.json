@@ -4,7 +4,7 @@
   "bottomRow": 242,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
-  "canOutsideClickClose": true,
+  "canOutsideClickClose": false,
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -47,7 +47,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
       },
       "parentColumnSpace": 1,
-      "parentId": "3s7ktna7jy",
+      "parentId": "eq7muzihvo",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -56,7 +56,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "mzgl6eyyrf",
+      "widgetId": "1hjgvqdbxz",
       "widgetName": "Canvas14"
     }
   ],
@@ -68,6 +68,7 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
   "height": 240,
   "hideCard": false,
   "iconSVG": "/static/media/icon.47fe8500526372db96cb58a82187ffeb.svg",
@@ -109,7 +110,7 @@
   "topRow": 2,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "3s7ktna7jy",
+  "widgetId": "eq7muzihvo",
   "widgetName": "Modal2",
   "width": 648
 }

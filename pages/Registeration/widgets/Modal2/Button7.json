@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 58,
+  "bottomRow": 63,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonStyle": "PRIMARY_BUTTON",
@@ -16,6 +16,14 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -27,7 +35,7 @@
   "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "true",
   "key": "68k0cnb4ky",
   "leftColumn": 47,
   "minWidth": 120,
@@ -44,7 +52,9 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{validateTitles.validateTitles();}}",
-  "parentId": "p27ar0d5op",
+  "originalBottomRow": 65,
+  "originalTopRow": 61,
+  "parentId": "ns5me8kvzl",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -60,9 +70,9 @@
   ],
   "text": "Confirm",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 54,
+  "topRow": 59,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "ozixp511gz",
+  "widgetId": "c9iwdf2d7p",
   "widgetName": "Button7"
 }

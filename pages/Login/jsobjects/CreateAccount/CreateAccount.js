@@ -7,7 +7,7 @@ export default {
 
 			return false;  // User not found
 		}
-		const expireAt = moment(expireDate[0].expire_at).format('YYYY-MM-DD HH:mm:ss');
+		const expireAt = moment.utc(expireDate[0].expire_at).format('YYYY-MM-DD HH:mm:ss');
 
 
 		const currentTime = moment().format('YYYY-MM-DD HH:mm:ss')
@@ -38,7 +38,7 @@ export default {
 		}
 		if(!Input5.text){
 			isValid = false;
-			showAlert("Confirm Email Address is required", "error");
+			showAlert("Password is required", "error");
 		}
 		return isValid;
 	},
@@ -58,7 +58,7 @@ export default {
 			await Verify_Recaptha.run();
 			const verificationToken = this.generateUUID(); 
 			// Prepare the payload for the insert operation
-			this.exitQuery = `SELECT id FROM taoq_research.rightHolder WHERE email = '${Input4.text}' or username ='${Input3.text}'`;
+			this.exitQuery = `SELECT id FROM taoq_research.rightHolder WHERE email = '${Input4.text}'`;
 
 			const verificationExpires = moment().add(2, 'hours').format('YYYY-MM-DD HH:mm:ss');
 
@@ -88,12 +88,15 @@ export default {
 				try {
 					const response = await Insert_User.run(userPayload);
 					if (response) {
+
+
 						await Insert_Verification_Token.run(tokenPayload); // Add the token to the new table
 						showAlert('User created successfully!', 'success'); // Show success message
 
 						await storeValue("signUpRightHolderName",Input3.text);
 						await storeValue("signUpRightHolderEmail",Input4.text);
 						await storeValue("emailVerifyToken",verificationToken);
+						await storeValue("rightHolderUserId",userId);
 						await closeModal(Modal1.name);
 						await showModal(Modal7.name);
 
@@ -106,7 +109,7 @@ export default {
 				}
 			}
 			else{
-				showAlert('User already created, try different EmailAddress or userName', 'warning'); // Show success message
+				showAlert('User already created, try different EmailAddress', 'warning'); // Show success message
 				await closeModal(Modal1.name);
 				await resetWidget(Modal1.name);
 			}

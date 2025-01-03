@@ -20,10 +20,10 @@
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "isVisible"
+      "key": "onClick"
     },
     {
-      "key": "onClick"
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -55,7 +55,7 @@
   },
   "onClick": "{{imageParsing.imageRendering(AddListInput.listArray[currentIndex].FilePicker1);}}",
   "parentColumnSpace": 16.272790908813477,
-  "parentId": "p461iqp2qr",
+  "parentId": "5kdu99bpnk",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -72,6 +72,6 @@
   "topRow": 8,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "6m8hyba5cl",
+  "widgetId": "2vqoomgvir",
   "widgetName": "IconButton9"
 }

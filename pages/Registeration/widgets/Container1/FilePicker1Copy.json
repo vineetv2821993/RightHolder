@@ -1,6 +1,7 @@
 {
   "allowedFileTypes": [
-    "image/*"
+    "image/jpeg",
+    ".png"
   ],
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -13,7 +14,12 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
   "dynamicTyping": true,
   "fileDataType": "Base64",
   "files": [],
@@ -28,7 +34,7 @@
   "key": "caopdsmnd2",
   "label": "Select Files",
   "leftColumn": 21,
-  "maxFileSize": 5,
+  "maxFileSize": "5",
   "maxNumFiles": 1,
   "minWidth": 120,
   "mobileBottomRow": 162,
@@ -43,10 +49,11 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
+  "onFilesSelected": "",
   "originalBottomRow": 83,
   "originalTopRow": 79,
   "parentColumnSpace": 12.15625,
-  "parentId": "z0k93pzm0u",
+  "parentId": "dt6fy6k6pa",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -62,6 +69,6 @@
   "topRow": 79,
   "type": "FILE_PICKER_WIDGET_V2",
   "version": 1,
-  "widgetId": "z0hycq9v93",
+  "widgetId": "lbj0be4lcu",
   "widgetName": "FilePicker1Copy"
 }

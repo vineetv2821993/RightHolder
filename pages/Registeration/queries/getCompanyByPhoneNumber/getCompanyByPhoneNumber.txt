@@ -1,0 +1,3 @@
+SELECT company_name as name
+FROM taoq_research.rightHolderProfile
+WHERE phoneNumber = '{{Select1.selectedOptionLabel}}-{{phoneNumber.text}}' LIMIT 1;

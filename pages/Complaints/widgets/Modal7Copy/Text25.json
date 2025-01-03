@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 33,
+  "bottomRow": 31,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -41,11 +41,11 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 33,
+  "originalBottomRow": 31,
   "originalTopRow": 13,
   "overflow": "NONE",
   "parentColumnSpace": 9.875,
-  "parentId": "c7k9gede30",
+  "parentId": "53bwmd46mu",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -60,7 +60,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "<p>Your query has been successfully sent to our customer support team.\nWe will review your query and respond to the same email thread.\n\nPlease ensure to check your email regularly for updates from our team.\n\nThank you for reaching out to us!\n</strong>.</p>\n",
+  "text": "<p>Your query has been successfully sent to our customer support team.\nWe will review your query and respond to the same email thread.\n\nPlease ensure to check your email regularly for updates from our team.\n\nThank you for reaching out to us!\n</strong></p>\n",
   "textAlign": "CENTER",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
@@ -68,6 +68,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "y6hl2bbhs7",
+  "widgetId": "0g6ir9anvj",
   "widgetName": "Text25"
 }

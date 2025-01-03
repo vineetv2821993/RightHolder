@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 51,
+  "bottomRow": 49,
   "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "defaultText": "",
   "displayName": "Input",
@@ -50,10 +50,10 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 51,
+  "originalBottomRow": 49,
   "originalTopRow": 44,
   "parentColumnSpace": 12.125,
-  "parentId": "z0k93pzm0u",
+  "parentId": "dt6fy6k6pa",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -75,6 +75,6 @@
   "topRow": 44,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "3mtxgtbx06",
+  "widgetId": "xuz9dzzl0i",
   "widgetName": "ConfirmPhoneNumber"
 }

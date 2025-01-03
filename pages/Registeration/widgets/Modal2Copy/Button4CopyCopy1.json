@@ -16,11 +16,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -51,7 +47,7 @@
   "onClick": "{{AddTitles.addTitles();}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
-  "parentId": "ztytcgm7vu",
+  "parentId": "24hsu2ab0q",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -70,6 +66,6 @@
   "topRow": 16,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "lovmi1bnjp",
+  "widgetId": "dmzhequa6k",
   "widgetName": "Button4CopyCopy1"
 }

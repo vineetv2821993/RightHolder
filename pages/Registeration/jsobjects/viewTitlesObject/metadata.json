@@ -6,6 +6,15 @@
     "pageId": "Registeration",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "variables": []
+    "variables": [
+      {
+        "name": "titleData",
+        "value": "[]"
+      },
+      {
+        "name": "countData",
+        "value": "0"
+      }
+    ]
   }
 }
