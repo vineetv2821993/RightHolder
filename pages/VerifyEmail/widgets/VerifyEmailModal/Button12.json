@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 33,
+  "bottomRow": 32,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -28,7 +28,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "2soe6l0gkw",
-  "leftColumn": 43,
+  "leftColumn": 54,
   "minWidth": 120,
   "mobileBottomRow": 25,
   "mobileLeftColumn": 43,
@@ -43,17 +43,17 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{resentEmail.resentEmailDetails();}}",
-  "originalBottomRow": 33,
-  "originalTopRow": 29,
+  "originalBottomRow": 32,
+  "originalTopRow": 28,
   "parentColumnSpace": 20.09375,
-  "parentId": "5c5tt1xldr",
+  "parentId": "s1vx1ogm5f",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 51,
+  "rightColumn": 62,
   "searchTags": [
     "click",
     "submit"
@@ -63,9 +63,9 @@
   ],
   "text": "Resend Email",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 29,
+  "topRow": 28,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "73hg7q0y8y",
+  "widgetId": "0acf8pcsbw",
   "widgetName": "Button12"
 }

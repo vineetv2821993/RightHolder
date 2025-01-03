@@ -1,19 +1,19 @@
 {
-  "gitSyncId": "66fb995faf2b8e5a2a63f337_45dd92f8-bf63-40c1-89f9-304090a52362",
-  "id": "Registeration_countTitles",
+  "gitSyncId": "66fb995faf2b8e5a2a63f337_caff33c9-b4d2-4a94-a8e2-52cccd609be0",
+  "id": "VerifyEmail_updateVerifyTokenCopy",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT count(*) as count FROM complaints_title where rightHolderUserId ='{{appsmith.store.rightHolderUserId}}'and complaints_title.name like '%{{Table1.searchText || \"\"}}%' {{titleViewFilters.whereFilter}};",
+      "body": "UPDATE taoq_research.right_holder_email_verification\nSET \ntoken = '{{this.params.token}}',\nexpire_at = '{{moment().add(2, 'hours').format('YYYY-MM-DD HH:mm:ss')}}'\nWHERE rightHolder_id = '{{this.params.user_id}}';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
-      "timeoutInMillisecond": 100000
+      "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
     "datasource": {
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
-    "name": "countTitles",
-    "pageId": "Registeration",
+    "executeOnLoad": false,
+    "name": "updateVerifyTokenCopy",
+    "pageId": "VerifyEmail",
     "userSetOnLoad": false
   }
 }

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 34,
+  "bottomRow": 24,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -46,7 +46,7 @@
   "originalBottomRow": 34,
   "originalTopRow": 30,
   "parentColumnSpace": 12.712890625,
-  "parentId": "9i6bye28on",
+  "parentId": "det9mrrk6i",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
@@ -63,9 +63,9 @@
   ],
   "text": "Go To Login Page",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 30,
+  "topRow": 20,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "6f2ufnr2p3",
-  "widgetName": "Button13Copy"
+  "widgetId": "jo2ue6ub6f",
+  "widgetName": "Button13Copy1"
 }

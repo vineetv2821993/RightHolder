@@ -45,7 +45,7 @@
   "originalTopRow": 17,
   "overflow": "NONE",
   "parentColumnSpace": 12.712890625,
-  "parentId": "9i6bye28on",
+  "parentId": "r13h6ewzdv",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -60,7 +60,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "Your email address has Aleardy verified. You can now access all features and receive important updates.",
+  "text": "Your email address has been verified. You can now access all features and receive important updates.",
   "textAlign": "CENTER",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
@@ -68,6 +68,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "6shn3vlack",
+  "widgetId": "u5jb3kr9pb",
   "widgetName": "Text26Copy"
 }

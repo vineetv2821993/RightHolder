@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 34,
+  "bottomRow": 32,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -13,11 +13,6 @@
     },
     {
       "key": "borderRadius"
-    }
-  ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -48,10 +43,10 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{verifyEmailObject.cancelAutoNavigate()}}",
-  "originalBottomRow": 34,
-  "originalTopRow": 30,
+  "originalBottomRow": 32,
+  "originalTopRow": 28,
   "parentColumnSpace": 12.712890625,
-  "parentId": "m8xrnfnxsv",
+  "parentId": "dpzc1ddfo6",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
@@ -68,9 +63,9 @@
   ],
   "text": "Go To Login Page",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 30,
+  "topRow": 28,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "v7gvyb7ndr",
-  "widgetName": "Button13"
+  "widgetId": "vn3q4thqqz",
+  "widgetName": "Button13CopyCopy"
 }

@@ -17,7 +17,10 @@ export default {
 			this.rightHolderData = (await getRightHolder.run({ id: rightHolder_id }))[0];
 
 			// Check if the token has expired
-			if (moment().isBefore(expire_at)) {
+			let currentTime= moment().format('YYYY-MM-DD HH:mm:ss');
+			const expireAt = moment.utc(expire_at).format('YYYY-MM-DD HH:mm:ss'); 
+			console.log("asdada",currentTime,expireAt);
+			if (`${new Date(currentTime).getTime()}`< `${new Date(expireAt).getTime()}`) {
 				console.log("user_id", rightHolder_id, rightHolder_id);
 
 				// Update the user record to mark the email as verified
@@ -30,7 +33,7 @@ export default {
 				// Set a timeout to automatically navigate to the login page after 30 seconds
 				this.loginTimeout = setTimeout(() => {
 					navigateTo('Login', {}, 'SAME_WINDOW');
-				}, 10000); // 10 seconds
+				}, 15000); // 10 seconds
 			} else {
 				// Token expired
 				await deleteVerificationEntry.run({ token: token });
@@ -43,7 +46,11 @@ export default {
 				showModal(Modal1Copy.name);
 				this.loginTimeout = setTimeout(() => {
 					navigateTo('Login', {}, 'SAME_WINDOW');
-				}, 10000); // 10 seconds
+				}, 15000); // 10 seconds
+			}
+			else
+			{
+				showModal(Modal1CopyCopy.name);
 			}
 		}
 	},

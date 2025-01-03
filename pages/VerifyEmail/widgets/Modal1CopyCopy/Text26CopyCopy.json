@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 25,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -24,15 +24,15 @@
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "pj9ak9hopa",
-  "leftColumn": 8,
+  "key": "1684m2rg13",
+  "leftColumn": 5,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 5,
-  "mobileLeftColumn": 6,
-  "mobileRightColumn": 22,
-  "mobileTopRow": 1,
+  "mobileBottomRow": 19,
+  "mobileLeftColumn": 22,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 15,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -41,15 +41,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 6,
-  "originalTopRow": 0,
+  "originalBottomRow": 25,
+  "originalTopRow": 17,
   "overflow": "NONE",
-  "parentColumnSpace": 6.939453125,
-  "parentId": "c0dn6tgcp1",
+  "parentColumnSpace": 12.712890625,
+  "parentId": "dpzc1ddfo6",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 53,
+  "rightColumn": 62,
   "searchTags": [
     "typography",
     "paragraph",
@@ -60,14 +60,14 @@
     "Suggested",
     "Content"
   ],
-  "text": "We've Sent Verifcation Email",
+  "text": "It looks like the verification link you used is no longer valid. This might happen if you requested a new verification email. Please check your email for the latest verification link or request a new one if needed",
   "textAlign": "CENTER",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 0,
+  "topRow": 17,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "et11qwx3e1",
-  "widgetName": "Text23"
+  "widgetId": "t0cbstu69d",
+  "widgetName": "Text26CopyCopy"
 }

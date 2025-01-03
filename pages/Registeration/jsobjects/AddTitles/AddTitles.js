@@ -96,7 +96,7 @@ export default {
        <p>Please find the attachment corresponding to each title below. The name of the attachment matches the title name, so you can easily identify which attachment corresponds to each title:</p>
 
 			<p>For your convenience, please use the link below to access the Dashboard and provide the approval or rejection status for the submitted titles:</p>
-			<p><a href="https://saip.bytes.care/app/saip-test/dashboard-66fe3a8daf2b8e5a2a63fc02?branch=master" target="_blank">Access the SAIP Dashboard</a></p>
+			<p><a href="https://saip.bytes.care/app/saip-vms/dashboard-66cc3795ec80177fd0d752e0?branch=master" target="_blank">Access the SAIP Dashboard</a></p>
 				<p>We kindly request your prompt attention to this matter and an update on the status of the titles submitted by <strong>${HolderName.text}</strong>.</p>
 					</div>
 			<div class="footer">
